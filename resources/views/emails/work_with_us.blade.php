@@ -1,26 +1,56 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>A User Is Intrested in working with You</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I need to Work With Hack Solutions: {{ $data['name'] }}</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        h1 {
+            color: #0088cc;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color: #333; font-family: Arial, sans-serif; font-size: 24px; margin-bottom: 10px;">A User Is Intrested in working with You</h1>
-    <table style="font-family: Arial, sans-serif; font-size: 16px;">
+    <h1>I need to Work With Hack Solutions, Am: {{ $data['name'] }}</h1>
+    <table>
         <tr>
-            <td style="padding: 5px 10px; text-align: right; font-weight: bold;">Name:</td>
-            <td style="padding: 5px 10px;">{{ $data['name'] }}</td>
+            <th>Name</th>
+            <td>{{ $data['name'] }}</td>
         </tr>
         <tr>
-            <td style="padding: 5px 10px; text-align: right; font-weight: bold;">Email:</td>
-            <td style="padding: 5px 10px;">{{ $data['email'] }}</td>
+            <th>Email</th>
+            <td>{{ $data['email'] }}</td>
         </tr>
         <tr>
-            <td style="padding: 5px 10px; text-align: right; font-weight: bold;">Phone Number:</td>
-            <td style="padding: 5px 10px;">{{ $data['phone_number'] }}</td>
+            <th>Phone Number</th>
+            <td>{{ $data['phone_number'] }}</td>
         </tr>
         <tr>
-            <td style="padding: 5px 10px; text-align: right; font-weight: bold;">State:</td>
-            <td style="padding: 5px 10px;">{{ $data['state'] }}</td>
+            <th>State</th>
+            <td>{{ $data['state'] }}</td>
         </tr>
     </table>
 </body>

@@ -1,13 +1,17 @@
 <?php
 
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController; // Import the UserController class
 use App\Http\Controllers\WorkusController;
+use App\Http\Controllers\JourneyController;
 
+use App\Http\Controllers\VehicleController;
 use App\Mail\MyTestEmail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
+
 Route::get('/testroute', function () {
     $name[] = "Funny Coder";
     // $data="";
@@ -33,11 +37,14 @@ Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
 Route::post('/register', 'Auth\RegisterController@register');
 
-// Route::get('/work', 'WorkusController@showForm');
-// Route::post('/work', 'WorkusController@storeForm');
 
 Route::get('/work', [WorkusController::class, 'showForm'])->name('showForm');
 Route::post('/work', [WorkusController::class, 'storeForm'])->name('storeForm');
+
+Route::get('/vehicle/form', [VehicleController::class, 'showForm'])->name('vehicle.form');
+Route::post('/vehicle/form', [VehicleController::class, 'store']);
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -65,6 +72,10 @@ Route::get('/contact', function () {
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
+
+Route::get('/welcome', function () {
+    return view('welcome');
+})->name('welcome');
 
 Auth::routes();
 
