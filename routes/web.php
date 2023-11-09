@@ -44,7 +44,7 @@ Route::post('/work', [WorkusController::class, 'storeForm'])->name('storeForm');
 Route::get('/vehicle/form', [VehicleController::class, 'showForm'])->name('vehicle.form');
 Route::post('/vehicle/form', [VehicleController::class, 'store']);
 
-
+Route::post('/plan-journey', [JourneyController::class, 'plan'])->name('plan.journey')->middleware('auth');
 /*
 |--------------------------------------------------------------------------
 | Web Routes

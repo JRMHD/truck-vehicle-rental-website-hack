@@ -93,54 +93,89 @@
                     </div>
 
 
-
-
-
-
-
                 </div>
+
+
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+
                 <div class="col-lg-2 col"></div>
-                <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
-                    <form class="request-form ftco-animate">
+                <div class="col-lg-4 col-md-6 mt-5 d-flex">
+                    <form action="{{ route('plan.journey') }}" method="POST" class="request-form ftco-animate">
                         @csrf
-                        <h2>Plan Your Journey</h2>
+                        <h2 class="mb-4 text-center">Plan Your Journey</h2>
+
                         <div class="form-group">
-                            <label for="starting_point" class="label">Starting Point</label>
+                            <label for="starting_point" class="label">Starting Point?</label>
                             <input type="text" class="form-control" name="starting_point" id="starting_point"
                                 placeholder="Your Location">
                         </div>
+
                         <div class="form-group">
-                            <label for="destination" class="label">Destination</label>
+                            <label for="destination" class="label">Your Destination?</label>
                             <input type="text" class="form-control" name="destination" id="destination"
                                 placeholder="Your Destination">
                         </div>
-                        <div class="d-flex">
-                            <div class="form-group mr-2">
+
+                        <div class="d-flex justify-content-between">
+                            <div class="form-group">
                                 <label for="departure_date" class="label">Departure Date</label>
-                                <input type="text" class="form-control" name="departure_date" id="departure_date"
+                                <input type="date" class="form-control" name="departure_date" id="departure_date"
                                     placeholder="Date">
+
                             </div>
-                            <div class="form-group ml-2">
+
+                            <div class="form-group">
                                 <label for="return_date" class="label">Return Date</label>
-                                <input type="text" class="form-control" name="return_date" id="return_date"
+                                <input type="date" class="form-control" name="return_date" id="return_date"
                                     placeholder="Date">
                             </div>
                         </div>
+
                         <div class="form-group">
                             <label for="preferred_time" class="label">Preferred Time</label>
                             <input type="text" class="form-control" name="preferred_time" id="preferred_time"
                                 placeholder="Time">
                         </div>
-                        <div class="form-group">
-                            <input type="submit" value="Find a Vehicle" class="btn btn-primary py-3 px-4">
-                        </div>
+
+                        <div class="form-group mt-4">
+                            <button type="submit" class="btn btn-primary btn-block py-3">Find a Vehicle</button>
+                    </form>
                     </form>
 
                 </div>
 
+
             </div>
         </div>
     </div>
+
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"
+        rel="stylesheet" />
+
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js">
+    </script>
+
+    <script>
+        $(document).ready(function() {
+                    $('.date').datetimepicker({
+                        format: 'MM/DD/YYYY',
+                        locale: 'en'
+                    });
+    </script>
+
 
     <div class="container mt-5">
         <div class="row">
