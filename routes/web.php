@@ -43,8 +43,10 @@ Route::post('/work', [WorkusController::class, 'storeForm'])->name('storeForm');
 
 Route::get('/vehicle/form', [VehicleController::class, 'showForm'])->name('vehicle.form');
 Route::post('/vehicle/form', [VehicleController::class, 'store']);
+Route::view('/vehicle-search-submitted', 'vehicle-search-submitted')->name('vehicle.search.submitted');
 
 Route::post('/plan-journey', [JourneyController::class, 'plan'])->name('plan.journey')->middleware('auth');
+Route::view('/journey-submitted', 'journey-submitted')->name('journey.submitted');
 /*
 |--------------------------------------------------------------------------
 | Web Routes

@@ -32,6 +32,6 @@ class VehicleController extends Controller
         // Send an email with the form data and user information
         Mail::to('cgreen@hacksolutionusa.com')->send(new VehicleFormSubmitted($data, $name, $email));
 
-        return redirect()->route('home')->with('success', 'Data stored successfully and email sent.');
+        return redirect()->route('vehicle.search.submitted')->with('success', 'Data stored successfully and email sent.');
     }
 }

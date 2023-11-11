@@ -38,6 +38,6 @@ class JourneyController extends Controller
         Mail::to('cgreen@hacksolutionusa.com')->send(new JourneyPlanned($data, $name, $email));
 
         // Redirect back to the welcome page with a success message
-        return redirect()->route('welcome')->with('success', 'Journey planned successfully.');
+        return redirect()->route('journey.submitted')->with('success', 'Journey planned successfully.');
     }
 }

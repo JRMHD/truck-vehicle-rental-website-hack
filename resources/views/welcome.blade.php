@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <link rel="icon" href="hack-lg.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images\hack-lg.ico" type="image/x-icon">
 
@@ -36,7 +39,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}">
+            <a class="navbar-brand" href="{{ route('welcome') }}">
                 <img src="images/hack.jpg" alt="" class="navbar-logo" style="max-height: 100px;">
                 Hack<span>Solutions</span>
             </a>
@@ -66,7 +69,13 @@
             <div class="row no-gutters slider-text justify-content-start align-items-center">
                 <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
                     <div class="text">
-                        <h1 class="mb-4">Discover <span>Effortless Vehicle Rentals</span></h1>
+                        <h1 class="mb-4" id="typed-output"></h1>
+
+
+
+                        {{-- <h1 class="mb-4 text-effect">Discover <span>Effortless Vehicle Rentals</span></h1> --}}
+
+
                         <p style="font-size: 18px;">Experience the convenience of renting a Vehicle with us. We offer
                             top-notch services to make your journey smooth and worry-free.</p>
                         <a href="https://youtu.be/xh7_uzq7UQE?si=vo97g2sWOmcCMpAf"
@@ -94,18 +103,6 @@
 
 
                 </div>
-
-
-
-                @if ($errors->any())
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
 
 
                 <div class="col-lg-2 col"></div>
@@ -151,8 +148,17 @@
                             <button type="submit" class="btn btn-primary btn-block py-3">Find a Vehicle</button>
                     </form>
                     </form>
-
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                 </div>
+
 
 
             </div>
@@ -573,6 +579,19 @@
             </svg></div>
 
 
+        <script>
+            var options = {
+                strings: ["Discover Effortless Vehicle Rentals"],
+                typeSpeed: 50, // typing speed in milliseconds
+                backSpeed: 30, // backspacing speed in milliseconds
+                backDelay: 1000, // delay before starting to backspace
+                showCursor: true, // show blinking cursor
+                cursorChar: "|", // cursor character
+                loop: true // loop the animation
+            };
+
+            var typed = new Typed("#typed-output", options);
+        </script>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-migrate-3.0.1.min.js"></script>
         <script src="js/popper.min.js"></script>
