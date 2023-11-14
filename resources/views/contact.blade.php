@@ -97,7 +97,7 @@
                                 <span class="icon-envelope-o"></span>
                             </div>
                             <p><span>Click To Email:</span> <a
-                                    href="mailto:cgreen@hacksolutionusa.com">cgreen@hacksolutionusa.com</a></p>
+                                    href="mailto:cgreen@hacksolutionusa.com">cgreen@hacksolutionsusa.com</a></p>
                         </div>
 
                     </div>

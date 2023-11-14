@@ -31,7 +31,7 @@ class WorkWithUsMail extends Mailable
     public function build()
     {
         return $this
-            ->from('cgreen@hacksolutionusa.com') // Replace with your email
+            ->from('cgreen@hacksolutionsusa.com') // Replace with your email
             ->subject('Work With Us Mail')
             ->view('emails.work_with_us')
             ->with(['data' => $this->data]);

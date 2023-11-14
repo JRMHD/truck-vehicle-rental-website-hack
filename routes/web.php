@@ -17,7 +17,7 @@ Route::get('/testroute', function () {
     // $data="";
 
     // The email sending is done using the to method on the Mail facade
-    Mail::to('testreceiver@gmail.com')->send(new MyTestEmail($name));
+    Mail::to('cgreen@hacksolutionsusa.com')->send(new MyTestEmail($name));
 });
 
 // Display the form

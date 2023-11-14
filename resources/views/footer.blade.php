@@ -51,7 +51,7 @@
                             <li><a href="#"><span class="icon icon-phone"></span><span class="text">+1
                                         800 774 9450</span></a></li>
                             <li><a href="#"><span class="icon icon-envelope"></span><span class="text">
-                                        cgreen@hacksolutionusa.com</span></a></li>
+                                        cgreen@hacksolutionsusa.com</span></a></li>
                         </ul>
                     </div>
                 </div>

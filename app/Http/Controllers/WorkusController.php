@@ -1,10 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
+
 use App\Mail\WorkWithUsMail;
 use Illuminate\Http\Request;
 use App\Models\Workus; // Import the Workus model at the top
 use Illuminate\Support\Facades\Mail;
+
 class WorkusController extends Controller
 {
     public function showForm()
@@ -32,7 +34,7 @@ class WorkusController extends Controller
             Workus::create($data);
             $message = 'Data submitted successfully.';
         }
-        Mail::to('cgreen@hacksolutionusa.com')->send(new WorkWithUsMail($data));
+        Mail::to('cgreen@hacksolutionsusa.com')->send(new WorkWithUsMail($data));
         return redirect('/work')->with('success', $message);
     }
 }
