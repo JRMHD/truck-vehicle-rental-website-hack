@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'HACKSOLUTIONSUSA'),
+    'name' => env('APP_NAME', 'HACK SOLUTIONS USA'),
 
     /*
     |--------------------------------------------------------------------------

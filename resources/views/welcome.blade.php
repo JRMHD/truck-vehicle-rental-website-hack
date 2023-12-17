@@ -69,7 +69,38 @@
             <div class="row no-gutters slider-text justify-content-start align-items-center">
                 <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
                     <div class="text">
-                        <h1 class="mb-4" id="typed-output"></h1>
+                        <h1 class="headline">
+                            <span>Discover</span>
+                            <span>Effortless</span>
+                            <span>Vehicle</span>
+                            <span>Rentals</span>
+                        </h1>
+
+                        <style>
+                            .headline {
+                                font-size: 120px;
+                                font-weight: 950;
+                                text-transform: uppercase;
+                                background: linear-gradient(to right, #dd3e54, #6be585);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                text-shadow:
+                                    -3px -3px 0 #f0932b,
+                                    3px -3px 0 #f0932b,
+                                    -3px 3px 0 #f0932b,
+                                    3px 3px 0 #f0932b;
+                            }
+
+                            .headline span {
+                                display: block;
+                            }
+
+                            @media (max-width: 768px) {
+                                .headline {
+                                    font-size: 60px;
+                                }
+                            }
+                        </style>
 
 
 
@@ -87,22 +118,47 @@
                                 <span>Watch Our Rental Process</span>
                             </div>
                         </a>
+                        <div style="display: flex; justify-content: center;">
+
+                            <a href="{{ route('login') }}"
+                                style="padding: 12px 24px; 
+            background-color: #5971ea;
+            color: white;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+            font-size: 16px;
+            font-weight: 600;
+            margin-right: 16px;
+            transition: all 0.2s ease-in-out;"
+                                class="login-btn">
+
+                                Login
+
+                            </a>
+
+                            <a href="{{ route('register') }}"
+                                style="padding: 12px 24px;
+           background-color: #21ce99;
+           color: white;
+           border-radius: 6px;
+           font-size: 16px; 
+           font-weight: 600;
+           box-shadow: 0 0 10px rgba(0,0,0,0.1);  
+           transition: all 0.2s ease-in-out;"
+                                class="register-btn">
+
+                                Register
+
+                            </a>
+
+                        </div>
+
+
                     </div>
-
-
-                    <div style="text-align: center;">
-                        <!-- Login Button -->
-                        <a href="{{ route('login') }}"
-                            style="display: inline-block; padding: 8px 16px; background-color: #007BFF; color: #fff; text-decoration: none; font-size: 14px; border: none; border-radius: 5px; margin: 10px; cursor: pointer;">Login</a>
-
-                        <!-- Create Account Button -->
-                        <a href="{{ route('register') }}"
-                            style="display: inline-block; padding: 8px 16px; background-color: #28A745; color: #fff; text-decoration: none; font-size: 14px; border: none; border-radius: 5px; margin: 10px; cursor: pointer;">Create
-                            Account</a>
-                    </div>
-
-
                 </div>
+
+
+
 
 
                 <div class="col-lg-2 col"></div>
@@ -182,7 +238,7 @@
                     });
     </script>
 
-
+    @include('user.cardisp')
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6 offset-md-3">
@@ -337,7 +393,7 @@
         </section>
 
 
-        @include('user.cardisp')
+
 
         <section class="custom-services-section ftco-section services-section img"
             style="background-image: url(images/24ft.jpg);">

@@ -88,14 +88,11 @@ return [
 
     'passwords' => [
         'users' => [
-            'driver' => 'eloquent',
-            'model' => App\User::class,
+            'provider' => 'users',
+            'table' => 'password_resets',
+            'expire' => 60,
+            'throttle' => 60,
         ],
-        'userlogins' => [
-            'driver' => 'database',
-            'table' => 'userlogins', // Set the table name to 'userlogins'
-        ],
-        
     ],
 
     /*
