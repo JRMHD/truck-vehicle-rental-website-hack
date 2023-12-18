@@ -11,6 +11,7 @@ use App\Http\Controllers\VehicleController;
 use App\Mail\MyTestEmail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\PostController;
 
 Route::get('/testroute', function () {
     $name[] = "Funny Coder";
@@ -47,6 +48,14 @@ Route::view('/vehicle-search-submitted', 'vehicle-search-submitted')->name('vehi
 
 Route::post('/plan-journey', [JourneyController::class, 'plan'])->name('plan.journey')->middleware('auth');
 Route::view('/journey-submitted', 'journey-submitted')->name('journey.submitted');
+Route::resource('posts', PostController::class);
+
+Route::get('/posts', [PostController::class, 'index']);
+Route::get('/posts/create', [PostController::class, 'create']);
+Route::post('/posts', [PostController::class, 'store']);
+Route::get('/posts/{id}', [PostController::class, 'show']); // This route remains the same
+Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
+Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 /*
 |--------------------------------------------------------------------------
 | Web Routes

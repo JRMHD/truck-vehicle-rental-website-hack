@@ -63,7 +63,12 @@
 
     <!-- END nav -->
 
-    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="position: relative;">
+        <video playsinline autoplay muted loop poster="/images/bg_1.jpg"
+            style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
+            <source src="/images/carvid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text justify-content-start align-items-center">
@@ -239,7 +244,7 @@
     </script>
 
     @include('user.cardisp')
-    
+
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6 offset-md-3">
