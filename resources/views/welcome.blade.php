@@ -125,38 +125,18 @@
                         </a>
                         <div style="display: flex; justify-content: center;">
 
-                            <a href="{{ route('login') }}"
-                                style="padding: 12px 24px; 
-            background-color: #5971ea;
-            color: white;
-            border-radius: 6px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
-            font-size: 16px;
-            font-weight: 600;
-            margin-right: 16px;
-            transition: all 0.2s ease-in-out;"
-                                class="login-btn">
-
+                            <a href="{{ route('login') }}" class="btn"
+                                style="background-color: #3498db; color: #fff; border-radius: 6px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); font-size: 16px; font-weight: 600; margin-right: 16px; padding: 12px 24px; text-decoration: none; transition: background-color 0.2s ease-in-out;">
                                 Login
-
                             </a>
 
-                            <a href="{{ route('register') }}"
-                                style="padding: 12px 24px;
-           background-color: #21ce99;
-           color: white;
-           border-radius: 6px;
-           font-size: 16px; 
-           font-weight: 600;
-           box-shadow: 0 0 10px rgba(0,0,0,0.1);  
-           transition: all 0.2s ease-in-out;"
-                                class="register-btn">
-
+                            <a href="{{ route('register') }}" class="btn"
+                                style="background-color: #2ecc71; color: #fff; border-radius: 6px; font-size: 16px; font-weight: 600; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 12px 24px; text-decoration: none; transition: background-color 0.2s ease-in-out;">
                                 Register
-
                             </a>
 
                         </div>
+
 
 
                     </div>
@@ -620,7 +600,7 @@
                                 today
                                 to start your leasing journey with Hack Solutions USA.</p>
 
-                            <p><a href="{{ url('/contact') }}" class="btn btn-primary">Search Vehicle</a></p>
+                            <p><a href="{{ url('/posts') }}" class="btn btn-primary">Search Vehicle</a></p>
                         </div>
                     </div>
                 </div>

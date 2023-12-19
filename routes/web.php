@@ -56,6 +56,7 @@ Route::post('/posts', [PostController::class, 'store']);
 Route::get('/posts/{id}', [PostController::class, 'show']); // This route remains the same
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes

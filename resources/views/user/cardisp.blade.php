@@ -118,7 +118,18 @@
                         <a href="{{ url('/contact') }}" class="btn btn-outline-dark ml-2">Details</a>
                     </div>
                 </div>
+
             </div>
+
+
+            <div class="text-center mt-4">
+                <p class="lead">Discover our extensive range of vehicles and find your ideal choice!</p>
+                <a href="{{ url('/posts') }}" class="btn btn-primary btn-lg">Latest Posts</a>
+            </div>
+
+
+
+
 
             <!-- Contact Section -->
             <div class="row mt-5">

@@ -26,6 +26,7 @@ class PostController extends Controller
             'title' => 'required',
             'content' => 'required',
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'price' => 'required',
         ]);
 
         $postData = $request->all();
@@ -58,6 +59,7 @@ class PostController extends Controller
             'title' => 'required',
             'content' => 'required',
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'price' => 'numeric|nullable',
         ]);
 
         $postData = $request->all();
