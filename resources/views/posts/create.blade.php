@@ -88,7 +88,7 @@
 
         <div>
             <label for="price">Price</label>
-            <input type="text" name="price" id="priceInput" placeholder="e.g., 749/week">
+            <input type="text" name="price" id="priceInput" placeholder="e.g., 19.99/week">
             <input type="hidden" name="parsedPrice" id="parsedPrice">
         </div>
 

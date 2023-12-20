@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="hack-lg.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images\hack-lg.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latest Posts | Your Website Name</title>
+    <title>Latest Posts | Hacksolutionsusa</title>
     <!-- Add your favicon links here -->
     <style>
         body {
@@ -151,7 +153,8 @@
                         <p style="font-size: 18px; color: #555;">No posts available. Contact us for more information
                             at
                             <a href="tel:+18007749450">+1 800 774 9450</a> or
-                            <a href="mailto:info@example.com">info@example.com</a>.</p>
+                            <a href="mailto:cgreen@hacksolutionsusa.com">cgreen@hacksolutionsusa.com</a>.
+                        </p>
                     </div>
                 @endforelse
             </div>

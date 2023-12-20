@@ -34,10 +34,10 @@ class ContactController extends Controller
         // $name=$request->name;
         // Send the email using Laravel Mailre
         // Mail::to('reaganmukabana@gmail.com')->send(new MyTestEmail($data));
-        Mail::to('cgreen@hacksolutionsusa.com')->send(new MyTestEmail($data));
+        Mail::to('hacksolutionsusa@outlook.com')->send(new MyTestEmail($data));
         // $data = ['Item 1', 'Item 2', 'Item 3'];
         // $recipientEmail = 'recipient@example.com';
-    
+
         // Mail::to($recipientEmail)->send(new MyTestEmail($request));
         // Redirect back with a success message
         return back()->with('success', 'Your message has been sent successfully.');

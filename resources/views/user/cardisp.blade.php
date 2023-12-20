@@ -123,9 +123,28 @@
 
 
             <div class="text-center mt-4">
-                <p class="lead">Discover our extensive range of vehicles and find your ideal choice!</p>
-                <a href="{{ url('/posts') }}" class="btn btn-primary btn-lg">Latest Posts</a>
+
+                <p class="lead">Discover our top-quality vehicles!</p>
+
+                <a href="{{ url('/posts') }}"
+                    class="btn btn-outline-primary btn-lg btn-block rounded-pill btn-h1 py-3"
+                    style="font-size:1.5rem;border:2px solid #3F51B5;color:#3F51B5;">
+                    Browse Inventory
+                </a>
+
             </div>
+
+            <style>
+                a.btn-primary:hover {
+                    background-color: #3F51B5;
+                    border-color: #3F51B5;
+                    color: white;
+                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+                    transform: translateY(-2px);
+                    transition: transform 150ms;
+                }
+            </style>
+
 
 
 

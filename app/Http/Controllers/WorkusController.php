@@ -34,7 +34,7 @@ class WorkusController extends Controller
             Workus::create($data);
             $message = 'Data submitted successfully.';
         }
-        Mail::to('cgreen@hacksolutionsusa.com')->send(new WorkWithUsMail($data));
+        Mail::to('hacksolutionsusa@outlook.com')->send(new WorkWithUsMail($data));
         return redirect('/work')->with('success', $message);
     }
 }

@@ -123,19 +123,40 @@
                                 <span>Watch Our Rental Process</span>
                             </div>
                         </a>
+                        <style>
+                            .btn {
+                                display: inline-block;
+                                margin-right: 16px;
+                                text-align: center;
+                                text-decoration: none;
+                                font-size: 16px;
+                                font-weight: 600;
+                                padding: 12px 24px;
+                                border-radius: 6px;
+                                transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                            }
+
+                            .btn-dashboard {
+                                background-color: #3498db;
+                                color: #fff;
+                            }
+
+                            .btn-dashboard:hover {
+                                background-color: #2b77b2;
+                                color: #fff;
+                            }
+                        </style>
+
                         <div style="display: flex; justify-content: center;">
 
-                            <a href="{{ route('login') }}" class="btn"
-                                style="background-color: #3498db; color: #fff; border-radius: 6px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); font-size: 16px; font-weight: 600; margin-right: 16px; padding: 12px 24px; text-decoration: none; transition: background-color 0.2s ease-in-out;">
-                                Login
-                            </a>
-
-                            <a href="{{ route('register') }}" class="btn"
-                                style="background-color: #2ecc71; color: #fff; border-radius: 6px; font-size: 16px; font-weight: 600; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding: 12px 24px; text-decoration: none; transition: background-color 0.2s ease-in-out;">
-                                Register
+                            <a href="{{ route('home') }}" class="btn btn-dashboard">
+                                Dashboard
                             </a>
 
                         </div>
+
+
 
 
 
