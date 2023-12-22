@@ -35,7 +35,7 @@ class JourneyController extends Controller
         $email = $user->email;
 
         // Send an email with the journey data and user information
-        Mail::to('hacksolutionsusa@outlook.com')->send(new JourneyPlanned($data, $name, $email));
+        Mail::to('hacksolutionsusa@bookerttransportllc.com')->send(new JourneyPlanned($data, $name, $email));
 
         // Redirect back to the welcome page with a success message
         return redirect()->route('journey.submitted')->with('success', 'Journey planned successfully.');
