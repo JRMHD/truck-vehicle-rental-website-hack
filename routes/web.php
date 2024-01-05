@@ -7,11 +7,14 @@ use App\Http\Controllers\UserController; // Import the UserController class
 use App\Http\Controllers\WorkusController;
 use App\Http\Controllers\JourneyController;
 
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\VehicleController;
 use App\Mail\MyTestEmail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ReservationController;
+
 
 Route::get('/testroute', function () {
     $name[] = "Funny Coder";
@@ -56,6 +59,18 @@ Route::post('/posts', [PostController::class, 'store']);
 Route::get('/posts/{id}', [PostController::class, 'show']); // This route remains the same
 Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+
+
+
+
+Route::post('/store-booking', [BookingController::class, 'storeBooking'])->name('store.booking');
+Route::get('/success', [BookingController::class, 'success'])->name('success');
+
+Route::post('/store-reservation', [ReservationController::class, 'store'])->name('store.reservation');
+Route::get('/success', [ReservationController::class, 'success'])->name('success');
+
+Route::post('/reservations', [ReservationController::class, 'store'])->name('reservations.store');
+
 
 /*
 |--------------------------------------------------------------------------
