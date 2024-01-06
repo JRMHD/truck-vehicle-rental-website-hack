@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
@@ -244,6 +245,59 @@
                     });
     </script>
 
+
+    <div class="container my-5">
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow h-100">
+                    <img src="images\salon-premio-png.jpg" class="card-img-top" alt="Saloon">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Saloon</h3>
+                        <p class="text-muted small">Alloy wheels, automatic transmission...</p>
+
+                        <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
+                            Rent This Vehicle
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow h-100">
+                    <img src="\images\Toyota-Sequoia-Capstone-23-1.jpg" class="card-img-top" alt="SUV">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">SUV</h3>
+                        <p class="text-muted small">Spacious interior with room...</p>
+
+                        <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
+                            Rent This Vehicle
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow h-100">
+                    <img src="\images\s-class-lux-png.jpg" class="card-img-top" alt="Luxury">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">Luxury</h3>
+                        <p class="text-muted small">Premium interiors...</p>
+
+                        <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
+                            Rent This Vehicle
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
     @include('user.cardisp')
 
     <div class="container mt-5">
@@ -251,7 +305,8 @@
             <div class="col-md-6 offset-md-3">
                 <h2 class="text-center">Vehicle Search</h2>
                 @guest
-                    <p>Please <a href="{{ route('login') }}">log in</a> or <a href="{{ route('register') }}">create an
+                    <p>Please <a href="{{ route('login') }}">log in</a> or <a href="{{ route('register') }}">create
+                            an
                             account</a> to submit the form.</p>
                 @else
                     <div class="container mt-5">
@@ -461,7 +516,8 @@
                                         class="flaticon-review"></span>
                                 </div>
                                 <h3 style="color: #fff;">Enjoy Your Ride</h3>
-                                <p style="color: #fff;">Relax and enjoy your journey with our comfortable vehicles.</p>
+                                <p style="color: #fff;">Relax and enjoy your journey with our comfortable vehicles.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -486,7 +542,8 @@
                                     <div class="user-img mb-4" style="background-image: url(images/charles2.jpg)">
                                     </div>
                                     <div class="text pt-4">
-                                        <p class="mb-4">Youll have an amazing experience leasing Vehicles with Our
+                                        <p class="mb-4">Youll have an amazing experience leasing Vehicles with
+                                            Our
                                             company. Our services are top-notch!</p>
                                         <p class="name">Charles Green</p>
                                         <span class="position">CEO HACK SOLUTIONS</span>
@@ -498,7 +555,8 @@
                                     <div class="user-img mb-4" style="background-image: url(images/charles.jpeg)">
                                     </div>
                                     <div class="text pt-4">
-                                        <p class="mb-4">The box trucks offered by this company are exceptional. They
+                                        <p class="mb-4">The box trucks offered by this company are exceptional.
+                                            They
                                             helped streamline our supply chain operations.</p>
                                         <p class="name">Aaron Alves</p>
                                         <span class="position">Supply Chain Analyst</span>
@@ -523,7 +581,8 @@
                                     <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
                                     </div>
                                     <div class="text pt-4">
-                                        <p class="mb-4">Their box truck leasing solutions have significantly improved
+                                        <p class="mb-4">Their box truck leasing solutions have significantly
+                                            improved
                                             our
                                             efficiency and cost-effectiveness.</p>
                                         <p class="name">Robert Wilson</p>
@@ -566,7 +625,8 @@
                                     <div class="user-img mb-4" style="background-image: url(images/charles2.jpg)">
                                     </div>
                                     <div class="text pt-4">
-                                        <p class="mb-4">Meet our CEO, Charles Green. He leads the way with passion
+                                        <p class="mb-4">Meet our CEO, Charles Green. He leads the way with
+                                            passion
                                             and
                                             expertise.</p>
                                         <p class="name">Charles Green</p>
@@ -579,7 +639,8 @@
                                     <div class="user-img mb-4" style="background-image: url(images/jrmhd.jpg)">
                                     </div>
                                     <div class="text pt-4">
-                                        <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's our
+                                        <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's
+                                            our
                                             tech wizard!</p>
                                         <p class="name">JRMHD (Reagan Mukabana)</p>
                                         <span class="position">Software Engineer</span>
@@ -606,18 +667,23 @@
                             <h2 class="mb-4">About Us</h2>
                             <p>Welcome to Hack Solutions USA</p>
 
-                            <p>We are your trusted partner for all your box truck leasing needs. With a fleet of 14ft,
+                            <p>We are your trusted partner for all your box truck leasing needs. With a fleet of
+                                14ft,
                                 16ft,
-                                20ft, 24ft, and 26ft straight box trucks, we provide flexible leasing options starting
+                                20ft, 24ft, and 26ft straight box trucks, we provide flexible leasing options
+                                starting
                                 at
                                 just $19.99 per day.</p>
 
-                            <p>Our mission is to make it easy for you to rent a truck for your business or personal use.
-                                Whether you need a box truck for moving, transportation, or any other purpose, we have
+                            <p>Our mission is to make it easy for you to rent a truck for your business or personal
+                                use.
+                                Whether you need a box truck for moving, transportation, or any other purpose, we
+                                have
                                 the
                                 perfect vehicle for you.</p>
 
-                            <p>Explore our selection of box trucks and find the one that suits your needs. Contact us
+                            <p>Explore our selection of box trucks and find the one that suits your needs. Contact
+                                us
                                 today
                                 to start your leasing journey with Hack Solutions USA.</p>
 

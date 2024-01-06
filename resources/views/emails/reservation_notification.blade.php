@@ -15,7 +15,7 @@
 <p style="border-bottom:3px solid #eee; padding-bottom:25px; margin-bottom:25px"></p>
 
 <p style="font-size:14px; line-height:1.5; color:#999">
-    You have received a new service booking on HackSolutionsUSA.com. Please review the request and contact the customer
+    You have received a new Vehicle booking on HackSolutionsUSA.com. Please review the request and contact the customer
     to confirm availability and pricing. Let us know if you have any other questions!
 </p>
 
