@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,12 +52,22 @@
         .checkbox-container {
             display: flex;
             align-items: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            /* Adjusted margin to move it closer to the left */
         }
 
         .checkbox-container input {
             margin-right: 8px;
+            width: 16px;
+            /* Adjusted width to make the checkbox smaller */
         }
+
+        .checkbox-container label {
+            font-size: 14px;
+            margin-bottom: 0;
+            /* Removed bottom margin to bring the label closer to the checkbox */
+        }
+
 
         button {
             width: 100%;
@@ -89,44 +100,46 @@
         }
     </style>
 </head>
+
 <body>
 
-<div class="form-container">
-    <h1>Login</h1>
+    <div class="form-container">
+        <h1>Login</h1>
 
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
+        <form method="POST" action="{{ route('login') }}">
+            @csrf
 
-        <label for="email">Email Address</label>
-        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email"
-               value="{{ old('email') }}" required autocomplete="email" autofocus>
+            <label for="email">Email Address</label>
+            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email"
+                value="{{ old('email') }}" required autocomplete="email" autofocus>
 
-        @error('email')
-        <span style="color: red; font-weight: bold;">{{ $message }}</span>
-        @enderror
+            @error('email')
+                <span style="color: red; font-weight: bold;">{{ $message }}</span>
+            @enderror
 
-        <label for="password">Password</label>
-        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"
-               name="password" required autocomplete="current-password">
+            <label for="password">Password</label>
+            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"
+                name="password" required autocomplete="current-password">
 
-        @error('password')
-        <span style="color: red; font-weight: bold;">{{ $message }}</span>
-        @enderror
+            @error('password')
+                <span style="color: red; font-weight: bold;">{{ $message }}</span>
+            @enderror
 
-        <div class="checkbox-container">
-            <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-            <label for="remember" style="font-size: 14px;">Remember Me</label>
-        </div>
+            <div class="checkbox-container">
+                <input type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
+                <label for="remember" style="font-size: 14px;">Remember Me</label>
+            </div>
 
-        <button type="submit">Login</button>
+            <button type="submit">Login</button>
 
-        @if (Route::has('password.request'))
-            <a href="{{ route('password.request') }}" style="font-size: 14px;">Forgot Password</a>
-        @endif
-    </form>
+            @if (Route::has('password.request'))
+                <a href="{{ route('password.request') }}" style="font-size: 14px;">Forgot Password</a>
+            @endif
+        </form>
 
-    <a href="{{ route('register') }}" style="font-size: 16px; color: #555;">Create an Account</a>
-</div>
+        <a href="{{ route('register') }}" style="font-size: 16px; color: #555;">Create an Account</a>
+    </div>
 
 </body>
+
 </html>

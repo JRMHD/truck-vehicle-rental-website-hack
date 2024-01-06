@@ -274,15 +274,20 @@
                             <div class="booking-form">
                                 <h2>Book Now</h2>
                                 <!-- Booking form -->
-                                <form action="{{ route('store.reservation') }}" method="POST">
-
+                                <form action="{{ route('reservations.store') }}" method="post">
                                     @csrf
                                     <label for="email">Email:</label>
                                     <input type="email" id="email" name="email" required><br>
+
                                     <label for="phone">Phone:</label>
                                     <input type="tel" id="phone" name="phone" required><br>
+
+                                    <label for="vehicle_type">Vehicle Type:</label>
+                                    <input type="text" id="vehicle_type" name="vehicle_type" required><br>
+
                                     <button type="submit" class="btn-primary">Submit</button>
                                 </form>
+
                                 <!-- Button for Book with Phone Call -->
                                 <a href="tel:+18007749450" class="btn-secondary">Book with Phone Call</a>
                             </div>

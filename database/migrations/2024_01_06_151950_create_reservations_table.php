@@ -12,6 +12,7 @@ class CreateReservationsTable extends Migration
             $table->id();
             $table->string('email');
             $table->string('phone');
+            $table->string('vehicle_type');
             $table->timestamps();
         });
     }

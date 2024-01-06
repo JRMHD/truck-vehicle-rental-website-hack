@@ -6,7 +6,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ReservationConfirmation extends Mailable
+class ReservationNotification extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -19,6 +19,8 @@ class ReservationConfirmation extends Mailable
 
     public function build()
     {
-        return $this->subject('New Reservation')->view('emails.reservation_confirmation');
+        return $this->view('emails.reservation_notification')
+            ->with(['reservationData' => $this->reservationData])
+            ->subject('New Reservation Request');
     }
 }

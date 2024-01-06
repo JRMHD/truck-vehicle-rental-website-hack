@@ -16,6 +16,8 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\ReservationController;
 
 
+
+
 Route::get('/testroute', function () {
     $name[] = "Funny Coder";
     // $data="";
@@ -66,10 +68,8 @@ Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 Route::post('/store-booking', [BookingController::class, 'storeBooking'])->name('store.booking');
 Route::get('/success', [BookingController::class, 'success'])->name('success');
 
-Route::post('/store-reservation', [ReservationController::class, 'store'])->name('store.reservation');
-Route::get('/success', [ReservationController::class, 'success'])->name('success');
-
 Route::post('/reservations', [ReservationController::class, 'store'])->name('reservations.store');
+
 
 
 /*
