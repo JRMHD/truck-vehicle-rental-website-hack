@@ -693,10 +693,48 @@
                 </div>
             </div>
         </section>
+        {{-- subscribe start --}}
 
+        <form action="{{ route('subscribe.store') }}" method="post" class="bg-white rounded-4 shadow-sm p-4">
 
+            <div class="text-center mb-4">
+                <h3 class="text-muted">Subscribe for Offers</h3>
+            </div>
 
+            @csrf
 
+            <div class="row g-2">
+
+                <div class="col-6">
+                    <input type="text" class="form-control form-control-sm rounded-pill border-0"
+                        name="first_name" placeholder="First name">
+                </div>
+
+                <div class="col-6">
+                    <input type="text" class="form-control form-control-sm rounded-pill border-0" name="last_name"
+                        placeholder="Last name">
+                </div>
+
+                <div class="col-12 mt-2">
+                    <input type="email" class="form-control form-control-sm rounded-pill border-0" name="email"
+                        placeholder="Enter email">
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-sm mt-3 w-100 rounded-pill">
+                Subscribe
+            </button>
+
+        </form>
+
+        @if (session('success'))
+            <div class="alert alert-success mt-3">
+                {{ session('success') }}
+            </div>
+        @endif
+
+        {{-- subscribe end --}}
 
         @include('footer')
         <!-- loader -->
@@ -708,19 +746,7 @@
             </svg></div>
 
 
-        <script>
-            var options = {
-                strings: ["Discover Effortless Vehicle Rentals"],
-                typeSpeed: 50, // typing speed in milliseconds
-                backSpeed: 30, // backspacing speed in milliseconds
-                backDelay: 1000, // delay before starting to backspace
-                showCursor: true, // show blinking cursor
-                cursorChar: "|", // cursor character
-                loop: true // loop the animation
-            };
 
-            var typed = new Typed("#typed-output", options);
-        </script>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-migrate-3.0.1.min.js"></script>
         <script src="js/popper.min.js"></script>

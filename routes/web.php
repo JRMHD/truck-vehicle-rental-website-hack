@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\SubscriptionController;
 
 
 
@@ -69,6 +70,8 @@ Route::post('/store-booking', [BookingController::class, 'storeBooking'])->name(
 Route::get('/success', [BookingController::class, 'success'])->name('success');
 
 Route::post('/reservations', [ReservationController::class, 'store'])->name('reservations.store');
+
+Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe.store');
 
 
 
