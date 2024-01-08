@@ -26,7 +26,7 @@ class ReservationController extends Controller
         ]);
 
         // Send email notification to the owner
-        Mail::to('info@hacksolutionsusa.com')->send(new ReservationNotification($reservation));
+        Mail::to('cgreen@hacksolutionsusa.com')->send(new ReservationNotification($reservation));
 
         // Redirect or respond as needed
         return redirect()->route('success')->with('message', 'Booking successfully submitted. You will receive a response soon.');

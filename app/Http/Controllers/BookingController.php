@@ -45,7 +45,7 @@ class BookingController extends Controller
     private function sendBookingConfirmationEmail($booking)
     {
         // You may customize the recipient email and name as needed
-        $recipientEmail = 'info@hacksolutionsusa.com';
+        $recipientEmail = 'cgreen@hacksolutionsusa.com';
         $recipientName = 'Hack Solutions';
 
         // Send email
