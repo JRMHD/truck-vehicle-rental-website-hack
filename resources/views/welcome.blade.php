@@ -40,9 +40,9 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('welcome') }}">
+            <a class="navbar-brand text-center" href="{{ route('welcome') }}">
                 <img src="images/hack.jpg" alt="" class="navbar-logo" style="max-height: 100px;">
-                Hack<span>Solutions</span>
+                Hack<span style="color: #4169E1;">Solutions</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,14 +53,15 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
                         <a href="{{ route('home') }}" class="nav-link">Home</a>
-                    <li class="nav-item "><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="{{ url('/pricing') }}" class="nav-link">Pricing</a></li>
-                    <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a>
                     </li>
+                    <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="{{ url('/pricing') }}" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
     <!-- END nav -->
 
@@ -87,14 +88,14 @@
                                 font-size: 120px;
                                 font-weight: 950;
                                 text-transform: uppercase;
-                                background: linear-gradient(to right, #dd3e54, #6be585);
+                                background: linear-gradient(to right, #4169e1, #4169e1);
                                 -webkit-background-clip: text;
                                 -webkit-text-fill-color: transparent;
                                 text-shadow:
-                                    -3px -3px 0 #f0932b,
-                                    3px -3px 0 #f0932b,
-                                    -3px 3px 0 #f0932b,
-                                    3px 3px 0 #f0932b;
+                                    -3px -3px 0 #4169e1,
+                                    3px -3px 0 #4169e1,
+                                    -3px 3px 0 #4169e1,
+                                    3px 3px 0 #4169e1;
                             }
 
                             .headline span {
@@ -139,7 +140,7 @@
                             }
 
                             .btn-dashboard {
-                                background-color: #3498db;
+                                background-color: #4169e1;
                                 color: #fff;
                             }
 
@@ -251,11 +252,11 @@
 
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow h-100">
-                    <img src="images\salon-premio-png.jpg" class="card-img-top" alt="Saloon">
+                    <img src="\images\BoxTruck2.png" class="card-img-top" alt="Saloon">
 
                     <div class="card-body text-center">
-                        <h3 class="card-title h5">Saloon</h3>
-                        <p class="text-muted small">Alloy wheels, automatic transmission...</p>
+                        <h3 class="card-title h5">Box Truck</h3>
+                        <p class="text-muted small">chassis cab truck with an enclosed cuboid-shaped cargo area</p>
 
                         <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
                             Rent This Vehicle
@@ -269,7 +270,7 @@
                     <img src="\images\Toyota-Sequoia-Capstone-23-1.jpg" class="card-img-top" alt="SUV">
 
                     <div class="card-body text-center">
-                        <h3 class="card-title h5">SUV</h3>
+                        <h3 class="card-title h5">SUVs luxury</h3>
                         <p class="text-muted small">Spacious interior with room...</p>
 
                         <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
@@ -281,10 +282,10 @@
 
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow h-100">
-                    <img src="\images\s-class-lux-png.jpg" class="card-img-top" alt="Luxury">
+                    <img src="\images\dims.jpg" class="card-img-top" alt="Luxury">
 
                     <div class="card-body text-center">
-                        <h3 class="card-title h5">Luxury</h3>
+                        <h3 class="card-title h5">sedans</h3>
                         <p class="text-muted small">Premium interiors...</p>
 
                         <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
@@ -297,6 +298,45 @@
         </div>
 
     </div>
+    <div class="text-center mt-4">
+
+        <p class="lead">
+            Discover our top-quality vehicles!
+        </p>
+
+        <a href="{{ url('/posts') }}" class="browse-btn">
+            Browse Inventory
+        </a>
+
+    </div>
+
+
+    <style>
+        .lead {
+            font-size: 1.2rem;
+        }
+
+        .browse-btn {
+            background: royalblue;
+            color: white;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+            padding: 12px 24px;
+            display: inline-block;
+            border-radius: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            transition: all 0.2s ease;
+        }
+
+        .browse-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+
 
     @include('user.cardisp')
 
@@ -531,7 +571,7 @@
                 <div class="row justify-content-center mb-5">
                     <div class="col-md-7 text-center heading-section ftco-animate">
                         <span class="subheading">Testimonial</span>
-                        <h2 class="mb-3">Happy Clients</h2>
+                        <h2 class="mb-3">Satisfied Customers</h2>
                     </div>
                 </div>
                 <div class="row ftco-animate">

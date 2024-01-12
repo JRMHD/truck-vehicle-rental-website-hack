@@ -539,24 +539,40 @@
 
             <div class="text-center mt-4">
 
-                <p class="lead">Discover our top-quality vehicles!</p>
+                <p class="lead">
+                    Discover our top-quality vehicles!
+                </p>
 
-                <a href="{{ url('/posts') }}"
-                    class="btn btn-outline-primary btn-lg btn-block rounded-pill btn-h1 py-3"
-                    style="font-size:1.5rem;border:2px solid #3F51B5;color:#3F51B5;">
+                <a href="{{ url('/posts') }}" class="browse-btn">
                     Browse Inventory
                 </a>
 
             </div>
 
+
             <style>
-                a.btn-primary:hover {
-                    background-color: #3F51B5;
-                    border-color: #3F51B5;
+                .lead {
+                    font-size: 1.2rem;
+                }
+
+                .browse-btn {
+                    background: royalblue;
                     color: white;
-                    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-                    transform: translateY(-2px);
-                    transition: transform 150ms;
+                    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+                    padding: 12px 24px;
+                    display: inline-block;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+
+                    transition: all 0.2s ease;
+                }
+
+                .browse-btn:hover {
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
                 }
             </style>
 
