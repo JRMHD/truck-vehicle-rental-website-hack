@@ -36,7 +36,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}">
+            <a class="navbar-brand" href="{{ route('welcome') }}">
                 <img src="images/hack.jpg" alt="" class="navbar-logo" style="max-height: 100px;">
                 Hack<span>Solutions</span>
             </a>
