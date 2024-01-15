@@ -36,7 +36,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}">
+            <a class="navbar-brand" href="{{ route('welcome') }}">
                 {{-- <img src="images/hack.jpg" alt="" class="navbar-logo" style="max-height: 100px;"> --}}
                 Hack<span>Solutions</span>
             </a>
@@ -276,19 +276,22 @@
                         <h2 class="mb-4">About Us</h2>
                         <p>Welcome to Hack Solutions USA</p>
 
-                        <p>We are your trusted partner for all your box truck leasing needs. With a fleet of 14ft, 16ft,
-                            20ft, 24ft, and 26ft straight box trucks, we provide flexible leasing options starting at
-                            just $19.99 per day.</p>
+                        <p>We are your reliable partner for all your vehicle leasing needs. With a diverse fleet that
+                            includes various
+                            vehicle types, we offer flexible leasing options starting at just $19.99 per day.</p>
 
-                        <p>Our mission is to make it easy for you to rent a truck for your business or personal use.
-                            Whether you need a box truck for moving, transportation, or any other purpose, we have the
-                            perfect vehicle for you.</p>
+                        <p>Our mission is to simplify the process of renting a vehicle for your business or personal
+                            use. Whether you
+                            require a vehicle for moving, transportation, or any other purpose, we have the ideal
+                            solution for you.</p>
 
-                        <p>Explore our selection of box trucks and find the one that suits your needs. Contact us today
-                            to start your leasing journey with Hack Solutions USA.</p>
+                        <p>Explore our selection of vehicles and find the one that best suits your needs. Contact us
+                            today to begin your
+                            leasing journey with Hack Solutions USA.</p>
 
-                        <p><a href="{{ url('/contact') }}" class="btn btn-primary">Search Vehicle</a></p>
+                        <p><a href="{{ url('/posts') }}" class="btn btn-primary">Search Vehicle</a></p>
                     </div>
+
                 </div>
             </div>
         </div>

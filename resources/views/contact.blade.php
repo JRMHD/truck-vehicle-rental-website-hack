@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="icon" href="hack-lg.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images\hack-lg.ico" type="image/x-icon">
 
@@ -37,7 +38,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('home') }}">
+            <a class="navbar-brand" href="{{ route('welcome') }}">
                 <img src="images/hack.jpg" alt="" class="navbar-logo" style="max-height: 100px;">
                 Hack<span>Solutions</span>
             </a>
@@ -122,16 +123,17 @@
                         <div class="form-group">
                             <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
                         </div>
+                        <div class="g-recaptcha" data-sitekey="6LfL-VEpAAAAACCgE1lT9L9ESG3uc8OOGh9doE3m"></div>
                         <div class="form-group">
                             <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
                         </div>
-                         @if (session('success'))
-                        <div class="alert alert-success">
-                            {{ session('success') }}
-                        </div>
-                    @endif
+                        @if (session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
                     </form>
-                   
+
 
 
 

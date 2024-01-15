@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
@@ -207,7 +208,7 @@
                             <input type="text" class="form-control" name="preferred_time" id="preferred_time"
                                 placeholder="Time">
                         </div>
-
+                        <div class="g-recaptcha" data-sitekey="6LfL-VEpAAAAACCgE1lT9L9ESG3uc8OOGh9doE3m"></div>
                         <div class="form-group mt-4">
                             <button type="submit" class="btn btn-primary btn-block py-3">Find a Vehicle</button>
                     </form>
@@ -415,6 +416,7 @@
                             <label for="state">State</label>
                             <input type="text" name="state" id="state" class="form-control" required>
                         </div>
+                        <div class="g-recaptcha" data-sitekey="6LfL-VEpAAAAACCgE1lT9L9ESG3uc8OOGh9doE3m"></div>
                         <button type="submit" class="btn btn-primary btn-block">Submit</button>
                     </form>
                     @if (session('success'))
@@ -707,28 +709,23 @@
                             <h2 class="mb-4">About Us</h2>
                             <p>Welcome to Hack Solutions USA</p>
 
-                            <p>We are your trusted partner for all your box truck leasing needs. With a fleet of
-                                14ft,
-                                16ft,
-                                20ft, 24ft, and 26ft straight box trucks, we provide flexible leasing options
-                                starting
-                                at
-                                just $19.99 per day.</p>
+                            <p>We are your reliable partner for all your vehicle leasing needs. With a diverse fleet
+                                that
+                                includes various
+                                vehicle types, we offer flexible leasing options starting at just $19.99 per day.</p>
 
-                            <p>Our mission is to make it easy for you to rent a truck for your business or personal
-                                use.
-                                Whether you need a box truck for moving, transportation, or any other purpose, we
-                                have
-                                the
-                                perfect vehicle for you.</p>
+                            <p>Our mission is to simplify the process of renting a vehicle for your business or personal
+                                use. Whether you
+                                require a vehicle for moving, transportation, or any other purpose, we have the ideal
+                                solution for you.</p>
 
-                            <p>Explore our selection of box trucks and find the one that suits your needs. Contact
-                                us
-                                today
-                                to start your leasing journey with Hack Solutions USA.</p>
+                            <p>Explore our selection of vehicles and find the one that best suits your needs. Contact us
+                                today to begin your
+                                leasing journey with Hack Solutions USA.</p>
 
                             <p><a href="{{ url('/posts') }}" class="btn btn-primary">Search Vehicle</a></p>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -761,7 +758,7 @@
                 </div>
 
             </div>
-
+            <div class="g-recaptcha" data-sitekey="6LfL-VEpAAAAACCgE1lT9L9ESG3uc8OOGh9doE3m"></div>
             <button type="submit" class="btn btn-primary btn-sm mt-3 w-100 rounded-pill">
                 Subscribe
             </button>
