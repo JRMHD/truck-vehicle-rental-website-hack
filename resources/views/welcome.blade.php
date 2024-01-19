@@ -39,10 +39,11 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"
+        style="margin-top: -25px;">
         <div class="container">
             <a class="navbar-brand text-center" href="{{ route('welcome') }}">
-                <img src="images/hack.jpg" alt="" class="navbar-logo" style="max-height: 100px;">
+                <img src="images/hack.jpg" alt="" class="navbar-logo" style="max-height: 75px;">
                 Hack<span style="color: #4169E1;">Solutions</span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -53,15 +54,16 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
-                        <a href="{{ route('home') }}" class="nav-link">Home</a>
+                        <a href="{{ route('welcome') }}" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="{{ url('/pricing') }}" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="{{ url('/posts') }}" class="nav-link">Our Inventory</a></li>
                     <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
 
 
     <!-- END nav -->
@@ -77,26 +79,16 @@
             <div class="row no-gutters slider-text justify-content-start align-items-center">
                 <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
                     <div class="text">
-                        <h1 class="headline">
-                            <span>Discover</span>
-                            <span>Effortless</span>
-                            <span>Vehicle</span>
-                            <span>Rentals</span>
-                        </h1>
-
+                        <h1 class="headline"> <span>Discover</span> <span>Effortless</span> <span>Vehicle</span>
+                            <span>Rentals</span> </h1>
                         <style>
                             .headline {
                                 font-size: 120px;
-                                font-weight: 950;
+                                font-weight: 700;
+                                font-family: 'Teko', sans-serif;
                                 text-transform: uppercase;
-                                background: linear-gradient(to right, #4169e1, #4169e1);
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                                text-shadow:
-                                    -3px -3px 0 #4169e1,
-                                    3px -3px 0 #4169e1,
-                                    -3px 3px 0 #4169e1,
-                                    3px 3px 0 #4169e1;
+                                color: #ffffff;
+                                text-shadow: -3px -3px 0 #ffffff, 3px -3px 0 #ffffff, -3px 3px 0 #ffffff, 3px 3px 0 #ffffff;
                             }
 
                             .headline span {
@@ -158,10 +150,6 @@
                             </a>
 
                         </div>
-
-
-
-
 
                     </div>
                 </div>
@@ -256,7 +244,7 @@
                     <img src="\images\BoxTruck2.png" class="card-img-top" alt="Saloon">
 
                     <div class="card-body text-center">
-                        <h3 class="card-title h5">Box Truck</h3>
+                        <h3 class="card-title h5">BOX TRUCK</h3>
                         <p class="text-muted small">chassis cab truck with an enclosed cuboid-shaped cargo area</p>
 
                         <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
@@ -271,7 +259,7 @@
                     <img src="\images\Toyota-Sequoia-Capstone-23-1.jpg" class="card-img-top" alt="SUV">
 
                     <div class="card-body text-center">
-                        <h3 class="card-title h5">SUVs luxury</h3>
+                        <h3 class="card-title h5">SUVs</h3>
                         <p class="text-muted small">Spacious interior with room...</p>
 
                         <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
@@ -286,7 +274,7 @@
                     <img src="\images\dims.jpg" class="card-img-top" alt="Luxury">
 
                     <div class="card-body text-center">
-                        <h3 class="card-title h5">sedans</h3>
+                        <h3 class="card-title h5">SEDANS</h3>
                         <p class="text-muted small">Premium interiors...</p>
 
                         <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
@@ -698,7 +686,7 @@
 
 
 
-        <section class="ftco-section ftco-no-pt ftco-no-pb">
+        {{-- <section class="ftco-section ftco-no-pt ftco-no-pb">
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center"
@@ -728,8 +716,65 @@
 
                     </div>
                 </div>
+            </div> --}}
+        </section>
+
+
+
+        <section class="ftco-section services-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                        <span class="subheading">Our Leasing Services</span>
+                        <h2 class="mb-2">Discover Our Vehicle Leasing Solutions</h2>
+                    </div>
+                </div>
+                <div class="row d-flex">
+                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                        <div class="media block-6 services">
+                            <div class="icon"><span class="flaticon-car"></span></div>
+                            <div class="media-body py-md-4">
+                                <h3 class="heading mb-0">Vehicle Selection</h3>
+                                <p>Explore a wide range of vehicles available for leasing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                        <div class="media block-6 services">
+                            <div class="icon"><span class="flaticon-credit-card"></span></div>
+                            <div class="media-body py-md-4">
+                                <h3 class="heading mb-0">Flexible Payment Plans</h3>
+                                <p>Customizable payment plans to fit your budget and needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                        <div class="media block-6 services">
+                            <div class="icon"><span class="flaticon-document"></span></div>
+                            <div class="media-body py-md-4">
+                                <h3 class="heading mb-0">Lease Agreements</h3>
+                                <p>Clear and transparent lease agreements with no hidden fees.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                        <div class="media block-6 services">
+                            <div class="icon"><span class="flaticon-warranty"></span></div>
+                            <div class="media-body py-md-4">
+                                <h3 class="heading mb-0">Maintenance Included</h3>
+                                <p>Comprehensive maintenance services included in your lease.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+
+
+
+
+
         {{-- subscribe start --}}
 
         <form action="{{ route('subscribe.store') }}" method="post" class="bg-white rounded-4 shadow-sm p-4">
@@ -772,7 +817,6 @@
         @endif
 
         {{-- subscribe end --}}
-
         @include('footer')
         <!-- loader -->
         <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">

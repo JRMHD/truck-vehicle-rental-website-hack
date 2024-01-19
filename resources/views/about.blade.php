@@ -48,7 +48,7 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
-                        <a href="{{ route('home') }}" class="nav-link">Home</a>
+                        <a href="{{ route('welcome') }}" class="nav-link">Home</a>
                     <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="{{ url('/pricing') }}" class="nav-link">Pricing</a></li>
                     <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a>
@@ -74,58 +74,10 @@
         </div>
     </section>
 
-    <section class="ftco-section services-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-                    <span class="subheading">Our Leasing Services</span>
-                    <h2 class="mb-2">Discover Our Vehicle Leasing Solutions</h2>
-                </div>
-            </div>
-            <div class="row d-flex">
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-car"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Vehicle Selection</h3>
-                            <p>Explore a wide range of vehicles available for leasing.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-credit-card"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Flexible Payment Plans</h3>
-                            <p>Customizable payment plans to fit your budget and needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-document"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Lease Agreements</h3>
-                            <p>Clear and transparent lease agreements with no hidden fees.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-warranty"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Maintenance Included</h3>
-                            <p>Comprehensive maintenance services included in your lease.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
 
-    <section class="custom-services-section ftco-section services-section img"
+    {{-- <section class="custom-services-section ftco-section services-section img"
         style="background-image: url(images/24ft.jpg);">
         <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5);"></div>
         <div class="container">
@@ -263,7 +215,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="ftco-section ftco-no-pt ftco-no-pb">
         <div class="container">
@@ -297,6 +249,49 @@
         </div>
     </section>
 
+    <section class="ftco-section testimony-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <span class="subheading">Company Team</span>
+                    <h2 class="mb-3">Meet Our Team</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel ftco-owl">
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/charles2.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Meet our CEO, Charles Green. He leads the way with
+                                        passion
+                                        and
+                                        expertise.</p>
+                                    <p class="name">Charles Green</p>
+                                    <span class="position">CEO</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/jrmhd.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's
+                                        our
+                                        tech wizard!</p>
+                                    <p class="name">JRMHD (Reagan Mukabana)</p>
+                                    <span class="position">Software Engineer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     @include('footer')
