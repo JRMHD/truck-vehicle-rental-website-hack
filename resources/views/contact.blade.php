@@ -106,7 +106,7 @@
             </div>
             <div class="row block-9 justify-content-center mb-5">
                 <div class="col-md-8 mb-md-5">
-                    <h2 class="text-center">If you got any questions <br>please do not hesitate to send us a message
+                    <h2 class="text-center">Have additional questions? <br>Do not hesitate to send us a message
                     </h2>
                     <form id="contact-form" action="{{ route('contact.send1') }}" method="POST"
                         class="bg-light p-5 contact-form">

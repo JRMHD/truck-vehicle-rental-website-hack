@@ -191,7 +191,7 @@
         </section>
 
         <!-- Text explanation about pricing changes -->
-        <div class="container pricing-explanation">
+        {{-- <div class="container pricing-explanation">
             <h2 class="heading-dark">Understanding Rental Price Changes</h2>
             <p>Market prices for vehicle renting can fluctuate due to various factors. These price changes are
                 influenced by supply and demand dynamics, seasonal variations, and economic conditions. When demand for
@@ -204,7 +204,7 @@
             <p>It's important for consumers to keep in mind that booking in advance can sometimes lead to cost savings,
                 as last-minute rentals may incur premium charges. To get the best rental deal, it's advisable to compare
                 prices, be flexible with rental dates, and book early when possible.</p>
-        </div>
+        </div> --}}
     </body>
 
     </html>

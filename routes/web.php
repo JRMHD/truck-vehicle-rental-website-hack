@@ -107,6 +107,16 @@ Route::get('/welcome', function () {
     return view('welcome');
 })->name('welcome');
 
+Route::get('/boxtrucks', function () {
+    return view('boxtrucks');
+});
+Route::get('/suvs', function () {
+    return view('suvs');
+});
+Route::get('/sedans', function () {
+    return view('sedans');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

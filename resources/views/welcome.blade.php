@@ -79,16 +79,22 @@
             <div class="row no-gutters slider-text justify-content-start align-items-center">
                 <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
                     <div class="text">
-                        <h1 class="headline"> <span>Discover</span> <span>Effortless</span> <span>Vehicle</span>
-                            <span>Rentals</span> </h1>
+                        <h1 class="headline">
+                            <span>Discover</span>
+                            <span>Effortless</span>
+                            <span>Vehicle</span>
+                            <span>Rentals</span>
+                        </h1>
+
                         <style>
                             .headline {
                                 font-size: 120px;
-                                font-weight: 700;
+                                font-weight: 600;
+                                /* Use Teko SemiBold 600 */
                                 font-family: 'Teko', sans-serif;
                                 text-transform: uppercase;
                                 color: #ffffff;
-                                text-shadow: -3px -3px 0 #ffffff, 3px -3px 0 #ffffff, -3px 3px 0 #ffffff, 3px 3px 0 #ffffff;
+                                /* White text color */
                             }
 
                             .headline span {
@@ -101,6 +107,7 @@
                                 }
                             }
                         </style>
+
 
 
 
@@ -247,8 +254,8 @@
                         <h3 class="card-title h5">BOX TRUCK</h3>
                         <p class="text-muted small">chassis cab truck with an enclosed cuboid-shaped cargo area</p>
 
-                        <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
-                            Rent This Vehicle
+                        <a href="{{ url('/boxtrucks') }}" class="btn btn-outline-primary rounded-pill mt-3">
+                            Browse Inventory
                         </a>
                     </div>
                 </div>
@@ -262,8 +269,8 @@
                         <h3 class="card-title h5">SUVs</h3>
                         <p class="text-muted small">Spacious interior with room...</p>
 
-                        <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
-                            Rent This Vehicle
+                        <a href="{{ url('/suvs') }}" class="btn btn-outline-primary rounded-pill mt-3">
+                            Browse Inventory
                         </a>
                     </div>
                 </div>
@@ -277,8 +284,8 @@
                         <h3 class="card-title h5">SEDANS</h3>
                         <p class="text-muted small">Premium interiors...</p>
 
-                        <a href="{{ url('/posts') }}" class="btn btn-outline-primary rounded-pill mt-3">
-                            Rent This Vehicle
+                        <a href="{{ url('/sedans') }}" class="btn btn-outline-primary rounded-pill mt-3">
+                            Browse Inventory
                         </a>
                     </div>
                 </div>
