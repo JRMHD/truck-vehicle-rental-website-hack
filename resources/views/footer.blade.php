@@ -4,7 +4,7 @@
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="ftco-footer-widget">
                     <h2 class="ftco-heading-2">About Us</h2>
-                    <p>Your go-to partner for vehicle leasing. Explore our fleet of trucks for personal and business
+                    <p>Your go-to partner for vehicle leasing. Explore our fleet for your personal and business
                         needs.</p>
                     <div class="ftco-footer-social list-unstyled mt-4">
                         <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
