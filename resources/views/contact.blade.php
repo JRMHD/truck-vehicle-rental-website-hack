@@ -52,7 +52,7 @@
                     <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
                         <a href="{{ route('welcome') }}" class="nav-link">Home</a>
                     <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="{{ url('/pricing') }}" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="{{ url('/posts') }}" class="nav-link">Our Inventory</a></li>
                     <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a>
                     </li>
                 </ul>

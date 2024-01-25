@@ -37,7 +37,7 @@
     <div style="background-color: royalblue; color: white; padding: 15px 0;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
+                {{-- <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
                     <div class="d-inline-flex align-items-center">
                         <a style="text-decoration: none; color: white;" href="tel:+1 800 774 9450">
                             <i class="fa fa-phone-alt mr-2"></i>+1 800 774 9450
@@ -47,7 +47,15 @@
                             <i class="fa fa-envelope mr-2"></i>cgreen@hacksolutionsusa.com
                         </a>
                     </div>
+                </div> --}}
+                <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
+                    <a class="btn btn-primary" href="{{ route('welcome') }}"
+                        style="background-color: white !important; color: black !important; font-weight: bold !important;">
+                        Home</a>
                 </div>
+
+
+
                 <div class="col-md-6 text-center text-md-right">
                     <div class="d-inline-flex align-items-center">
                         <a style="text-decoration: none; color: white; padding: 0 5px;"
@@ -125,14 +133,14 @@
     <!-- Page Header Start -->
     <div
         style="background-image: url('/images/box truck.jpg'); background-size: cover; background-position: center; height: 300px; display: flex; align-items: center; justify-content: center;">
-        <div style="text-align: center;">
+        {{-- <div style="text-align: center;">
             <h1 style="font-size: 50px; color: #fff; font-weight: bold; margin-bottom: 20px;">Box Trucks Listing</h1>
             <div style="display: flex; align-items: center; font-size: 18px;">
                 <a href="welcome" style="color: #fff; margin-right: 10px;">Home</a>
                 <div style="color: #ccc; margin-right: 10px;">/</div>
                 <div style="color: #000000;">Box Trucks</div>
             </div>
-        </div>
+        </div> --}}
     </div>
     <!-- Page Header End -->
 
@@ -141,14 +149,14 @@
     <!-- Rent A Box Truck Start -->
     <div class="container-fluid py-5 bg-light">
         <div class="container pt-5 pb-3">
-            <h1 class="display-6 text-uppercase text-center mb-5">Rent a Box Truck</h1>
+            <h1 class="display-6 text-uppercase text-center mb-5">Box Trucks</h1>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
                         <img class="card-img-top img-fluid mb-4" src="/images/14ft.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">14 ft Truck</h4>
-                            <div class="d-flex justify-content-center mb-4">
+                            {{-- <div class="d-flex justify-content-center mb-4">
                                 <div class="px-2">
                                     <i class="fa fa-truck text-primary mr-1"></i>
                                     <span>Year: Varies</span>
@@ -161,7 +169,7 @@
                                     <i class="fa fa-road text-primary mr-1"></i>
                                     <span>Mileage: custom</span>
                                 </div>
-                            </div>
+                            </div> --}}
                             <a class="btn btn-sm" style="background-color: royalblue; color: white;"
                                 href="tel:+1 800 774 9450" onmouseover="this.style.backgroundColor='orange'"
                                 onmouseout="this.style.backgroundColor='royalblue'">Rent Now</a>
@@ -174,7 +182,7 @@
                         <img class="card-img-top img-fluid mb-4" src="\images\16ft.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">16 ft truck</h4>
-                            <div class="d-flex justify-content-center mb-4">
+                            {{-- <div class="d-flex justify-content-center mb-4">
                                 <div class="px-2">
                                     <i class="fa fa-truck text-primary mr-1"></i>
                                     <span>Year: Varies</span>
@@ -187,7 +195,7 @@
                                     <i class="fa fa-road text-primary mr-1"></i>
                                     <span>Mileage: custom</span>
                                 </div>
-                            </div>
+                            </div> --}}
                             <a class="btn btn-sm" style="background-color: royalblue; color: white;"
                                 href="tel:+1 800 774 9450" onmouseover="this.style.backgroundColor='orange'"
                                 onmouseout="this.style.backgroundColor='royalblue'">Rent Now</a>
@@ -200,7 +208,7 @@
                         <img class="card-img-top img-fluid mb-4" src="\images\20ft.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">20 ft truck</h4>
-                            <div class="d-flex justify-content-center mb-4">
+                            {{-- <div class="d-flex justify-content-center mb-4">
                                 <div class="px-2">
                                     <i class="fa fa-truck text-primary mr-1"></i>
                                     <span>Year: Varies</span>
@@ -213,7 +221,7 @@
                                     <i class="fa fa-road text-primary mr-1"></i>
                                     <span>Mileage: custom</span>
                                 </div>
-                            </div>
+                            </div> --}}
                             <a class="btn btn-sm" style="background-color: royalblue; color: white;"
                                 href="tel:+1 800 774 9450" onmouseover="this.style.backgroundColor='orange'"
                                 onmouseout="this.style.backgroundColor='royalblue'">Rent Now</a>
@@ -226,7 +234,7 @@
                         <img class="card-img-top img-fluid mb-4" src="/images/14ft.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">24 ft truck</h4>
-                            <div class="d-flex justify-content-center mb-4">
+                            {{-- <div class="d-flex justify-content-center mb-4">
                                 <div class="px-2">
                                     <i class="fa fa-truck text-primary mr-1"></i>
                                     <span>Year: Varies</span>
@@ -239,7 +247,7 @@
                                     <i class="fa fa-road text-primary mr-1"></i>
                                     <span>Mileage: custom</span>
                                 </div>
-                            </div>
+                            </div> --}}
                             <a class="btn btn-sm" style="background-color: royalblue; color: white;"
                                 href="tel:+1 800 774 9450" onmouseover="this.style.backgroundColor='orange'"
                                 onmouseout="this.style.backgroundColor='royalblue'">Rent Now</a>
@@ -252,7 +260,7 @@
                         <img class="card-img-top img-fluid mb-4" src="\images\26ft.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">26 ft truck</h4>
-                            <div class="d-flex justify-content-center mb-4">
+                            {{-- <div class="d-flex justify-content-center mb-4">
                                 <div class="px-2">
                                     <i class="fa fa-truck text-primary mr-1"></i>
                                     <span>Year: Varies</span>
@@ -265,7 +273,7 @@
                                     <i class="fa fa-road text-primary mr-1"></i>
                                     <span>Mileage: custom</span>
                                 </div>
-                            </div>
+                            </div> --}}
                             <a class="btn btn-sm" style="background-color: royalblue; color: white;"
                                 href="tel:+1 800 774 9450" onmouseover="this.style.backgroundColor='orange'"
                                 onmouseout="this.style.backgroundColor='royalblue'">Rent Now</a>
@@ -282,7 +290,7 @@
 
 
 
-    <!-- Modern Banner Start -->
+    {{-- <!-- Modern Banner Start -->
     <div class="container-fluid py-5 bg-dark">
         <div class="container py-5">
             <div class="row align-items-center">
@@ -316,7 +324,7 @@
             </div>
         </div>
     </div>
-    <!-- Modern Banner End -->
+    <!-- Modern Banner End --> --}}
 
 
     @include('footer')
