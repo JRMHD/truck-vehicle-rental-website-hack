@@ -65,7 +65,7 @@
                                         <li>Cash App</li>
                                         <li>Zelle</li>
                                     </ul>
-                                    <p class="text-danger">No personal or business Cheques!</p>
+                                    {{-- <p class="text-danger">No personal or business Cheques!</p> --}}
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

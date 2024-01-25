@@ -116,7 +116,7 @@
 
                         <p style="font-size: 18px;">Experience the convenience of renting a Vehicle with us. We offer
                             top-notch services to make your journey smooth and worry-free.</p>
-                        <a href="https://youtu.be/xh7_uzq7UQE?si=vo97g2sWOmcCMpAf"
+                        {{-- <a href="https://youtu.be/xh7_uzq7UQE?si=vo97g2sWOmcCMpAf"
                             class="icon-wrap popup-vimeo d-flex align-items-center mt-4">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="ion-ios-play"></span>
@@ -148,15 +148,15 @@
                                 background-color: #2b77b2;
                                 color: #fff;
                             }
-                        </style>
+                        </style> --}}
 
-                        <div style="display: flex; justify-content: center;">
+                        {{-- <div style="display: flex; justify-content: center;">
 
                             <a href="{{ route('home') }}" class="btn btn-dashboard">
                                 Dashboard
                             </a>
 
-                        </div>
+                        </div> --}}
 
                     </div>
                 </div>
@@ -251,8 +251,8 @@
                     <img src="\images\BoxTruck2.png" class="card-img-top" alt="Saloon">
 
                     <div class="card-body text-center">
-                        <h3 class="card-title h5">BOX TRUCK</h3>
-                        <p class="text-muted small">chassis cab truck with an enclosed cuboid-shaped cargo area</p>
+                        <h3 class="card-title h5">BOX TRUCKS</h3>
+                        {{-- <p class="text-muted small">chassis cab truck with an enclosed cuboid-shaped cargo area</p> --}}
 
                         <a href="{{ url('/boxtrucks') }}" class="btn btn-outline-primary rounded-pill mt-3">
                             Browse Inventory
@@ -267,7 +267,7 @@
 
                     <div class="card-body text-center">
                         <h3 class="card-title h5">SUVs</h3>
-                        <p class="text-muted small">Spacious interior with room...</p>
+                        {{-- <p class="text-muted small">Spacious interior with room...</p> --}}
 
                         <a href="{{ url('/suvs') }}" class="btn btn-outline-primary rounded-pill mt-3">
                             Browse Inventory
@@ -282,7 +282,7 @@
 
                     <div class="card-body text-center">
                         <h3 class="card-title h5">SEDANS</h3>
-                        <p class="text-muted small">Premium interiors...</p>
+                        {{-- <p class="text-muted small">Premium interiors...</p> --}}
 
                         <a href="{{ url('/sedans') }}" class="btn btn-outline-primary rounded-pill mt-3">
                             Browse Inventory
@@ -294,7 +294,7 @@
         </div>
 
     </div>
-    <div class="text-center mt-4">
+    {{-- <div class="text-center mt-4">
 
         <p class="lead">
             Discover our top-quality vehicles!
@@ -304,7 +304,7 @@
             Browse Inventory
         </a>
 
-    </div>
+    </div> --}}
 
 
     <style>
@@ -429,7 +429,7 @@
 
 
 
-        <section class="custom-services-section ftco-section ftco-no-pt ftco-no-pb"
+        {{-- <section class="custom-services-section ftco-section ftco-no-pt ftco-no-pb"
             style="background-color: #f5f5f5;">
             <div class="container">
                 <div class="row justify-content-center">
@@ -489,13 +489,13 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
 
 
 
         <section class="custom-services-section ftco-section services-section img"
-            style="background-image: url(images/24ft.jpg);">
+            style="background-image: url(/images/Ge.jpg);">
             <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5);"></div>
             <div class="container">
                 <div class="row justify-content-center mb-5">
@@ -732,8 +732,8 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-                        <span class="subheading">Our Leasing Services</span>
-                        <h2 class="mb-2">Discover Our Vehicle Leasing Solutions</h2>
+                        {{-- <span class="subheading">Our Leasing Services</span> --}}
+                        <h2 class="mb-2">Explore Our Vehicle Leasing Solutions</h2>
                     </div>
                 </div>
                 <div class="row d-flex">
@@ -742,7 +742,7 @@
                             <div class="icon"><span class="flaticon-car"></span></div>
                             <div class="media-body py-md-4">
                                 <h3 class="heading mb-0">Vehicle Selection</h3>
-                                <p>Explore a wide range of vehicles available for leasing.</p>
+                                <p>Browse our diversified inventory to meet your business or personal needs.</p>
                             </div>
                         </div>
                     </div>
@@ -751,7 +751,7 @@
                             <div class="icon"><span class="flaticon-credit-card"></span></div>
                             <div class="media-body py-md-4">
                                 <h3 class="heading mb-0">Flexible Payment Plans</h3>
-                                <p>Customizable payment plans to fit your budget and needs.</p>
+                                <p>Customizable payment plans to fit your budgetary and needs.</p>
                             </div>
                         </div>
                     </div>
@@ -760,7 +760,7 @@
                             <div class="icon"><span class="flaticon-document"></span></div>
                             <div class="media-body py-md-4">
                                 <h3 class="heading mb-0">Lease Agreements</h3>
-                                <p>Clear and transparent lease agreements with no hidden fees.</p>
+                                <p>Transparent lease agreements with no hidden fees.</p>
                             </div>
                         </div>
                     </div>

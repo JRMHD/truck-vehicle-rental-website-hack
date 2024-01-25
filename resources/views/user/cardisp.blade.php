@@ -537,7 +537,7 @@
 
 
 
-            <div class="text-center mt-4">
+            {{-- <div class="text-center mt-4">
 
                 <p class="lead">
                     Discover our top-quality vehicles!
@@ -574,14 +574,14 @@
                     transform: translateY(-3px);
                     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
                 }
-            </style>
+            </style> --}}
 
 
 
 
 
 
-            <!-- Contact Section -->
+            {{-- <!-- Contact Section -->
             <div class="row mt-5">
                 <div class="col-12 text-center">
                     <h2 class="section-heading mb-4">Can't find what you're looking for?</h2>
@@ -592,7 +592,7 @@
                     </div>
                 </div>
             </div>
-            <!-- End Contact Section -->
+            <!-- End Contact Section --> --}}
 
         </div>
     </div>

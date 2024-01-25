@@ -50,7 +50,7 @@
                     <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
                         <a href="{{ route('welcome') }}" class="nav-link">Home</a>
                     <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="{{ url('/pricing') }}" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="{{ url('/posts') }}" class="nav-link">Our Inventory</a></li>
                     <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a>
                     </li>
                 </ul>
@@ -59,7 +59,7 @@
     </nav>
     <!-- END nav -->
 
-    <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_2.jpg');"
+    {{-- <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_2.jpg');"
         data-stellar-background-ratio="0.5">
         <div class="overlay"></div>
         <div class="container">
@@ -72,7 +72,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
 

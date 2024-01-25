@@ -38,7 +38,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
-                    <div class="d-inline-flex align-items-center">
+                    {{-- <div class="d-inline-flex align-items-center">
                         <a style="text-decoration: none; color: white;" href="tel:+1 800 774 9450">
                             <i class="fa fa-phone-alt mr-2"></i>+1 800 774 9450
                         </a>
@@ -46,6 +46,11 @@
                         <a style="text-decoration: none; color: white;" href="mailto:cgreen@hacksolutionsusa.com">
                             <i class="fa fa-envelope mr-2"></i>cgreen@hacksolutionsusa.com
                         </a>
+                    </div> --}}
+                    <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
+                        <a class="btn btn-primary" href="{{ route('welcome') }}"
+                            style="background-color: white !important; color: black !important; font-weight: bold !important;">
+                            Home</a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-md-right">
@@ -125,14 +130,14 @@
     <!-- Page Header Start -->
     <div
         style="background-image: url('/images/AMG_Sedans_1_93ae162aed.jpg'); background-size: cover; background-position: center; height: 300px; display: flex; align-items: center; justify-content: center;">
-        <div style="text-align: center;">
+        {{-- <div style="text-align: center;">
             <h1 style="font-size: 50px; color: #fff; font-weight: bold; margin-bottom: 20px;">Sedans Listing</h1>
             <div style="display: flex; align-items: center; font-size: 18px;">
                 <a href="welcome" style="color: #fff; margin-right: 10px;">Home</a>
                 <div style="color: #ccc; margin-right: 10px;">/</div>
                 <div style="color: #000000;">Sedans</div>
             </div>
-        </div>
+        </div> --}}
     </div>
     <!-- Page Header End -->
 
@@ -141,7 +146,7 @@
     <!-- Rent A Box Truck Start -->
     <div class="container-fluid py-5 bg-light">
         <div class="container pt-5 pb-3">
-            <h1 class="display-6 text-uppercase text-center mb-5">Sedans, Great Reliability</h1>
+            <h1 class="display-6 text-uppercase text-center mb-5">Sedans</h1>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
@@ -312,7 +317,7 @@
 
 
 
-    <!-- Modern Banner Start -->
+    {{-- <!-- Modern Banner Start -->
     <div class="container-fluid py-5 bg-dark">
         <div class="container py-5">
             <div class="row align-items-center">
@@ -346,7 +351,7 @@
             </div>
         </div>
     </div>
-    <!-- Modern Banner End -->
+    <!-- Modern Banner End --> --}}
 
 
     @include('footer')
