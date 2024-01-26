@@ -34,11 +34,10 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('welcome') }}">
-                {{-- <img src="images/hack.jpg" alt="" class="navbar-logo" style="max-height: 100px;"> --}}
-                Hack<span>Solutions</span>
+            <a class="navbar-brand" href="{{ route('welcome') }}" style="font-weight: 700; color: white;">
+                Go Home<span style="font-weight: 700;"> </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,15 +47,16 @@
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
-                        <a href="{{ route('welcome') }}" class="nav-link">Home</a>
-                    <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
-                    <li class="nav-item"><a href="{{ url('/posts') }}" class="nav-link">Our Inventory</a></li>
-                    <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a>
+                        {{-- <a href="{{ route('welcome') }}" class="nav-link">Home</a> --}}
                     </li>
+                    {{-- <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li> --}}
+                    <li class="nav-item"><a href="{{ url('/posts') }}" class="nav-link">Our Inventory</a></li>
+                    <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
     <!-- END nav -->
 
     {{-- <section class="hero-wrap hero-wrap-2 js-fullheight" style="background-image: url('images/bg_2.jpg');"
@@ -265,10 +265,10 @@
                                 <div class="user-img mb-4" style="background-image: url(images/charles2.jpg)">
                                 </div>
                                 <div class="text pt-4">
-                                    <p class="mb-4">Meet our CEO, Charles Green. He leads the way with
+                                    {{-- <p class="mb-4">Meet our CEO, Charles Green. He leads the way with
                                         passion
                                         and
-                                        expertise.</p>
+                                        expertise.</p> --}}
                                     <p class="name">Charles Green</p>
                                     <span class="position">CEO</span>
                                 </div>
@@ -279,14 +279,30 @@
                                 <div class="user-img mb-4" style="background-image: url(images/jrmhd.jpg)">
                                 </div>
                                 <div class="text pt-4">
-                                    <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's
+                                    {{-- <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's
                                         our
-                                        tech wizard!</p>
-                                    <p class="name">JRMHD (Reagan Mukabana)</p>
+                                        tech wizard!</p> --}}
+                                    <p class="name">Reagan Mukabana</p>
                                     <span class="position">Software Engineer</span>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(/images/Gibson.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    {{-- <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's
+                                        our
+                                        tech wizard!</p> --}}
+                                    <p class="name">Gabriel Gibson</p>
+                                    <span class="position">Chief Marketing Director</span>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>

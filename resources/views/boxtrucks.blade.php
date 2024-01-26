@@ -153,7 +153,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
-                        <img class="card-img-top img-fluid mb-4" src="/images/14ft.jpg" alt="Box Truck 1" />
+                        <img class="card-img-top img-fluid mb-4" src="images/bx2.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">14 ft Truck</h4>
                             {{-- <div class="d-flex justify-content-center mb-4">
@@ -205,7 +205,7 @@
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
-                        <img class="card-img-top img-fluid mb-4" src="\images\20ft.jpg" alt="Box Truck 1" />
+                        <img class="card-img-top img-fluid mb-4" src="images/bx1.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">20 ft truck</h4>
                             {{-- <div class="d-flex justify-content-center mb-4">
@@ -257,7 +257,7 @@
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
-                        <img class="card-img-top img-fluid mb-4" src="\images\26ft.jpg" alt="Box Truck 1" />
+                        <img class="card-img-top img-fluid mb-4" src="images/bx1.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">26 ft truck</h4>
                             {{-- <div class="d-flex justify-content-center mb-4">

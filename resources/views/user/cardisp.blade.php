@@ -10,7 +10,7 @@
             <!-- Vehicle Card 1 -->
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card h-100 border-0">
-                    <img src="images/26ft.jpg" class="card-img-top" alt="Box Truck 26ft">
+                    <img src="images/bx1.jpg" class="card-img-top" alt="Box Truck 26ft">
                     <div class="card-body">
                         <h5 class="card-title">Box Truck 26ft</h5>
                         <p class="card-text">Spacious and powerful. Ideal for large cargo transport.</p>
@@ -77,7 +77,7 @@
             <!-- Vehicle Card 2 -->
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card h-100 border-0">
-                    <img src="images/24ft.jpg" class="card-img-top" alt="Box Truck 24ft">
+                    <img src="images/bx2.jpg" class="card-img-top" alt="Box Truck 24ft">
                     <div class="card-body">
                         <h5 class="card-title">Box Truck 24ft</h5>
                         <p class="card-text">Versatile and reliable. Perfect for various transportation needs.</p>
@@ -141,7 +141,7 @@
             <!-- Vehicle Card 3 -->
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="card h-100 border-0">
-                    <img src="images/20ft.jpg" class="card-img-top" alt="Box Truck 20ft">
+                    <img src="images/bx3.jpg" class="card-img-top" alt="Box Truck 20ft">
                     <div class="card-body">
                         <h5 class="card-title">Box Truck 20ft</h5>
                         <p class="card-text">Compact and fuel-efficient. Suitable for small to medium-sized loads.</p>

@@ -124,7 +124,7 @@
                             <div class="heading-title ml-5">
                                 <span>Watch Our Rental Process</span>
                             </div>
-                        </a>
+                        </a> --}}
                         <style>
                             .btn {
                                 display: inline-block;
@@ -148,15 +148,15 @@
                                 background-color: #2b77b2;
                                 color: #fff;
                             }
-                        </style> --}}
+                        </style>
 
-                        {{-- <div style="display: flex; justify-content: center;">
+                        <div style="display: flex; justify-content: center;">
 
                             <a href="{{ route('home') }}" class="btn btn-dashboard">
                                 Dashboard
                             </a>
 
-                        </div> --}}
+                        </div>
 
                     </div>
                 </div>
@@ -165,7 +165,7 @@
 
 
 
-                <div class="col-lg-2 col"></div>
+                {{-- <div class="col-lg-2 col"></div>
                 <div class="col-lg-4 col-md-6 mt-5 d-flex">
                     <form action="{{ route('plan.journey') }}" method="POST" class="request-form ftco-animate">
                         @csrf
@@ -217,7 +217,51 @@
                             </ul>
                         </div>
                     @endif
+                </div> --}}
+
+
+                <div class="col-lg-2 col"></div>
+                <div class="col-lg-4 col-md-6 mt-5 d-flex">
+                    <form action="{{ route('plan.journey') }}" method="POST" class="request-form ftco-animate">
+                        @csrf
+                        <h2 class="mb-4 text-center">Plan Your Journey</h2>
+
+                        <div class="form-group">
+                            <label for="pickup_dropoff_location" class="label">Pick-up & Drop-off Location</label>
+                            <input type="text" class="form-control" name="pickup_dropoff_location"
+                                id="pickup_dropoff_location" placeholder="City or Zip code">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pick_up_date" class="label">Pick-up Date</label>
+                            <input type="date" class="form-control" name="pick_up_date" id="pick_up_date"
+                                placeholder="Date">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pick_up_time" class="label">Pick-up Time</label>
+                            <input type="time" class="form-control" name="pick_up_time" id="pick_up_time"
+                                placeholder="Time">
+                        </div>
+
+                        <div class="g-recaptcha" data-sitekey="6LfL-VEpAAAAACCgE1lT9L9ESG3uc8OOGh9doE3m"></div>
+
+                        <div class="form-group mt-4">
+                            <button type="submit" class="btn btn-primary btn-block py-3">Find a Vehicle</button>
+                        </div>
+                    </form>
+
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                 </div>
+
 
 
 
@@ -336,7 +380,7 @@
 
     @include('user.cardisp')
 
-    <div class="container mt-5">
+    {{-- <div class="container mt-5">
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <h2 class="text-center">Vehicle Search</h2>
@@ -422,14 +466,14 @@
 
                 </div>
             </div>
-        </div>
+        </div> --}}
 
 
 
 
 
 
-        {{-- <section class="custom-services-section ftco-section ftco-no-pt ftco-no-pb"
+    {{-- <section class="custom-services-section ftco-section ftco-no-pt ftco-no-pb"
             style="background-color: #f5f5f5;">
             <div class="container">
                 <div class="row justify-content-center">
@@ -494,76 +538,72 @@
 
 
 
-        <section class="custom-services-section ftco-section services-section img"
-            style="background-image: url(/images/Ge.jpg);">
-            <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5);"></div>
-            <div class="container">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                        <span class="subheading" style="color: #fff;">Our Process</span>
-                        <h2 class="mb-3" style="color: #fff;">How It Works</h2>
+    <section class="custom-services-section ftco-section services-section img"
+        style="background-image: url(/images/Ge.jpg);">
+        <div class="overlay" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                    <span class="subheading" style="color: #fff;">Our Process</span>
+                    <h2 class="mb-3" style="color: #fff;">How It Works</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services services-2"
+                        style="background-color: #333; border-radius: 10px;">
+                        <div class="media-body py-md-4 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center"
+                                style="background-color: #ff9900; color: #fff;"><span class="flaticon-route"></span>
+                            </div>
+                            <h3 style="color: #fff;">Choose Destination</h3>
+                            <p style="color: #fff;">Select your desired destination for your journey.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services services-2"
-                            style="background-color: #333; border-radius: 10px;">
-                            <div class="media-body py-md-4 text-center">
-                                <div class="icon d-flex align-items-center justify-content-center"
-                                    style="background-color: #ff9900; color: #fff;"><span
-                                        class="flaticon-route"></span>
-                                </div>
-                                <h3 style="color: #fff;">Choose Destination</h3>
-                                <p style="color: #fff;">Select your desired destination for your journey.</p>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services services-2"
+                        style="background-color: #333; border-radius: 10px;">
+                        <div class="media-body py-md-4 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center"
+                                style="background-color: #0099cc; color: #fff;"><span class="flaticon-select"></span>
                             </div>
+                            <h3 style="color: #fff;">Select Term</h3>
+                            <p style="color: #fff;">Choose the duration of your rental term.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services services-2"
-                            style="background-color: #333; border-radius: 10px;">
-                            <div class="media-body py-md-4 text-center">
-                                <div class="icon d-flex align-items-center justify-content-center"
-                                    style="background-color: #0099cc; color: #fff;"><span
-                                        class="flaticon-select"></span>
-                                </div>
-                                <h3 style="color: #fff;">Select Term</h3>
-                                <p style="color: #fff;">Choose the duration of your rental term.</p>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services services-2"
+                        style="background-color: #333; border-radius: 10px;">
+                        <div class="media-body py-md-4 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center"
+                                style="background-color: #ff6699; color: #fff;"><span class="flaticon-rent"></span>
                             </div>
+                            <h3 style="color: #fff;">Choose A Vehicle</h3>
+                            <p style="color: #fff;">Select a vehicle that suits your needs and preferences.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services services-2"
-                            style="background-color: #333; border-radius: 10px;">
-                            <div class="media-body py-md-4 text-center">
-                                <div class="icon d-flex align-items-center justify-content-center"
-                                    style="background-color: #ff6699; color: #fff;"><span
-                                        class="flaticon-rent"></span>
-                                </div>
-                                <h3 style="color: #fff;">Choose A Vehicle</h3>
-                                <p style="color: #fff;">Select a vehicle that suits your needs and preferences.</p>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services services-2"
+                        style="background-color: #333; border-radius: 10px;">
+                        <div class="media-body py-md-4 text-center">
+                            <div class="icon d-flex align-items-center justify-content-center"
+                                style="background-color: #33cc33; color: #fff;"><span class="flaticon-review"></span>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services services-2"
-                            style="background-color: #333; border-radius: 10px;">
-                            <div class="media-body py-md-4 text-center">
-                                <div class="icon d-flex align-items-center justify-content-center"
-                                    style="background-color: #33cc33; color: #fff;"><span
-                                        class="flaticon-review"></span>
-                                </div>
-                                <h3 style="color: #fff;">Enjoy Your Ride</h3>
-                                <p style="color: #fff;">Relax and enjoy your journey with our comfortable vehicles.
-                                </p>
-                            </div>
+                            <h3 style="color: #fff;">Enjoy Your Ride</h3>
+                            <p style="color: #fff;">Relax and enjoy your journey with our comfortable vehicles.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-        <section class="ftco-section testimony-section">
+    {{-- <section class="ftco-section testimony-section">
             <div class="container">
                 <div class="row justify-content-center mb-5">
                     <div class="col-md-7 text-center heading-section ftco-animate">
@@ -644,56 +684,72 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
 
-        <section class="ftco-section testimony-section">
-            <div class="container">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-md-7 text-center heading-section ftco-animate">
-                        <span class="subheading">Company Team</span>
-                        <h2 class="mb-3">Meet Our Team</h2>
-                    </div>
+    <section class="ftco-section testimony-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <span class="subheading">Company Team</span>
+                    <h2 class="mb-3">Meet Our Team</h2>
                 </div>
-                <div class="row ftco-animate">
-                    <div class="col-md-12">
-                        <div class="carousel-testimony owl-carousel ftco-owl">
-                            <div class="item">
-                                <div class="testimony-wrap text-center py-4 pb-5">
-                                    <div class="user-img mb-4" style="background-image: url(images/charles2.jpg)">
-                                    </div>
-                                    <div class="text pt-4">
-                                        <p class="mb-4">Meet our CEO, Charles Green. He leads the way with
-                                            passion
-                                            and
-                                            expertise.</p>
-                                        <p class="name">Charles Green</p>
-                                        <span class="position">CEO</span>
-                                    </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12">
+                    <div class="carousel-testimony owl-carousel ftco-owl">
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/charles2.jpg)">
                                 </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-wrap text-center py-4 pb-5">
-                                    <div class="user-img mb-4" style="background-image: url(images/jrmhd.jpg)">
-                                    </div>
-                                    <div class="text pt-4">
-                                        <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's
-                                            our
-                                            tech wizard!</p>
-                                        <p class="name">JRMHD (Reagan Mukabana)</p>
-                                        <span class="position">Software Engineer</span>
-                                    </div>
+                                <div class="text pt-4">
+                                    {{-- <p class="mb-4">Meet our CEO, Charles Green. He leads the way with
+                                        passion
+                                        and
+                                        expertise.</p> --}}
+                                    <p class="name">Charles Green</p>
+                                    <span class="position">CEO</span>
                                 </div>
                             </div>
                         </div>
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(images/jrmhd.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    {{-- <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's
+                                        our
+                                        tech wizard!</p> --}}
+                                    <p class="name">Reagan Mukabana</p>
+                                    <span class="position">Software Engineer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="testimony-wrap text-center py-4 pb-5">
+                                <div class="user-img mb-4" style="background-image: url(/images/Gibson.jpg)">
+                                </div>
+                                <div class="text pt-4">
+                                    {{-- <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's
+                                        our
+                                        tech wizard!</p> --}}
+                                    <p class="name">Gabriel Gibson</p>
+                                    <span class="position">Chief Marketing Director</span>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
 
 
-        {{-- <section class="ftco-section ftco-no-pt ftco-no-pb">
+    {{-- <section class="ftco-section ftco-no-pt ftco-no-pb">
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center"
@@ -724,67 +780,67 @@
                     </div>
                 </div>
             </div> --}}
-        </section>
+    </section>
 
 
 
-        <section class="ftco-section services-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-                        {{-- <span class="subheading">Our Leasing Services</span> --}}
-                        <h2 class="mb-2">Explore Our Vehicle Leasing Solutions</h2>
+    <section class="ftco-section services-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                    {{-- <span class="subheading">Our Leasing Services</span> --}}
+                    <h2 class="mb-2">Explore Our Vehicle Leasing Solutions</h2>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services">
+                        <div class="icon"><span class="flaticon-car"></span></div>
+                        <div class="media-body py-md-4">
+                            <h3 class="heading mb-0">Vehicle Selection</h3>
+                            <p>Browse our diversified inventory to meet your business or personal needs.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="row d-flex">
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services">
-                            <div class="icon"><span class="flaticon-car"></span></div>
-                            <div class="media-body py-md-4">
-                                <h3 class="heading mb-0">Vehicle Selection</h3>
-                                <p>Browse our diversified inventory to meet your business or personal needs.</p>
-                            </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services">
+                        <div class="icon"><span class="flaticon-credit-card"></span></div>
+                        <div class="media-body py-md-4">
+                            <h3 class="heading mb-0">Flexible Payment Plans</h3>
+                            <p>Customizable payment plans to fit your budgetary and needs.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services">
-                            <div class="icon"><span class="flaticon-credit-card"></span></div>
-                            <div class="media-body py-md-4">
-                                <h3 class="heading mb-0">Flexible Payment Plans</h3>
-                                <p>Customizable payment plans to fit your budgetary and needs.</p>
-                            </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services">
+                        <div class="icon"><span class="flaticon-document"></span></div>
+                        <div class="media-body py-md-4">
+                            <h3 class="heading mb-0">Lease Agreements</h3>
+                            <p>Transparent lease agreements with no hidden fees.</p>
                         </div>
                     </div>
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services">
-                            <div class="icon"><span class="flaticon-document"></span></div>
-                            <div class="media-body py-md-4">
-                                <h3 class="heading mb-0">Lease Agreements</h3>
-                                <p>Transparent lease agreements with no hidden fees.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services">
-                            <div class="icon"><span class="flaticon-warranty"></span></div>
-                            <div class="media-body py-md-4">
-                                <h3 class="heading mb-0">Maintenance Included</h3>
-                                <p>Comprehensive maintenance services included in your lease.</p>
-                            </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services">
+                        <div class="icon"><span class="flaticon-warranty"></span></div>
+                        <div class="media-body py-md-4">
+                            <h3 class="heading mb-0">Maintenance Included</h3>
+                            <p>Comprehensive maintenance services included in your lease.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
 
 
 
 
-        {{-- subscribe start --}}
+    {{-- subscribe start --}}
 
-        <form action="{{ route('subscribe.store') }}" method="post" class="bg-white rounded-4 shadow-sm p-4">
+    {{-- <form action="{{ route('subscribe.store') }}" method="post" class="bg-white rounded-4 shadow-sm p-4">
 
             <div class="text-center mb-4">
                 <h3 class="text-muted">Subscribe for Offers</h3>
@@ -821,37 +877,39 @@
             <div class="alert alert-success mt-3">
                 {{ session('success') }}
             </div>
-        @endif
+        @endif --}}
 
-        {{-- subscribe end --}}
-        @include('footer')
-        <!-- loader -->
-        <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-                <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                    stroke="#eeeeee" />
-                <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                    stroke-miterlimit="10" stroke="#F96D00" />
-            </svg></div>
+    {{-- subscribe end --}}
 
 
+    @include('footer')
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
+                stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"
+                stroke-miterlimit="10" stroke="#F96D00" />
+        </svg></div>
 
-        <script src="js/jquery.min.js"></script>
-        <script src="js/jquery-migrate-3.0.1.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.easing.1.3.js"></script>
-        <script src="js/jquery.waypoints.min.js"></script>
-        <script src="js/jquery.stellar.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/jquery.animateNumber.min.js"></script>
-        <script src="js/bootstrap-datepicker.js"></script>
-        <script src="js/jquery.timepicker.min.js"></script>
-        <script src="js/scrollax.min.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-        <script src="js/google-map.js"></script>
-        <script src="js/main.js"></script>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 
