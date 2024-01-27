@@ -156,130 +156,295 @@
                         <img class="card-img-top img-fluid mb-4" src="images/bx2.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">14 ft Truck</h4>
-                            {{-- <div class="d-flex justify-content-center mb-4">
-                                <div class="px-2">
-                                    <i class="fa fa-truck text-primary mr-1"></i>
-                                    <span>Year: Varies</span>
-                                </div>
-                                <div class="px-2">
-                                    <i class="fa fa-cogs text-primary mr-1"></i>
-                                    <span>Transmission: AUTO</span>
-                                </div>
-                                <div class="px-2">
-                                    <i class="fa fa-road text-primary mr-1"></i>
-                                    <span>Mileage: custom</span>
-                                </div>
-                            </div> --}}
-                            <a class="btn btn-sm" style="background-color: royalblue; color: white;"
-                                href="tel:+1 800 774 9450" onmouseover="this.style.backgroundColor='orange'"
-                                onmouseout="this.style.backgroundColor='royalblue'">Rent Now</a>
+
+                            <!-- Rent Now Button with Modal Trigger -->
+                            <button type="button" class="btn btn-sm" style="background-color: royalblue; color: white;"
+                                data-toggle="modal" data-target="#rentNowModal14ft">
+                                Rent Now
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rent Now Modal for 14 ft Truck -->
+                <div class="modal fade" id="rentNowModal14ft" tabindex="-1" role="dialog"
+                    aria-labelledby="rentNowModalLabel14ft" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="rentNowModalLabel14ft">Rent Now - Enter Details</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Rent Now Form -->
+                                <form action="{{ route('rent.submission') }}" method="POST">
+                                    @csrf
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Your Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vehicle_type">Vehicle Type</label>
+                                        <input type="text" class="form-control" id="vehicle_type"
+                                            name="vehicle_type" value="14 ft Truck">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
                         <img class="card-img-top img-fluid mb-4" src="\images\16ft.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">16 ft truck</h4>
-                            {{-- <div class="d-flex justify-content-center mb-4">
-                                <div class="px-2">
-                                    <i class="fa fa-truck text-primary mr-1"></i>
-                                    <span>Year: Varies</span>
-                                </div>
-                                <div class="px-2">
-                                    <i class="fa fa-cogs text-primary mr-1"></i>
-                                    <span>Transmission: AUTO</span>
-                                </div>
-                                <div class="px-2">
-                                    <i class="fa fa-road text-primary mr-1"></i>
-                                    <span>Mileage: custom</span>
-                                </div>
-                            </div> --}}
-                            <a class="btn btn-sm" style="background-color: royalblue; color: white;"
-                                href="tel:+1 800 774 9450" onmouseover="this.style.backgroundColor='orange'"
-                                onmouseout="this.style.backgroundColor='royalblue'">Rent Now</a>
+
+                            <!-- Rent Now Button with Modal Trigger -->
+                            <button type="button" class="btn btn-sm"
+                                style="background-color: royalblue; color: white;" data-toggle="modal"
+                                data-target="#rentNowModal">
+                                Rent Now
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rent Now Modal -->
+                <div class="modal fade" id="rentNowModal" tabindex="-1" role="dialog"
+                    aria-labelledby="rentNowModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="rentNowModalLabel">Rent Now - Enter Details</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Rent Now Form -->
+                                <form action="{{ route('rent.submission') }}" method="POST">
+
+                                    @csrf
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Your Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vehicle_type">Vehicle Type</label>
+                                        <input type="text" class="form-control" id="vehicle_type"
+                                            name="vehicle_type" value="16 ft truck">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
                         <img class="card-img-top img-fluid mb-4" src="images/bx1.jpg" alt="Box Truck 1" />
                         <div class="card-body">
-                            <h4 class="card-title text-uppercase mb-4">20 ft truck</h4>
-                            {{-- <div class="d-flex justify-content-center mb-4">
-                                <div class="px-2">
-                                    <i class="fa fa-truck text-primary mr-1"></i>
-                                    <span>Year: Varies</span>
-                                </div>
-                                <div class="px-2">
-                                    <i class="fa fa-cogs text-primary mr-1"></i>
-                                    <span>Transmission: AUTO</span>
-                                </div>
-                                <div class="px-2">
-                                    <i class="fa fa-road text-primary mr-1"></i>
-                                    <span>Mileage: custom</span>
-                                </div>
-                            </div> --}}
-                            <a class="btn btn-sm" style="background-color: royalblue; color: white;"
-                                href="tel:+1 800 774 9450" onmouseover="this.style.backgroundColor='orange'"
-                                onmouseout="this.style.backgroundColor='royalblue'">Rent Now</a>
+                            <h4 class="card-title text-uppercase mb-4">20 ft Truck</h4>
+
+                            <!-- Rent Now Button with Modal Trigger -->
+                            <button type="button" class="btn btn-sm"
+                                style="background-color: royalblue; color: white;" data-toggle="modal"
+                                data-target="#rentNowModal20ft">
+                                Rent Now
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rent Now Modal for 20 ft Truck -->
+                <div class="modal fade" id="rentNowModal20ft" tabindex="-1" role="dialog"
+                    aria-labelledby="rentNowModalLabel20ft" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="rentNowModalLabel20ft">Rent Now - Enter Details</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Rent Now Form -->
+                                <form action="{{ route('rent.submission') }}" method="POST">
+                                    @csrf
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Your Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vehicle_type">Vehicle Type</label>
+                                        <input type="text" class="form-control" id="vehicle_type"
+                                            name="vehicle_type" value="20 ft Truck">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
                         <img class="card-img-top img-fluid mb-4" src="/images/14ft.jpg" alt="Box Truck 1" />
                         <div class="card-body">
-                            <h4 class="card-title text-uppercase mb-4">24 ft truck</h4>
-                            {{-- <div class="d-flex justify-content-center mb-4">
-                                <div class="px-2">
-                                    <i class="fa fa-truck text-primary mr-1"></i>
-                                    <span>Year: Varies</span>
-                                </div>
-                                <div class="px-2">
-                                    <i class="fa fa-cogs text-primary mr-1"></i>
-                                    <span>Transmission: AUTO</span>
-                                </div>
-                                <div class="px-2">
-                                    <i class="fa fa-road text-primary mr-1"></i>
-                                    <span>Mileage: custom</span>
-                                </div>
-                            </div> --}}
-                            <a class="btn btn-sm" style="background-color: royalblue; color: white;"
-                                href="tel:+1 800 774 9450" onmouseover="this.style.backgroundColor='orange'"
-                                onmouseout="this.style.backgroundColor='royalblue'">Rent Now</a>
+                            <h4 class="card-title text-uppercase mb-4">24 ft Truck</h4>
+
+                            <!-- Rent Now Button with Modal Trigger -->
+                            <button type="button" class="btn btn-sm"
+                                style="background-color: royalblue; color: white;" data-toggle="modal"
+                                data-target="#rentNowModal24ft">
+                                Rent Now
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rent Now Modal for 24 ft Truck -->
+                <div class="modal fade" id="rentNowModal24ft" tabindex="-1" role="dialog"
+                    aria-labelledby="rentNowModalLabel24ft" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="rentNowModalLabel24ft">Rent Now - Enter Details</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Rent Now Form -->
+                                <form action="{{ route('rent.submission') }}" method="POST">
+                                    @csrf
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Your Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vehicle_type">Vehicle Type</label>
+                                        <input type="text" class="form-control" id="vehicle_type"
+                                            name="vehicle_type" value="24 ft Truck">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
                         <img class="card-img-top img-fluid mb-4" src="images/bx1.jpg" alt="Box Truck 1" />
                         <div class="card-body">
-                            <h4 class="card-title text-uppercase mb-4">26 ft truck</h4>
-                            {{-- <div class="d-flex justify-content-center mb-4">
-                                <div class="px-2">
-                                    <i class="fa fa-truck text-primary mr-1"></i>
-                                    <span>Year: Varies</span>
-                                </div>
-                                <div class="px-2">
-                                    <i class="fa fa-cogs text-primary mr-1"></i>
-                                    <span>Transmission: AUTO</span>
-                                </div>
-                                <div class="px-2">
-                                    <i class="fa fa-road text-primary mr-1"></i>
-                                    <span>Mileage: custom</span>
-                                </div>
-                            </div> --}}
-                            <a class="btn btn-sm" style="background-color: royalblue; color: white;"
-                                href="tel:+1 800 774 9450" onmouseover="this.style.backgroundColor='orange'"
-                                onmouseout="this.style.backgroundColor='royalblue'">Rent Now</a>
+                            <h4 class="card-title text-uppercase mb-4">26 ft Truck</h4>
+
+                            <!-- Rent Now Button with Modal Trigger -->
+                            <button type="button" class="btn btn-sm"
+                                style="background-color: royalblue; color: white;" data-toggle="modal"
+                                data-target="#rentNowModal26ft">
+                                Rent Now
+                            </button>
                         </div>
                     </div>
                 </div>
+
+                <!-- Rent Now Modal for 26 ft Truck -->
+                <div class="modal fade" id="rentNowModal26ft" tabindex="-1" role="dialog"
+                    aria-labelledby="rentNowModalLabel26ft" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="rentNowModalLabel26ft">Rent Now - Enter Details</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Rent Now Form -->
+                                <form action="{{ route('rent.submission') }}" method="POST">
+                                    @csrf
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Your Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vehicle_type">Vehicle Type</label>
+                                        <input type="text" class="form-control" id="vehicle_type"
+                                            name="vehicle_type" value="26 ft Truck">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
 
                 <!-- Add similar card structures for other box trucks -->
