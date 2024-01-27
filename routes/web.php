@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\SubscriptionController;
+use App\Http\Controllers\RentSubmissionController;
+use App\Http\Controllers\JourneyPlanController;
 
 
 
@@ -72,6 +74,8 @@ Route::get('/success', [BookingController::class, 'success'])->name('success');
 Route::post('/reservations', [ReservationController::class, 'store'])->name('reservations.store');
 
 Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe.store');
+Route::post('/rent-submission', [RentSubmissionController::class, 'store'])->name('rent.submission');
+Route::post('/plan-journey', [JourneyPlanController::class, 'store'])->name('plan.journey')->middleware('auth');
 
 
 
