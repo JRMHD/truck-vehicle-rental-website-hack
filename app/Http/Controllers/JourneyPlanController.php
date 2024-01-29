@@ -35,6 +35,7 @@ class JourneyPlanController extends Controller
             'pick_up_time' => $journeyPlan->pick_up_time,
             // Add other details as needed
         ];
+        // Get the authenticated user's name and email
 
         // Replace with the email address where you want to send notifications
         $recipientEmail = 'cgreen@hacksolutionsusa.com';
