@@ -290,50 +290,50 @@
     <div class="container my-5">
         <div class="row">
 
-            <div class="col-md-4 mb-4">
+            {{-- <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow h-100">
                     <img src="\images\BoxTruck2.png" class="card-img-top" alt="Saloon">
 
                     <div class="card-body text-center">
                         <h3 class="card-title h5">BOX TRUCKS</h3>
-                        {{-- <p class="text-muted small">chassis cab truck with an enclosed cuboid-shaped cargo area</p> --}}
+
 
                         <a href="{{ url('/boxtrucks') }}" class="btn btn-outline-primary rounded-pill mt-3">
                             Browse Inventory
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
-            <div class="col-md-4 mb-4">
+            {{-- <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow h-100">
                     <img src="\images\Toyota-Sequoia-Capstone-23-1.jpg" class="card-img-top" alt="SUV">
 
                     <div class="card-body text-center">
                         <h3 class="card-title h5">SUVs</h3>
-                        {{-- <p class="text-muted small">Spacious interior with room...</p> --}}
+
 
                         <a href="{{ url('/suvs') }}" class="btn btn-outline-primary rounded-pill mt-3">
                             Browse Inventory
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
-            <div class="col-md-4 mb-4">
+            {{-- <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow h-100">
                     <img src="\images\dims.jpg" class="card-img-top" alt="Luxury">
 
                     <div class="card-body text-center">
                         <h3 class="card-title h5">SEDANS</h3>
-                        {{-- <p class="text-muted small">Premium interiors...</p> --}}
+
 
                         <a href="{{ url('/sedans') }}" class="btn btn-outline-primary rounded-pill mt-3">
                             Browse Inventory
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         </div>
 
