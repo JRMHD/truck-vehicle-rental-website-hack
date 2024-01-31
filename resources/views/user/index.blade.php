@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <link rel="icon" href="hack-lg.ico" type="image/x-icon">
     <link rel="shortcut icon" href="images\hack-lg.ico" type="image/x-icon">
     <meta charset="UTF-8">
@@ -238,6 +241,105 @@
     <div>
         <a href="/" class="go-home-btn">Go Home</a>
     </div>
+
+
+    <div class="container my-5">
+        <div class="row">
+
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow h-100">
+                    <img src="\images\BoxTruck2.png" class="card-img-top" alt="Saloon">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">BOX TRUCKS</h3>
+                        {{-- <p class="text-muted small">chassis cab truck with an enclosed cuboid-shaped cargo area</p> --}}
+
+                        <a href="{{ url('/boxtrucks') }}" class="btn btn-outline-primary rounded-pill mt-3">
+                            Browse Inventory
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow h-100">
+                    <img src="\images\Toyota-Sequoia-Capstone-23-1.jpg" class="card-img-top" alt="SUV">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">SUVs</h3>
+                        {{-- <p class="text-muted small">Spacious interior with room...</p> --}}
+
+                        <a href="{{ url('/suvs') }}" class="btn btn-outline-primary rounded-pill mt-3">
+                            Browse Inventory
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow h-100">
+                    <img src="\images\dims.jpg" class="card-img-top" alt="Luxury">
+
+                    <div class="card-body text-center">
+                        <h3 class="card-title h5">SEDANS</h3>
+                        {{-- <p class="text-muted small">Premium interiors...</p> --}}
+
+                        <a href="{{ url('/sedans') }}" class="btn btn-outline-primary rounded-pill mt-3">
+                            Browse Inventory
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    {{-- <div class="text-center mt-4">
+
+        <p class="lead">
+            Discover our top-quality vehicles!
+        </p>
+
+        <a href="{{ url('/posts') }}" class="browse-btn">
+            Browse Inventory
+        </a>
+
+    </div> --}}
+
+
+    <style>
+        .lead {
+            font-size: 1.2rem;
+        }
+
+        .browse-btn {
+            background: royalblue;
+            color: white;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+
+            padding: 12px 24px;
+            display: inline-block;
+            border-radius: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            transition: all 0.2s ease;
+        }
+
+        .browse-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+
+
+    {{-- @include('user.cardisp') --}}
+
+
+
+
+
     <section style="background-color: #f8f9fa;" class="ftco-section">
         <div class="container-fluid">
             <div class="row justify-content-between">
@@ -318,6 +420,8 @@
             document.getElementById('bookingModal').style.display = 'none';
         }
     </script>
+
+
 </body>
 
 </html>
