@@ -13,25 +13,17 @@
     <title>Hack Solutions Usa Homepage</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
@@ -40,7 +32,7 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar"
-        style="margin-top: -25px;">
+        style="margin-top: -0;">
         <div class="container">
             <a class="navbar-brand text-center" href="{{ route('welcome') }}">
                 <img src="images/hack.jpg" alt="" class="navbar-logo" style="max-height: 75px;">
@@ -71,7 +63,7 @@
     <div class="hero-wrap" style="position: relative;">
         <video playsinline autoplay muted loop poster="/images/bg_1.jpg"
             style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
-            <source src="/images/carvid.mp4" type="video/mp4">
+            <source src="\images\hack trucks.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="overlay"></div>
