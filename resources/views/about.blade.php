@@ -51,6 +51,7 @@
                     </li>
                     {{-- <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li> --}}
                     <li class="nav-item"><a href="{{ url('/posts') }}" class="nav-link">Our Inventory</a></li>
+                    <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link">Dashboard</a></li>
                     <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
                 </ul>
             </div>
