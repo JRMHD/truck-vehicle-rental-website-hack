@@ -50,7 +50,9 @@
                     </li>
                     <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="{{ url('/posts') }}" class="nav-link">Our Inventory</a></li>
+                    <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link">Dashboard</a></li>
                     <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
+
                 </ul>
             </div>
         </div>
@@ -117,7 +119,7 @@
                                 <span>Watch Our Rental Process</span>
                             </div>
                         </a> --}}
-                        <style>
+                        {{-- <style>
                             .btn {
                                 display: inline-block;
                                 margin-right: 16px;
@@ -140,15 +142,15 @@
                                 background-color: #2b77b2;
                                 color: #fff;
                             }
-                        </style>
+                        </style> --}}
 
-                        <div style="display: flex; justify-content: center;">
+                        {{-- <div style="display: flex; justify-content: center;">
 
                             <a href="{{ route('home') }}" class="btn btn-dashboard">
                                 Dashboard
                             </a>
 
-                        </div>
+                        </div> --}}
 
                     </div>
                 </div>
@@ -370,7 +372,7 @@
     </style>
 
 
-    @include('user.cardisp')
+    {{-- @include('user.cardisp')   --}}
 
     {{-- <div class="container mt-5">
         <div class="row">
@@ -678,7 +680,8 @@
             </div>
         </section> --}}
 
-    <section class="ftco-section testimony-section">
+
+    {{-- <section class="ftco-section testimony-section">
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
@@ -694,10 +697,7 @@
                                 <div class="user-img mb-4" style="background-image: url(images/charles2.jpg)">
                                 </div>
                                 <div class="text pt-4">
-                                    {{-- <p class="mb-4">Meet our CEO, Charles Green. He leads the way with
-                                        passion
-                                        and
-                                        expertise.</p> --}}
+
                                     <p class="name">Charles Green</p>
                                     <span class="position">CEO</span>
                                 </div>
@@ -708,9 +708,7 @@
                                 <div class="user-img mb-4" style="background-image: url(images/jrmhd.jpg)">
                                 </div>
                                 <div class="text pt-4">
-                                    {{-- <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's
-                                        our
-                                        tech wizard!</p> --}}
+
                                     <p class="name">Reagan Mukabana</p>
                                     <span class="position">Software Engineer</span>
                                 </div>
@@ -722,9 +720,7 @@
                                 <div class="user-img mb-4" style="background-image: url(/images/Gibson.jpg)">
                                 </div>
                                 <div class="text pt-4">
-                                    {{-- <p class="mb-4">Meet our Software Engineer, JRMHD (Reagan Mukabana). He's
-                                        our
-                                        tech wizard!</p> --}}
+
                                     <p class="name">Gabriel Gibson</p>
                                     <span class="position">Chief Marketing Director</span>
                                 </div>
@@ -736,7 +732,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
 
@@ -776,54 +772,7 @@
 
 
 
-    <section class="ftco-section services-section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-                    {{-- <span class="subheading">Our Leasing Services</span> --}}
-                    <h2 class="mb-2">Explore Our Vehicle Leasing Solutions</h2>
-                </div>
-            </div>
-            <div class="row d-flex">
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-car"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Vehicle Selection</h3>
-                            <p>Browse our diversified inventory to meet your business or personal needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-credit-card"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Flexible Payment Plans</h3>
-                            <p>Customizable payment plans to fit your budgetary and needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-document"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Lease Agreements</h3>
-                            <p>Transparent lease agreements with no hidden fees.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-warranty"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Maintenance Included</h3>
-                            <p>Comprehensive maintenance services included in your lease.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
 
 

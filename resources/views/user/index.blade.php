@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
@@ -242,7 +243,54 @@
         <a href="/" class="go-home-btn">Go Home</a>
     </div>
 
-
+    <section class="ftco-section services-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                    {{-- <span class="subheading">Our Leasing Services</span> --}}
+                    <h2 class="mb-2">Explore Our Vehicle Leasing Solutions</h2>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services">
+                        <div class="icon"><span class="flaticon-car"></span></div>
+                        <div class="media-body py-md-4">
+                            <h3 class="heading mb-0">Vehicle Selection</h3>
+                            <p>Browse our diversified inventory to meet your business or personal needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services">
+                        <div class="icon"><span class="flaticon-credit-card"></span></div>
+                        <div class="media-body py-md-4">
+                            <h3 class="heading mb-0">Flexible Payment Plans</h3>
+                            <p>Customizable payment plans to fit your budgetary and needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services">
+                        <div class="icon"><span class="flaticon-document"></span></div>
+                        <div class="media-body py-md-4">
+                            <h3 class="heading mb-0">Lease Agreements</h3>
+                            <p>Transparent lease agreements with no hidden fees.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services">
+                        <div class="icon"><span class="flaticon-warranty"></span></div>
+                        <div class="media-body py-md-4">
+                            <h3 class="heading mb-0">Maintenance Included</h3>
+                            <p>Comprehensive maintenance services included in your lease.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="container my-5">
         <div class="row">
 

@@ -53,6 +53,7 @@
                         <a href="{{ route('welcome') }}" class="nav-link">Home</a>
                     <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="{{ url('/posts') }}" class="nav-link">Our Inventory</a></li>
+                    <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link">Dashboard</a></li>
                     <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a>
                     </li>
                 </ul>
@@ -85,7 +86,7 @@
                             <div class="icon">
                                 <span class="icon-map-o"></span>
                             </div>
-                            <p><span>Address:</span> 901 Dulaney Valley Rd Townson, MD 21204</p>
+                            <p><span>Address:</span> 901 Dulaney Valley Rd Towson, MD 21204</p>
                         </div>
                         <div class="col-md-4 text-center border-height py-4">
                             <div class="icon">
