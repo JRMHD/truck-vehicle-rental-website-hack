@@ -529,6 +529,28 @@
             </div>
         </section> --}}
 
+    <section class="section bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="section-title mb-4" style="color: #4169e1; font-size: 2.5rem;">Welcome to Hack
+                        Solutions</h2>
+                    <p class="section-description" style="font-size: 1.1rem;">Hack Solutions understands that having
+                        access to the right vehicles at the right time is fundamental for your business. We are here to
+                        cater to your need to succeed. Whether there is an unexpected increase in demand or a seasonal
+                        spike, and you find yourself needing additional vehicles to conduct business, renting from Hack
+                        Solutions can increase your productivity with our specialized business features so you don’t
+                        have to worry.</p>
+                    <p class="section-description" style="font-size: 1.1rem;">Let Hack be the solution to your vehicle
+                        management needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
 
 
@@ -591,6 +613,12 @@
                             </p>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-12 text-center">
+                    <a href="{{ url('/posts') }}" class="btn btn-primary btn-lg px-4 py-3"
+                        style="background-color: #4169e1; border-color: #4169e1;">Get Started</a>
                 </div>
             </div>
         </div>
