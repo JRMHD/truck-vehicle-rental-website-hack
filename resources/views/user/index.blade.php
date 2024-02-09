@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="images\hack-lg.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Latest Posts | Hacksolutionsusa</title>
+    <title>Our Invntory | Latest Posts</title>
     <!-- Add your favicon links here -->
     <style>
         body {
@@ -243,30 +243,20 @@
         <a href="/" class="go-home-btn">Go Home</a>
     </div>
 
-    <section class="ftco-section services-section">
+    <section class="ftco-section services-section bg-light">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-                    {{-- <span class="subheading">Our Leasing Services</span> --}}
-                    <h2 class="mb-2">Explore Our Vehicle Leasing Solutions</h2>
+                    <h2 class="mb-2" style="color: #000;">Explore Our Vehicle Leasing Solutions</h2>
                 </div>
             </div>
             <div class="row d-flex">
                 <div class="col-md-3 d-flex align-self-stretch ftco-animate">
                     <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-car"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Vehicle Selection</h3>
-                            <p>Browse our diversified inventory to meet your business or personal needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
                         <div class="icon"><span class="flaticon-credit-card"></span></div>
                         <div class="media-body py-md-4">
                             <h3 class="heading mb-0">Flexible Payment Plans</h3>
-                            <p>Customizable payment plans to fit your budgetary and needs.</p>
+                            <p>Customizable payment plans to fit your budget and needs.</p>
                         </div>
                     </div>
                 </div>
@@ -291,6 +281,7 @@
             </div>
         </div>
     </section>
+
     <div class="container my-5">
         <div class="row">
 

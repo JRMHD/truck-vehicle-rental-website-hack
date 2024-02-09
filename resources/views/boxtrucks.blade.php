@@ -151,15 +151,81 @@
         <div class="container pt-5 pb-3">
             <h1 class="display-6 text-uppercase text-center mb-5">Box Trucks</h1>
             <div class="row">
+
+
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card rent-item border-0 shadow">
+                        <img class="card-img-top img-fluid mb-4" src="images\12 ft truck.jpg" alt="Box Truck 1" />
+                        <div class="card-body">
+                            <h4 class="card-title text-uppercase mb-4">12 ft Truck</h4>
+
+                            <!-- Price -->
+                            <p class="card-text mt-3"><strong>PRICE:</strong> $275/Week</p>
+                            <!-- Rent Now Button with Modal Trigger -->
+                            <button type="button" class="btn btn-sm" style="background-color: royalblue; color: white;"
+                                data-toggle="modal" data-target="#rentNowModal14ft">
+                                Rent Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Rent Now Modal for 14 ft Truck -->
+                <div class="modal fade" id="rentNowModal14ft" tabindex="-1" role="dialog"
+                    aria-labelledby="rentNowModalLabel14ft" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="rentNowModalLabel14ft">Rent Now - Enter Details</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Rent Now Form -->
+                                <form action="{{ route('rent.submission') }}" method="POST">
+                                    @csrf
+                                    <div class="form-group">
+                                        <label for="name">Your Name</label>
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Your Email</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Your Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="vehicle_type">Vehicle Type</label>
+                                        <input type="text" class="form-control" id="vehicle_type"
+                                            name="vehicle_type" value="12 ft Truck">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
                         <img class="card-img-top img-fluid mb-4" src="images/bx2.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">14 ft Truck</h4>
-
+                            <!-- Price -->
+                            <p class="card-text mt-3"><strong>PRICE:</strong> $325/Week</p>
                             <!-- Rent Now Button with Modal Trigger -->
-                            <button type="button" class="btn btn-sm" style="background-color: royalblue; color: white;"
-                                data-toggle="modal" data-target="#rentNowModal14ft">
+                            <button type="button" class="btn btn-sm"
+                                style="background-color: royalblue; color: white;" data-toggle="modal"
+                                data-target="#rentNowModal14ft">
                                 Rent Now
                             </button>
                         </div>
@@ -214,6 +280,8 @@
                         <img class="card-img-top img-fluid mb-4" src="\images\16ft.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">16 ft truck</h4>
+                            <!-- Price -->
+                            <p class="card-text mt-3"><strong>PRICE:</strong> $500/Week</p>
 
                             <!-- Rent Now Button with Modal Trigger -->
                             <button type="button" class="btn btn-sm"
@@ -274,6 +342,8 @@
                         <img class="card-img-top img-fluid mb-4" src="images/bx1.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">20 ft Truck</h4>
+                            <!-- Price -->
+                            <p class="card-text mt-3"><strong>PRICE:</strong> $600/Week</p>
 
                             <!-- Rent Now Button with Modal Trigger -->
                             <button type="button" class="btn btn-sm"
@@ -333,6 +403,8 @@
                         <img class="card-img-top img-fluid mb-4" src="/images/14ft.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">24 ft Truck</h4>
+                            <!-- Price -->
+                            <p class="card-text mt-3"><strong>PRICE:</strong> $700/Week</p>
 
                             <!-- Rent Now Button with Modal Trigger -->
                             <button type="button" class="btn btn-sm"
@@ -392,6 +464,8 @@
                         <img class="card-img-top img-fluid mb-4" src="images/bx1.jpg" alt="Box Truck 1" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">26 ft Truck</h4>
+                            <!-- Price -->
+                            <p class="card-text mt-3"><strong>PRICE:</strong> $750/Week</p>
 
                             <!-- Rent Now Button with Modal Trigger -->
                             <button type="button" class="btn btn-sm"
