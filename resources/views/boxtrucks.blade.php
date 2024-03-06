@@ -177,7 +177,14 @@
             <h1 class="display-6 text-uppercase text-center mb-5">Box Trucks</h1>
             <div class="row">
 
-
+                <style>
+                    .card-img-top:hover {
+                        transform: scale(1.1);
+                        /* Adjust the scale factor for the desired zoom level */
+                        transition: transform 0.3s ease;
+                        /* Add a smooth transition effect */
+                    }
+                </style>
 
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
