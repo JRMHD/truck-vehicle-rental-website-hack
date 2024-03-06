@@ -105,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row block-9 justify-content-center mb-5">
+            {{-- <div class="row block-9 justify-content-center mb-5">
                 <div class="col-md-8 mb-md-5">
                     <h2 class="text-center">Have additional questions? <br>Do not hesitate to send us a message
                     </h2>
@@ -140,7 +140,43 @@
 
 
                 </div>
+            </div> --}}
+
+
+
+            <div class="row block-9 justify-content-center mb-5">
+                <div class="col-md-8 mb-md-5">
+                    <h2 class="text-center">Have additional questions? <br>Do not hesitate to send us a message
+                    </h2>
+                    <form action="{{ route('submitForm') }}" method="post" id="contact-form"
+                        class="bg-light p-5 contact-form">
+                        @csrf
+                        <div class="form-group">
+                            <input type="text" name='name' class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name='email' class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name='subject' class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                        </div>
+                        <div class="g-recaptcha" data-sitekey="6LfL-VEpAAAAACCgE1lT9L9ESG3uc8OOGh9doE3m"></div>
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                        </div>
+                        @if (session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+                    </form>
+                </div>
             </div>
+
+
 
 
 

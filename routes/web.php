@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewSubscriptionController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
@@ -17,6 +18,7 @@ use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\SubscriptionController;
 use App\Http\Controllers\RentSubmissionController;
 use App\Http\Controllers\JourneyPlanController;
+use App\Http\Controllers\FormController;
 
 
 
@@ -77,7 +79,9 @@ Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subsc
 Route::post('/rent-submission', [RentSubmissionController::class, 'store'])->name('rent.submission');
 Route::post('/plan-journey', [JourneyPlanController::class, 'store'])->name('plan.journey')->middleware('auth');
 
+Route::post('/submit-form', [FormController::class, 'store'])->name('submitForm');
 
+Route::post('/subscribe', [NewSubscriptionController::class, 'store'])->name('subscribe.store');
 
 /*
 |--------------------------------------------------------------------------

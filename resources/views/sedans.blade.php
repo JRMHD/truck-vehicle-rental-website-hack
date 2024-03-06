@@ -34,11 +34,11 @@
 
 <body>
     <!-- Topbar Start -->
-    <div style="background-color: royalblue; color: white; padding: 15px 0;">
+    {{-- <div style="background-color: royalblue; color: white; padding: 15px 0;">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
-                    {{-- <div class="d-inline-flex align-items-center">
+                <div class="col-md-6 text-center text-md-left mb-2 mb-md-0"> --}}
+    {{-- <div class="d-inline-flex align-items-center">
                         <a style="text-decoration: none; color: white;" href="tel:+1 800 774 9450">
                             <i class="fa fa-phone-alt mr-2"></i>+1 800 774 9450
                         </a>
@@ -47,7 +47,7 @@
                             <i class="fa fa-envelope mr-2"></i>cgreen@hacksolutionsusa.com
                         </a>
                     </div> --}}
-                    <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
+    {{-- <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
                         <a class="btn btn-primary" href="{{ route('welcome') }}"
                             style="background-color: white !important; color: black !important; font-weight: bold !important;">
                             Home</a>
@@ -75,8 +75,32 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Topbar End -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="{{ route('welcome') }}" style="font-weight: 700; color: white;">
+                Go Home<span style="font-weight: 700;"> </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
+                        {{-- <a href="{{ route('welcome') }}" class="nav-link">Home</a> --}}
+                    </li>
+                    {{-- <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li> --}}
+                    <li class="nav-item"><a href="{{ url('/suvs') }}" class="nav-link">Suvs</a></li>
+                    <li class="nav-item"><a href="{{ url('/boxtrucks') }}" class="nav-link">BoxTrucks</a></li>
+                    <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link">Dashboard</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
     {{-- <!-- Search Start -->
@@ -129,7 +153,7 @@
 
     <!-- Page Header Start -->
     <div
-        style="background-image: url('/images/AMG_Sedans_1_93ae162aed.jpg'); background-size: cover; background-position: center; height: 300px; display: flex; align-items: center; justify-content: center;">
+        style="background-image: url('images/toyota.jpg'); background-size: cover; background-position: center; height: 300px; display: flex; align-items: center; justify-content: center;">
         {{-- <div style="text-align: center;">
             <h1 style="font-size: 50px; color: #fff; font-weight: bold; margin-bottom: 20px;">Sedans Listing</h1>
             <div style="display: flex; align-items: center; font-size: 18px;">
@@ -154,7 +178,7 @@
                             alt="Toyota Corolla" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">Toyota Corolla</h4>
-                            <div class="d-flex justify-content-center mb-4">
+                            {{-- <div class="d-flex justify-content-center mb-4">
                                 <div class="px-2">
                                     <i class="fa fa-car text-primary mr-1"></i>
                                     <span>Year: Varies</span>
@@ -167,7 +191,7 @@
                                     <i class="fa fa-road text-primary mr-1"></i>
                                     <span>Mileage: custom</span>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <!-- Rent Now Button with Modal Trigger -->
                             <button type="button" class="btn btn-sm" style="background-color: royalblue; color: white;"
@@ -221,7 +245,7 @@
                 </div>
 
 
-                <div class="col-lg-4 col-md-6 mb-4">
+                {{-- <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
                         <img class="card-img-top img-fluid mb-4" src="\images\Honda_Civic_SR_VTEC_1.jpg"
                             alt="Honda Civic" />
@@ -292,7 +316,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
 
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -301,7 +325,7 @@
                             alt="Hyundai Elantra" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">Hyundai Elantra</h4>
-                            <div class="d-flex justify-content-center mb-4">
+                            {{-- <div class="d-flex justify-content-center mb-4">
                                 <div class="px-2">
                                     <i class="fa fa-car text-primary mr-1"></i>
                                     <span>Year: Varies</span>
@@ -314,7 +338,7 @@
                                     <i class="fa fa-road text-primary mr-1"></i>
                                     <span>Mileage: custom</span>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <!-- Rent Now Button with Modal Trigger -->
                             <button type="button" class="btn btn-sm"
@@ -368,7 +392,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 mb-4">
+                {{-- <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
                         <img class="card-img-top img-fluid mb-4" src="\images\Nissan Sentra.jpg"
                             alt="Nissan Sentra" />
@@ -439,7 +463,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
 
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -448,7 +472,7 @@
                             alt="Subaru Impreza" />
                         <div class="card-body">
                             <h4 class="card-title text-uppercase mb-4">Subaru Impreza</h4>
-                            <div class="d-flex justify-content-center mb-4">
+                            {{-- <div class="d-flex justify-content-center mb-4">
                                 <div class="px-2">
                                     <i class="fa fa-car text-primary mr-1"></i>
                                     <span>Year: Varies</span>
@@ -461,7 +485,7 @@
                                     <i class="fa fa-road text-primary mr-1"></i>
                                     <span>Mileage: custom</span>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <!-- Rent Now Button with Modal Trigger -->
                             <button type="button" class="btn btn-sm"
@@ -516,7 +540,7 @@
                 </div>
 
 
-                <div class="col-lg-4 col-md-6 mb-4">
+                {{-- <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">
                         <img class="card-img-top img-fluid mb-4" src="\images\kia_forte_sedan_gt_fq_oem_1.jpg"
                             alt="Kia Forte" />
@@ -587,7 +611,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
 
 
