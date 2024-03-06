@@ -1,11 +1,11 @@
-<footer class="ftco-footer ftco-bg-dark ftco-section">
+<footer class="ftco-footer ftco-section" style="background-color: black; padding-top: 100px; padding-bottom: 250px;">
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="ftco-footer-widget">
-                    <h2 class="ftco-heading-2">About Us</h2>
-                    <p>Your go-to partner for vehicle leasing. Explore our fleet for your personal and business
-                        needs.</p>
+                    <h2 class="ftco-heading-2" style="color: white;">About Us</h2>
+                    <p style="color: white;">Your go-to partner for vehicle leasing. Explore our fleet for your
+                        personal and business needs.</p>
                     <div class="ftco-footer-social list-unstyled mt-4">
                         <li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
                         <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
@@ -16,34 +16,30 @@
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="ftco-footer-widget">
-                    <h2 class="ftco-heading-2">Info</h2>
+                    <h2 class="ftco-heading-2" style="color: white;">Info</h2>
                     <ul class="list-unstyled">
-                        <li><a href="{{ url('/about') }}" class="py-2 d-block">About</a></li>
-                        <li><a href="{{ url('/contact') }}" class="py-2 d-block">Services</a></li>
-                        <li><a href="#" class="py-2 d-block">Terms and Conditions</a></li>
-                        <li><a href="#" class="py-2 d-block">Privacy &amp; Cookies Policy</a></li>
+                        <li><a href="{{ url('/about') }}" class="py-2 d-block" style="color: white;">About</a>
+                        </li>
+                        <li><a href="{{ url('/contact') }}" class="py-2 d-block" style="color: white;">Services</a></li>
+                        <li><a href="#" class="py-2 d-block" style="color: white;">Terms and Conditions</a>
+                        </li>
+                        <li><a href="#" class="py-2 d-block" style="color: white;">Privacy &amp; Cookies
+                                Policy</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="ftco-footer-widget">
-                    <h2 class="ftco-heading-2">Support</h2>
+                    <h2 class="ftco-heading-2" style="color: white;">Support</h2>
                     <!-- Add this where you want the links -->
                     <ul class="list-unstyled">
-                        <li><a href="{{ url('/contact') }}" class="py-2 d-block">FAQ</a></li>
-                        <li><a href="#" class="py-2 d-block" data-toggle="modal"
+                        <li><a href="{{ url('/contact') }}" class="py-2 d-block" style="color: white;">FAQ</a>
+                        </li>
+                        <li><a href="#" class="py-2 d-block" style="color: white;" data-toggle="modal"
                                 data-target="#paymentModal">Payment Options</a></li>
-                        <li><a href="{{ url('/contact') }}" class="py-2 d-block">Contact Us</a></li>
+                        <li><a href="{{ url('/contact') }}" class="py-2 d-block" style="color: white;">Contact
+                                Us</a></li>
                     </ul>
-
-                    <!-- Add this where you want the links -->
-                    <ul class="list-unstyled">
-                        <li><a href="{{ url('/contact') }}" class="py-2 d-block">FAQ</a></li>
-                        <li><a href="#" class="py-2 d-block" data-toggle="modal"
-                                data-target="#paymentModal">Payment Options</a></li>
-                        <li><a href="{{ url('/contact') }}" class="py-2 d-block">Contact Us</a></li>
-                    </ul>
-
                     <!-- Payment Options Modal -->
                     <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog"
                         aria-labelledby="paymentModalLabel" aria-hidden="true">
@@ -89,30 +85,29 @@
             </div>
             <div class="col-md-6 col-lg-3 mb-4">
                 <div class="ftco-footer-widget">
-                    <h2 class="ftco-heading-2">Contact</h2>
+                    <h2 class="ftco-heading-2" style="color: white;">Contact</h2>
                     <div class="block-23">
                         <ul>
                             <li>
                                 <a href="https://www.google.com/maps?q=901%20Dulaney%20Valley%20Rd%20Ste%20110,%20Towson,%20MD%2021204"
-                                    target="_blank">
+                                    target="_blank" style="color: white;">
                                     <span class="icon icon-map-marker"></span>
                                     <span class="text">901 Dulaney Valley Rd Ste 110, Towson, MD 21204</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="tel:+18007749450">
+                                <a href="tel:+18007749450" style="color: white;">
                                     <span class="icon icon-phone"></span>
                                     <span class="text">+1 800 774 9450</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:cgreen@hacksolutionsusa.com">
+                                <a href="mailto:cgreen@hacksolutionsusa.com" style="color: white;">
                                     <span class="icon icon-envelope"></span>
                                     <span class="text">cgreen@hacksolutionsusa.com</span>
                                 </a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
             </div>
@@ -123,7 +118,7 @@
                     <script>
                         document.write(new Date().getFullYear());
                     </script> HACK SOLUTIONS USA. All rights reserved. Developed by <a
-                        href="mailto:jrmqhd@gmail.com">JRMHD</a>
+                        href="mailto:jrmqhd@gmail.com" style="color: white;">JRMHD</a>
                 </p>
             </div>
         </div>

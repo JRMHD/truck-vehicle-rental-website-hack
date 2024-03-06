@@ -34,10 +34,10 @@
 
 <body>
     <!-- Topbar Start -->
-    <div style="background-color: royalblue; color: white; padding: 15px 0;">
+    {{-- <div style="background-color: royalblue; color: white; padding: 15px 0;">
         <div class="container">
-            <div class="row">
-                {{-- <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
+            <div class="row"> --}}
+    {{-- <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
                     <div class="d-inline-flex align-items-center">
                         <a style="text-decoration: none; color: white;" href="tel:+1 800 774 9450">
                             <i class="fa fa-phone-alt mr-2"></i>+1 800 774 9450
@@ -48,15 +48,15 @@
                         </a>
                     </div>
                 </div> --}}
-                <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
+    {{-- <div class="col-md-6 text-center text-md-left mb-2 mb-md-0">
                     <a class="btn btn-primary" href="{{ route('welcome') }}"
                         style="background-color: white !important; color: black !important; font-weight: bold !important;">
                         Home</a>
-                </div>
+                </div> --}}
 
 
 
-                <div class="col-md-6 text-center text-md-right">
+    {{-- <div class="col-md-6 text-center text-md-right">
                     <div class="d-inline-flex align-items-center">
                         <a style="text-decoration: none; color: white; padding: 0 5px;"
                             href="https://www.facebook.com/profile.php?id=100039978403586">
@@ -75,11 +75,36 @@
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
-                </div>
+                </div> --}}
+    {{-- </div>
+    </div>
+    </div> --}}
+    <!-- Topbar End -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="{{ route('welcome') }}" style="font-weight: 700; color: white;">
+                Go Home<span style="font-weight: 700;"> </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
+                        {{-- <a href="{{ route('welcome') }}" class="nav-link">Home</a> --}}
+                    </li>
+                    {{-- <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li> --}}
+                    <li class="nav-item"><a href="{{ url('/sedans') }}" class="nav-link">Sedans</a></li>
+                    <li class="nav-item"><a href="{{ url('/suvs') }}" class="nav-link">Suvs</a></li>
+                    <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-    <!-- Topbar End -->
+    </nav>
 
 
     {{-- <!-- Search Start -->

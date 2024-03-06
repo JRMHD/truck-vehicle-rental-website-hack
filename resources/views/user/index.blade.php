@@ -10,13 +10,13 @@
     <link rel="shortcut icon" href="images\hack-lg.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Invntory | Latest Posts</title>
-    <!-- Add your favicon links here -->
+    <title>Our Inventory | Latest Posts</title>
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f8f9fa;
-            margin: 0;
+            0 margin: 0;
             padding: 20px;
             box-sizing: border-box;
         }
@@ -239,9 +239,33 @@
 </head>
 
 <body>
-    <div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="{{ route('welcome') }}" style="font-weight: 700; color: white;">
+                Go Home<span style="font-weight: 700;"> </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
+                        {{-- <a href="{{ route('welcome') }}" class="nav-link">Home</a> --}}
+                    </li>
+                    {{-- <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li> --}}
+                    <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {{-- <div>
         <a href="/" class="go-home-btn">Go Home</a>
-    </div>
+    </div> --}}
 
     <section class="ftco-section services-section bg-light">
         <div class="container">
@@ -250,31 +274,35 @@
                     <h2 class="mb-2" style="color: #000;">Explore Our Vehicle Leasing Solutions</h2>
                 </div>
             </div>
-            <div class="row d-flex">
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-credit-card"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Flexible Payment Plans</h3>
-                            <p>Customizable payment plans to fit your budget and needs.</p>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row d-flex">
+                        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                            <div class="media block-6 services text-center">
+                                <div class="icon"><span class="flaticon-credit-card"></span></div>
+                                <div class="media-body py-md-4">
+                                    <h3 class="heading mb-0">Flexible Payment Plans</h3>
+                                    <p>Customizable payment plans to fit your budget and needs.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-document"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Lease Agreements</h3>
-                            <p>Transparent lease agreements with no hidden fees.</p>
+                        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                            <div class="media block-6 services text-center">
+                                <div class="icon"><span class="flaticon-document"></span></div>
+                                <div class="media-body py-md-4">
+                                    <h3 class="heading mb-0">Lease Agreements</h3>
+                                    <p>Transparent lease agreements with no hidden fees.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                    <div class="media block-6 services">
-                        <div class="icon"><span class="flaticon-warranty"></span></div>
-                        <div class="media-body py-md-4">
-                            <h3 class="heading mb-0">Maintenance Included</h3>
-                            <p>Comprehensive maintenance services included in your lease.</p>
+                        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                            <div class="media block-6 services text-center">
+                                <div class="icon"><span class="flaticon-warranty"></span></div>
+                                <div class="media-body py-md-4">
+                                    <h3 class="heading mb-0">Maintenance Included</h3>
+                                    <p>Comprehensive maintenance services included in your lease.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -383,12 +411,12 @@
         <div class="container-fluid">
             <div class="row justify-content-between">
                 <div>
-                    <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                    {{-- <div class="col-md-12 heading-section text-center ftco-animate mb-5">
                         <span class="subheading" style="color: #3498db; font-size: 18px;">Latest Posts</span>
                         <h2 class="mb-2"
                             style="color: #2c3e50; font-size: 32px; line-height: 1.4; font-weight: bold;">
                             Explore Our Posts</h2>
-                    </div>
+                    </div> --}}
                 </div>
 
             </div>
@@ -436,14 +464,14 @@
                     </div>
 
                 @empty
-                    <div class="col-md-12 text-center">
+                    {{-- <div class="col-md-12 text-center">
                         <p style="font-size: 18px; color: #555;">No posts available. Contact us for more information
                             at
                             <a href="tel:+18007749450">+1 800 774 9450</a> or
                             <a href="mailto:cgreen@hacksolutionsusa.com">cgreen@hacksolutionsusa.com</a>.
                         </p>
                         <a href="/" class="go-home-btn">Go Home</a>
-                    </div>
+                    </div> --}}
                 @endforelse
             </div>
         </div>
@@ -459,6 +487,8 @@
             document.getElementById('bookingModal').style.display = 'none';
         }
     </script>
+
+    @include('footer')
 
 
 </body>
