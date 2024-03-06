@@ -313,14 +313,38 @@
     <div class="container my-5">
         <div class="row">
 
+
+            <style>
+                .card:hover img {
+                    transform: scale(1.1);
+                    transition: transform 0.3s ease;
+                }
+
+                .hover-button {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    opacity: 0;
+                    transition: opacity 0.3s ease;
+                }
+
+                .card:hover .hover-button {
+                    opacity: 1;
+                }
+            </style>
+
+
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow h-100">
-                    <img src="\images\BoxTruck2.png" class="card-img-top" alt="Saloon">
+                    <div class="position-relative">
+                        <img src="\images\BoxTruck2.png" class="card-img-top" alt="Box Trucks">
+                        <a href="{{ url('/boxtrucks') }}" class="btn btn-primary hover-button">BOOK NOW</a>
+                    </div>
 
                     <div class="card-body text-center">
                         <h3 class="card-title h5">BOX TRUCKS</h3>
                         {{-- <p class="text-muted small">chassis cab truck with an enclosed cuboid-shaped cargo area</p> --}}
-
                         <a href="{{ url('/boxtrucks') }}" class="btn btn-outline-primary rounded-pill mt-3">
                             Browse Inventory
                         </a>
@@ -330,12 +354,14 @@
 
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow h-100">
-                    <img src="\images\Toyota-Sequoia-Capstone-23-1.jpg" class="card-img-top" alt="SUV">
+                    <div class="position-relative">
+                        <img src="\images\Toyota-Sequoia-Capstone-23-1.jpg" class="card-img-top" alt="SUV">
+                        <a href="{{ url('/suvs') }}" class="btn btn-primary hover-button">BOOK NOW</a>
+                    </div>
 
                     <div class="card-body text-center">
                         <h3 class="card-title h5">SUVs</h3>
                         {{-- <p class="text-muted small">Spacious interior with room...</p> --}}
-
                         <a href="{{ url('/suvs') }}" class="btn btn-outline-primary rounded-pill mt-3">
                             Browse Inventory
                         </a>
@@ -343,20 +369,25 @@
                 </div>
             </div>
 
+
+
             <div class="col-md-4 mb-4">
                 <div class="card border-0 shadow h-100">
-                    <img src="\images\dims.jpg" class="card-img-top" alt="Luxury">
+                    <div class="position-relative">
+                        <img src="\images\dims.jpg" class="card-img-top" alt="Luxury">
+                        <a href="{{ url('/sedans') }}" class="btn btn-primary hover-button">BOOK NOW</a>
+                    </div>
 
                     <div class="card-body text-center">
                         <h3 class="card-title h5">SEDANS</h3>
                         {{-- <p class="text-muted small">Premium interiors...</p> --}}
-
                         <a href="{{ url('/sedans') }}" class="btn btn-outline-primary rounded-pill mt-3">
                             Browse Inventory
                         </a>
                     </div>
                 </div>
             </div>
+
 
         </div>
 

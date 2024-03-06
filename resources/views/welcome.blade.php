@@ -156,7 +156,7 @@
     <!-- END nav -->
 
     <div class="hero-wrap" style="position: relative;">
-        <video playsinline autoplay muted loop poster="/images/bg_1.jpg"
+        <video playsinline autoplay muted loop poster="images/handsome-elegant-black-man-car-salon.jpg"
             style="position: absolute; width: 100%; height: 100%; object-fit: cover;">
             <source src="\images\hack trucks.mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -645,7 +645,170 @@
     </section>
 
 
+    <!-- Why Us Section -->
 
+
+    <style>
+        .why-us h2 {
+            position: relative;
+            margin-bottom: 35px;
+        }
+
+        .why-us h2::after {
+            content: "";
+            width: 120px;
+            height: 3px;
+            display: inline-block;
+            background: #FFC107;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            bottom: -20px;
+            margin: 0 auto;
+        }
+
+        .why-us .box {
+            padding: 50px 30px;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.10);
+            transition: 0.5s;
+            position: relative;
+            background-color: #333;
+            max-height: 230px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+
+        .why-us .box:hover {
+            padding: 30px 30px 70px 30px;
+            box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.20);
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .why-us .box img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0;
+            transition: all ease 1s;
+        }
+
+        .why-us .box:hover img {
+            opacity: 1;
+        }
+
+        .why-us .box span {
+            display: block;
+            font-size: 56px;
+            font-weight: 700;
+            color: #6b6060;
+            position: absolute;
+            right: 10px;
+            top: 0px;
+            line-height: normal;
+        }
+
+        .why-us .box h4 a {
+            font-size: 24px;
+            font-weight: 600;
+            padding: 0;
+            margin: 20px 0;
+            color: #dadada;
+            text-decoration: none;
+        }
+
+        .why-us .box p {
+            color: #aaaaaa;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .why-us .box:hover span,
+        .why-us .box:hover h4 a,
+        .why-us .box:hover p {
+            color: #fff;
+        }
+    </style>
+
+
+    <section class="why-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="mt-5 text-center">Why Choose Our Vehicle Rental Services</h2>
+                    <p class="mb-5 text-center">Explore the reasons why our vehicle rental services are the perfect
+                        choice for you.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="box">
+                        <span>01</span>
+                        <h4><a href="{{ url('/posts') }}"> Wide Range of Vehicles</a></h4>
+                        <p>We offer a diverse fleet of vehicles to meet your specific needs, from sedans to trucks and
+                            SUVs.</p>
+                        <img src="images/group-trucks-parked-line-truck-stop.jpg" alt="Wide Range of Vehicles">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="box">
+                        <span>02</span>
+                        <h4><a href="{{ url('/boxtrucks') }}">Flexible Rental Options</a></h4>
+                        <p>Choose from various rental durations and plans to fit your schedule and requirements.</p>
+                        <img src="images/rental-application-form-financial-concept.jpg" alt="Flexible Rental Options">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="box">
+                        <span>03</span>
+                        <h4><a href="{{ url('/suvs') }}"> Quality and Reliability</a></h4>
+                        <p>Our vehicles undergo regular maintenance to ensure they are in top-notch condition, providing
+                            you a reliable rental experience.</p>
+                        <img src="images/group-happy-workmates-showing-thumbs-up.jpg" alt="Quality and Reliability">
+                    </div>
+                </div>
+
+                <!-- Add three more cards below following a similar structure -->
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="box">
+                        <span>04</span>
+                        <h4><a href="{{ url('/sedans') }}"> Convenient Booking Process</a></h4>
+                        <p>Our easy and efficient booking system ensures a hassle-free experience for our customers.</p>
+                        <img src="images/high-angle-woman-working-laptop.jpg" alt="Convenience">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="box">
+                        <span>05</span>
+                        <h4><a href="{{ url('/contact') }}"> Exceptional Customer Service</a></h4>
+                        <p>Our dedicated customer service team is always ready to assist you with any inquiries or
+                            concerns.</p>
+                        <img src="images/customer-care-webpage-interface-word.jpg" alt="Customer Service">
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <div class="box">
+                        <span>06</span>
+                        <h4><a href="{{ url('/boxtrucks') }}"> Competitive Pricing</a></h4>
+                        <p>We offer competitive pricing plans to ensure you get the best value for your rental.</p>
+                        <img src="images/close-up-business-people-working-with-business-document-discussion-meeting.jpg"
+                            alt="Pricing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Why Us Section -->
 
 
 

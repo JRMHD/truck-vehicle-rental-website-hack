@@ -165,7 +165,14 @@
     </div>
     <!-- Page Header End -->
 
-
+    <style>
+        .card-img-top:hover {
+            transform: scale(1.1);
+            /* Adjust the scale factor for the desired zoom level */
+            transition: transform 0.3s ease;
+            /* Add a smooth transition effect */
+        }
+    </style>
 
     <!-- Rent A Box Truck Start -->
     <div class="container-fluid py-5 bg-light">

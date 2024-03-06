@@ -222,7 +222,7 @@
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-                    style="background-image: url(images/about.jpg);">
+                    style="background-image: url(images/full-shot-man-valet-holding-key.jpg);">
                 </div>
                 <div class="col-md-6 wrap-about py-md-5 ftco-animate">
                     <div class="heading-section mb-5 pl-md-5">
