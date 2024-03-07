@@ -271,7 +271,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-                    <h2 class="mb-2" style="color: #000;">Explore Our Vehicle Leasing Solutions</h2>
+                    <h2 class="mb-2" style="color: #4169e1; font-size: 2.5rem; font-weight: bold;">Explore Our Vehicle
+                        Leasing Solutions</h2>
                 </div>
             </div>
             <div class="row">

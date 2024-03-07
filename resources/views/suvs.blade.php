@@ -179,7 +179,9 @@
     <!-- Rent A Box Truck Start -->
     <div class="container-fluid py-5 bg-light">
         <div class="container pt-5 pb-3">
-            <h1 class="display-6 text-uppercase text-center mb-5">SUVS</h1>
+            <h1 class="display-6 text-uppercase text-center mb-5"
+                style="color: #4169e1; font-size: 2.5rem; font-weight: bold;">SUVs</h1>
+
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card rent-item border-0 shadow">

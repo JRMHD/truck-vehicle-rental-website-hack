@@ -226,8 +226,9 @@
                 </div>
                 <div class="col-md-6 wrap-about py-md-5 ftco-animate">
                     <div class="heading-section mb-5 pl-md-5">
-                        <h2 class="mb-4">About Us</h2>
-                        <p>Welcome to Hack Solutions USA</p>
+                        <h2 class="mb-4" style="color: #4169e1; font-size: 2.5rem; font-weight: bold;">About Us</h2>
+                        <p style="color: #555;">Welcome to Hack Solutions USA</p>
+
 
                         <p>We are your reliable partner for all your vehicle leasing needs. With a diverse fleet that
                             includes various
@@ -255,7 +256,8 @@
             <div class="row justify-content-center mb-5">
                 <div class="col-md-7 text-center heading-section ftco-animate">
                     <span class="subheading">Company Team</span>
-                    <h2 class="mb-3">Meet Our Team</h2>
+                    <h2 class="mb-3" style="color: #4169e1;">Meet Our Team</h2>
+
                 </div>
             </div>
             <div class="row ftco-animate">

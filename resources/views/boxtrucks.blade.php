@@ -174,7 +174,9 @@
     <!-- Rent A Box Truck Start -->
     <div class="container-fluid py-5 bg-light">
         <div class="container pt-5 pb-3">
-            <h1 class="display-6 text-uppercase text-center mb-5">Box Trucks</h1>
+            <h1 class="display-6 text-uppercase text-center mb-5"
+                style="color: #4169e1; font-size: 2.5rem; font-weight: bold;">Box Trucks</h1>
+
             <div class="row">
 
                 <style>

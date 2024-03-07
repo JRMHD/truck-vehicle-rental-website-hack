@@ -29,6 +29,61 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+        .rent-button {
+            background-color: #003366;
+            /* Royal Blue */
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 12px 24px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .rent-button:focus {
+            outline: none;
+            box-shadow: none;
+        }
+
+        .rent-button:hover .popup,
+        .rent-button:focus .popup {
+            display: block;
+        }
+
+        .popup {
+            display: none;
+            position: absolute;
+            top: calc(100% + 10px);
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .popup a {
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+
+        .popup a:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+
+
+    <style>
         /* The Modal (background) */
         .modal {
             display: none;
@@ -141,9 +196,9 @@
                     <li class="nav-item {{ request()->is('/') ? 'active' : '' }}">
                         <a href="{{ route('welcome') }}" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="{{ url('/posts') }}" class="nav-link">Our Inventory</a></li>
                     <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link">Dashboard</a></li>
+                    <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
 
                 </ul>
@@ -622,27 +677,47 @@
             </div>
         </section> --}}
 
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <button class="rent-button">RENT A VEHICLE NOW
+                    <div class="popup">
+                        <a href="{{ url('/boxtrucks') }}">Box Trucks</a>
+                        <a href="{{ url('/sedans') }}">Sedans</a>
+                        <a href="{{ url('/suvs') }}">SUVs</a>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
     <section class="section bg-light">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 text-center">
-                    <h2 class="section-title mb-4" style="color: #4169e1; font-size: 2.5rem;">Welcome to Hack
-                        Solutions</h2>
-                    <p class="section-description" style="font-size: 1.1rem;">We understand that having
-                        access to the right vehicles at the right time is fundamental for your business.</p>
-                    <p class="section-description" style="font-size: 1.1rem;">Whether there is an unexpected increase
-                        in demand or a seasonal spike, You could find yourself in need of additional rentals to power
-                        your
-                        business, not a problem we
-                        have you covered.</p>
-                    <p class="section-description" style="font-size: 1.1rem;">Our specialized rental process can
-                        increase your productivity.</p>
-                    <p class="section-description" style="font-size: 1.1rem;">Let Hack be the solution to your vehicle
-                        management needs.</p>
+                    <h2 class="section-title mb-4" style="color: #4169e1; font-size: 2.5rem; font-weight: bold;">
+                        Welcome to Hack Solutions</h2>
+                    <p class="section-description" style="font-size: 1.2rem; line-height: 1.6; color: #555;">
+                        We understand that having access to the right vehicles at the right time is fundamental for your
+                        business.
+                    </p>
+                    <p class="section-description" style="font-size: 1.2rem; line-height: 1.6; color: #555;">
+                        Whether there is an unexpected increase in demand or a seasonal spike, you could find yourself
+                        in need of additional rentals to power your business not a problem, we have you covered.
+                    </p>
+                    <p class="section-description" style="font-size: 1.2rem; line-height: 1.6; color: #555;">
+                        Our specialized rental process can increase your productivity.
+                    </p>
+                    <p class="section-description" style="font-size: 1.2rem; line-height: 1.6; color: #555;">
+                        Let Hack be the solution to your vehicle management needs.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <!-- Why Us Section -->
@@ -652,6 +727,9 @@
         .why-us h2 {
             position: relative;
             margin-bottom: 35px;
+            color: #4169e1;
+            font-size: 2.5rem;
+            font-weight: bold;
         }
 
         .why-us h2::after {
@@ -819,9 +897,13 @@
         <div class="container">
             <div class="row justify-content-center mb-5">
                 <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                    <span class="subheading" style="color: #fff;">Our Process</span>
+                    <span class="subheading" style="color: #fff; font-size: 2.5rem; font-weight: bold; ">Our
+                        Process</span>
                     <h2 class="mb-3" style="color: #fff;">How It Works</h2>
                 </div>
+
+
+
             </div>
             <div class="row">
                 <div class="col-md-3 d-flex align-self-stretch ftco-animate">
@@ -1172,6 +1254,23 @@
             });
         });
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.rent-button').on('click', function(e) {
+                e.stopPropagation();
+                $('.popup').toggle();
+            });
+
+            $(document).on('click', function(e) {
+                if (!$(e.target).closest('.rent-button').length) {
+                    $('.popup').hide();
+                }
+            });
+        });
+    </script>
+
 </body>
 
 
