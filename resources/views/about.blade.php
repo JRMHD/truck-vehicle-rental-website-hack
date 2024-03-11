@@ -30,9 +30,105 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 8px;
+            /* Added for rounded corners */
+        }
+
+        /* Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Subscribe Form */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        button {
+            margin-top: 10px;
+            padding: 12px;
+            /* Increased padding */
+            font-size: 16px;
+            border: 1px solid #4169e1;
+            /* Royal Blue border */
+            border-radius: 4px;
+            /* Added for rounded corners */
+        }
+
+        button {
+            background-color: #4169e1;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #2b77b2;
+            /* Darker shade on hover */
+        }
+    </style>
+
+
 </head>
 
 <body>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 style="color: #4169e1;">Subscribe to Our Newsletter</h2>
+            <p>Get updates on our latest offers and news.</p>
+            <form id="subscribeForm" action="{{ route('subscribe.store') }}" method="post">
+                @csrf
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            @if (session('success'))
+                <div class="alert alert-success">
+                    {{ session('success') }}
+                </div>
+            @endif
+
+        </div>
+    </div>
+
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
         <div class="container">
@@ -342,6 +438,41 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var modal = document.getElementById("myModal");
+            var span = document.getElementsByClassName("close")[0];
+
+            // Show the modal after 3 seconds (adjust the time as needed)
+            setTimeout(function() {
+                modal.style.display = "block";
+            }, 6000);
+
+            // Close the modal when the close button is clicked
+            span.onclick = function() {
+                modal.style.display = "none";
+            };
+
+            // Close the modal when clicking outside the modal
+            window.onclick = function(event) {
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            };
+
+            // Subscribe form submission
+            var subscribeForm = document.getElementById("subscribeForm");
+            subscribeForm.addEventListener("", function(event) {
+                event.preventDefault();
+                // Add logic here to handle the subscription (e.g., send data to a server)
+                alert("Thank you for subscribing!");
+                modal.style.display = "none";
+            });
+        });
+    </script>
 
 </body>
 

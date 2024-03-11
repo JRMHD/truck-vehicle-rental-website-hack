@@ -29,6 +29,34 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
+        #ftco-loader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .loader-container {
+            text-align: center;
+        }
+
+        .rotate-loader {
+            animation: rotate 2s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+                opacity: 0.8;
+            }
+
+            to {
+                transform: rotate(360deg);
+                opacity: 0.4;
+            }
+        }
+    </style>
+
+    <style>
         .rent-button {
             background-color: #003366;
             /* Royal Blue */
@@ -160,22 +188,16 @@
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
-            <h2 style="color: #4169e1;">Subscribe to Our Newsletter</h2>
-            <p>Get updates on our latest offers and news.</p>
-            <form id="subscribeForm" action="{{ route('subscribe.store') }}" method="post">
-                @csrf
-                <input type="text" name="first_name" placeholder="First Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-            @if (session('success'))
-                <div class="alert alert-success">
-                    {{ session('success') }}
-                </div>
-            @endif
-
+            <p>Get your journey started.</p>
+            <h1 style="color: #4169e1; font-size: 1.5rem; font-weight:;">Click the button below to rent your vehicle.
+            </h1>
+            <a href="{{ url('boxtrucks') }}" class="btn btn-primary"
+                style="font-size: 1.5rem; font-weight: bold; background-color: #4169e1;">Book Now</a>
         </div>
     </div>
+
+
+
 
 
 
@@ -1194,12 +1216,14 @@
 
     @include('footer')
     <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4"
-                stroke-miterlimit="10" stroke="#F96D00" />
-        </svg></div>
+    <div id="ftco-loader" class="show fullscreen">
+        <div class="loader-container">
+            <img src="{{ asset('images/hack-lg.ico') }}" alt="Loader Image" class="rotate-loader">
+        </div>
+    </div>
+
+
+
 
 
 
@@ -1230,7 +1254,7 @@
             // Show the modal after 3 seconds (adjust the time as needed)
             setTimeout(function() {
                 modal.style.display = "block";
-            }, 6000);
+            }, 2000);
 
             // Close the modal when the close button is clicked
             span.onclick = function() {
