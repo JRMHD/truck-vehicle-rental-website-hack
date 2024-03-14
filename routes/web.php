@@ -1,10 +1,13 @@
 <?php
 
+
+// Import the UserController class
+use App\Http\Controllers\DocumentSubmissionController;
 use App\Http\Controllers\NewSubscriptionController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController; // Import the UserController class
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\WorkusController;
 use App\Http\Controllers\JourneyController;
 
@@ -82,6 +85,8 @@ Route::post('/plan-journey', [JourneyPlanController::class, 'store'])->name('pla
 Route::post('/submit-form', [FormController::class, 'store'])->name('submitForm');
 
 Route::post('/subscribe', [NewSubscriptionController::class, 'store'])->name('subscribe.store');
+
+Route::post('/document-submission', [DocumentSubmissionController::class, 'store'])->name('document-submission.store');
 
 /*
 |--------------------------------------------------------------------------

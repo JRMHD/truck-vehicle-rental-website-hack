@@ -72,6 +72,10 @@
 
 <body>
 
+
+
+
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="{{ route('welcome') }}">
@@ -117,6 +121,7 @@
     </nav>
 
 
+
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-8">
@@ -124,6 +129,12 @@
                     <h4 class="text-center mb-4">Have You Submitted Your Documents?</h4>
                     <p class="text-center mb-4">To proceed, please ensure you have submitted your driving license, MC
                         number, and DOT number.</p>
+
+                    @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
                     <div class="text-center">
                         <button id="showFormBtn" class="btn btn-primary submit-btn"
                             style="background-color: #4169e1;">Submit Documents</button>
@@ -140,27 +151,30 @@
                     <h3 class="text-center mb-4">Vehicle Rental Registration</h3>
                     <p class="text-muted mb-4">Please provide the required information and upload your driver's license
                         to complete the registration process.</p>
-                    <form>
+                    <form action="{{ route('document-submission.store') }}" method="POST"
+                        enctype="multipart/form-data">
+                        @csrf
                         <div class="form-group">
-                            <label for="mcNumber">MC Number</label>
-                            <input type="text" class="form-control" id="mcNumber"
+                            <label for="mc_number">MC Number</label>
+                            <input type="text" class="form-control" id="mc_number" name="mc_number"
                                 placeholder="Enter your MC Number">
                         </div>
                         <div class="form-group">
                             <label for="dot">DOT</label>
-                            <input type="text" class="form-control" id="dot" placeholder="Enter your DOT">
+                            <input type="text" class="form-control" id="dot" name="dot"
+                                placeholder="Enter your DOT">
                         </div>
                         <div class="form-group">
-                            <label for="driverLicense">Driver's License</label>
+                            <label for="driver_license">Driver's License</label>
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="driverLicense"
-                                    accept=".pdf,image/*">
-                                <label class="custom-file-label" for="driverLicense">Choose file</label>
+                                <input type="file" class="custom-file-input" id="driver_license"
+                                    name="driver_license" accept=".pdf,image/*">
+                                <label class="custom-file-label" for="driver_license">Choose file</label>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="additionalInfo">Additional Information (Optional)</label>
-                            <textarea class="form-control" id="additionalInfo" rows="3"
+                            <label for="additional_info">Additional Information (Optional)</label>
+                            <textarea class="form-control" id="additional_info" name="additional_info" rows="3"
                                 placeholder="Enter any additional information (optional)"></textarea>
                         </div>
                         <div class="text-center">
@@ -168,6 +182,7 @@
                             <button type="button" class="btn btn-secondary ml-2" id="hideFormBtn">Cancel</button>
                         </div>
                     </form>
+
                 </div>
             </div>
         </div>
