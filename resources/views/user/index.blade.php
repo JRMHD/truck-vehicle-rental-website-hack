@@ -617,6 +617,22 @@
         }
     </script>
 
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center">
+                <h2 class="mb-4"
+                    style="font-weight: bold; color: royalblue; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 50px;">
+                    Featured Vehicles</h2>
+                <p class="lead">Explore our curated selection of featured vehicles. Each one is hand-picked for its
+                    exceptional quality and performance.</p>
+                <a href="{{ url('Featured') }}" class="btn btn-primary btn-lg"
+                    style="background-color: royalblue; border-color: royalblue;">View Featured</a>
+            </div>
+        </div>
+    </div>
+
     @include('footer')
 
 
@@ -652,7 +668,21 @@
             });
         });
     </script>
-
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/65f9629ca0c6737bd1226b1e/1hpb2id61/jrmhd';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 
 </body>

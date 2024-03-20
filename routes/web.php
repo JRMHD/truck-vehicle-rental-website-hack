@@ -129,6 +129,9 @@ Route::get('/suvs', function () {
 Route::get('/sedans', function () {
     return view('sedans');
 });
+Route::get('/Featured', function () {
+    return view('Featured');
+});
 
 Auth::routes();
 

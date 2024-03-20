@@ -299,6 +299,24 @@
 
         </div>
 
+
+
+
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-8 offset-md-2 text-center">
+                    <h2 class="mb-4">Featured Vehicles</h2>
+                    <p class="lead">Explore our collection of top-notch vehicles handpicked for you.</p>
+                    <div class="d-grid gap-2">
+                        <a href="{{ url('Featured') }}" class="btn btn-primary btn-lg"
+                            style="background-color: #007bff; border-color: #007bff;">View Featured Vehicles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         {{-- @include('user.cardisp') --}}
 
 
@@ -346,6 +364,24 @@
                 $(this).next('.custom-file-label').addClass('selected').html(fileName);
             });
         </script>
+
+
+
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {},
+                Tawk_LoadStart = new Date();
+            (function() {
+                var s1 = document.createElement("script"),
+                    s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/65f9629ca0c6737bd1226b1e/1hpb2id61/jrmhd';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
 
 </body>
 
