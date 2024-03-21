@@ -27,7 +27,7 @@
     <header class="header" id="header">
         <nav class="nav container">
             <a class="navbar-brand d-flex align-items-center" href="{{ route('welcome') }}">
-                <img src="images/hack.jpg" alt="Logo" class="navbar-logo mr-2" style="max-height: 60px;">
+                <img src="images/hack.jpg" alt="Logo" class="navbar-logo mr-2" style="max-height: 40px;">
                 <span><span class="text-royal-blue"></span></span>
             </a>
 
@@ -37,13 +37,13 @@
                         <a href="{{ route('welcome') }}" class="nav__link ">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">Our Inventory</a>
+                        <a href="{{ url('/posts') }}" class="nav__link">Our Inventory</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#popular" class="nav__link">About Us</a>
+                        <a href="{{ url('/about') }}" class="nav__link">About Us</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#featured" class="nav__link">Contact Us</a>
+                        <a href="{{ url('/contact') }}" class="nav__link">Contact Us</a>
                     </li>
                 </ul>
 
@@ -80,7 +80,7 @@
                         <i class="ri-truck-fill"></i> Box Truck
                     </h3>
                 </div>
-                <img src="images\boxtt1.png" alt="" class="home__img">
+                <img src="images\hino268.png" alt="" class="home__img">
 
                 <div class="home__car">
                     <div class="home__car-data">
@@ -143,11 +143,10 @@
             </div>
         </section>
 
-
         <!--==================== POPULAR ====================-->
         <section class="popular section" id="popular">
             <h2 class="section__title">
-                Choose Your Electric Car <br> Of The Porsche Brand
+                Choose Your Vehicle <br> From Our Popular Models
             </h2>
 
             <div class="popular__container container swiper">
@@ -155,167 +154,111 @@
                     <article class="popular__card swiper-slide">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="popular__title">Porsche</h1>
-                        <h3 class="popular__subtitle">Turbo S</h3>
+                        <h1 class="popular__title">Box Trucks</h1>
+                        <h3 class="popular__subtitle">Heavy-duty Haulers</h3>
 
-                        <img src="assets/img/popular1.png" alt="" class="popular__img">
+                        <img src="images\boxtt1.png" alt="" class="popular__img">
 
                         <div class="popular__data">
                             <div class="popular__data-group">
-                                <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                                <i class="ri-dashboard-3-line"></i> High Payload Capacity
                             </div>
                             <div class="popular__data-group">
-                                <i class="ri-funds-box-line"></i> 356 Km/h
+                                <i class="ri-funds-box-line"></i> Reliable Performance
                             </div>
                             <div class="popular__data-group">
-                                <i class="ri-charging-pile-2-line"></i> Electric
+                                <i class="ri-charging-pile-2-line"></i> Diesel Powered
                             </div>
                         </div>
 
-                        <h3 class="popular__price">$175,900</h3>
-
-                        <button class="button popular__button">
+                        <a href="{{ url('/boxtrucks') }}" class="button popular__button">
                             <i class="ri-shopping-bag-2-line"></i>
-                        </button>
+                        </a>
                     </article>
 
                     <article class="popular__card swiper-slide">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="popular__title">Porsche</h1>
-                        <h3 class="popular__subtitle">Taycan</h3>
+                        <h1 class="popular__title">SUVs</h1>
+                        <h3 class="popular__subtitle">Adventure Seekers</h3>
 
-                        <img src="assets/img/popular2.png" alt="" class="popular__img">
+                        <img src="images\suvfeatured.png" alt="" class="popular__img">
 
                         <div class="popular__data">
                             <div class="popular__data-group">
-                                <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                                <i class="ri-dashboard-3-line"></i> Off-road Capabilities
                             </div>
                             <div class="popular__data-group">
-                                <i class="ri-funds-box-line"></i> 356 Km/h
+                                <i class="ri-funds-box-line"></i> Spacious Interior
                             </div>
                             <div class="popular__data-group">
-                                <i class="ri-charging-pile-2-line"></i> Electric
+                                <i class="ri-charging-pile-2-line"></i> Gasoline Powered
                             </div>
                         </div>
 
-                        <h3 class="popular__price">$114,900</h3>
-
-                        <button class="button popular__button">
+                        <a href="{{ url('/suvs') }}" class="button popular__button">
                             <i class="ri-shopping-bag-2-line"></i>
-                        </button>
+                        </a>
                     </article>
 
                     <article class="popular__card swiper-slide">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="popular__title">Porsche</h1>
-                        <h3 class="popular__subtitle">Turbo S Cross</h3>
+                        <h1 class="popular__title">Sedans</h1>
+                        <h3 class="popular__subtitle">Smooth and Stylish</h3>
 
-                        <img src="assets/img/popular3.png" alt="" class="popular__img">
-
-                        <div class="popular__data">
-                            <div class="popular__data-group">
-                                <i class="ri-dashboard-3-line"></i> 3.7 Sec
-                            </div>
-                            <div class="popular__data-group">
-                                <i class="ri-funds-box-line"></i> 356 Km/h
-                            </div>
-                            <div class="popular__data-group">
-                                <i class="ri-charging-pile-2-line"></i> Electric
-                            </div>
-                        </div>
-
-                        <h3 class="popular__price">$150,900</h3>
-
-                        <button class="button popular__button">
-                            <i class="ri-shopping-bag-2-line"></i>
-                        </button>
-                    </article>
-
-                    <article class="popular__card swiper-slide">
-                        <div class="shape shape__smaller"></div>
-
-                        <h1 class="popular__title">Porsche</h1>
-                        <h3 class="popular__subtitle">Boxster 718</h3>
-
-                        <img src="assets/img/popular4.png" alt="" class="popular__img">
+                        <img src="images\sedansfeatured.png" alt="" class="popular__img">
 
                         <div class="popular__data">
                             <div class="popular__data-group">
-                                <i class="ri-dashboard-3-line"></i> 3.7 Sec
+                                <i class="ri-dashboard-3-line"></i> Comfortable Ride
                             </div>
                             <div class="popular__data-group">
-                                <i class="ri-funds-box-line"></i> 356 Km/h
+                                <i class="ri-funds-box-line"></i> Fuel Efficient
                             </div>
                             <div class="popular__data-group">
-                                <i class="ri-charging-pile-2-line"></i> Electric
+                                <i class="ri-charging-pile-2-line"></i> Various Engine Options
                             </div>
                         </div>
 
-                        <h3 class="popular__price">$125,900</h3>
-
-                        <button class="button popular__button">
+                        <a href="{{ url('/sedans') }}" class="button popular__button">
                             <i class="ri-shopping-bag-2-line"></i>
-                        </button>
+                        </a>
                     </article>
 
-                    <article class="popular__card swiper-slide">
-                        <div class="shape shape__smaller"></div>
+                    <!-- Additional articles for Sedans can be added similarly -->
 
-                        <h1 class="popular__title">Porsche</h1>
-                        <h3 class="popular__subtitle">Cayman</h3>
-
-                        <img src="assets/img/popular5.png" alt="" class="popular__img">
-
-                        <div class="popular__data">
-                            <div class="popular__data-group">
-                                <i class="ri-dashboard-3-line"></i> 3.7 Sec
-                            </div>
-                            <div class="popular__data-group">
-                                <i class="ri-funds-box-line"></i> 356 Km/h
-                            </div>
-                            <div class="popular__data-group">
-                                <i class="ri-charging-pile-2-line"></i> Electric
-                            </div>
-                        </div>
-
-                        <h3 class="popular__price">$128,900</h3>
-
-                        <button class="button popular__button">
-                            <i class="ri-shopping-bag-2-line"></i>
-                        </button>
-                    </article>
                 </div>
 
                 <div class="swiper-pagination"></div>
             </div>
         </section>
 
+
+
         <!--==================== FEATURES ====================-->
         <section class="features section">
             <h2 class="section__title">
-                More Features
+                Box Trucks Features
             </h2>
 
             <div class="features__container container grid">
                 <div class="features__group">
-                    <img src="assets/img/features.png" alt="" class="features__img">
+                    <img src="images\boxtt1.png" alt="" class="features__img">
 
                     <div class="features__card features__card-1">
-                        <h3 class="features__card-title">800v</h3>
-                        <p class="features__card-description">Turbo <br> Chargin</p>
-                        </p>
+                        <h3 class="features__card-title">Heavy-duty</h3>
+                        <p class="features__card-description">Designed for <br> Commercial Use</p>
                     </div>
 
                     <div class="features__card features__card-2">
-                        <h3 class="features__card-title">350</h3>
-                        <p class="features__card-description">Km <br> Range</p>
+                        <h3 class="features__card-title">High Payload</h3>
+                        <p class="features__card-description">Capacity <br> 10,000 kg</p>
                     </div>
 
                     <div class="features__card features__card-3">
-                        <h3 class="features__card-title">480</h3>
-                        <p class="features__card-description">Km <br> Travel</p>
+                        <h3 class="features__card-title">Durability</h3>
+                        <p class="features__card-description">Long-lasting <br> Performance</p>
                     </div>
                 </div>
             </div>
@@ -323,10 +266,11 @@
             <img src="assets/img/map.svg" alt="" class="features__map">
         </section>
 
+
         <!--==================== FEATURED ====================-->
         <section class="featured section" id="featured">
             <h2 class="section__title">
-                Featured Luxury Cars
+                Featured Affordable Sedans and SUVs
             </h2>
 
             <div class="featured__container container">
@@ -337,105 +281,78 @@
                         </button>
                     </li>
                     <li>
-                        <button class="featured__item" data-filter=".tesla">
-                            <img src="assets/img/logo3.png" alt="">
+                        <button class="featured__item" data-filter=".sedans">
+                            Affordable Sedans
                         </button>
                     </li>
                     <li>
-                        <button class="featured__item" data-filter=".audi">
-                            <img src="assets/img/logo2.png" alt="">
-                        </button>
-                    </li>
-                    <li>
-                        <button class="featured__item" data-filter=".porsche">
-                            <img src="assets/img/logo1.png" alt="">
+                        <button class="featured__item" data-filter=".suvs">
+                            Cheap SUVs
                         </button>
                     </li>
                 </ul>
 
                 <div class="featured__content grid">
-                    <article class="featured__card mix tesla">
+                    <article class="featured__card mix sedans">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="featured__title">Tesla</h1>
+                        <h1 class="featured__title">Affordable Sedans</h1>
 
-                        <h3 class="featured__subtitle">Model X</h3>
+                        <h3 class="featured__subtitle">Toyota Corolla</h3>
 
-                        <img src="assets/img/featured1.png" alt="" class="featured__img">
+                        <img src="images\corola ft.png" alt="" class="featured__img">
 
-                        <h3 class="featured__price">$98,900</h3>
-
-                        <button class="button featured__button">
-                            <i class="ri-shopping-bag-2-line"></i>
-                        </button>
+                        <a href="{{ url('/sedans') }}" class="button featured__button">
+                            <span>More Info</span>
+                        </a>
                     </article>
 
-                    <article class="featured__card mix tesla">
+                    <article class="featured__card mix sedans">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="featured__title">Tesla</h1>
+                        <h1 class="featured__title">Affordable Sedans</h1>
 
-                        <h3 class="featured__subtitle">Model 3</h3>
+                        <h3 class="featured__subtitle">Honda Civic</h3>
 
-                        <img src="assets/img/featured2.png" alt="" class="featured__img">
+                        <img src="images\civic ft.png" alt="" class="featured__img">
 
-                        <h3 class="featured__price">$45,900</h3>
-
-                        <button class="button featured__button">
-                            <i class="ri-shopping-bag-2-line"></i>
-                        </button>
+                        <a href="{{ url('/sedans') }}" class="button featured__button">
+                            <span>More Info</span>
+                        </a>
                     </article>
 
-                    <article class="featured__card mix audi">
+                    <article class="featured__card mix suvs">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="featured__title">Audi</h1>
+                        <h1 class="featured__title">Cheap SUVs</h1>
 
-                        <h3 class="featured__subtitle">E-tron</h3>
+                        <h3 class="featured__subtitle">Toyota RAV4</h3>
 
-                        <img src="assets/img/featured3.png" alt="" class="featured__img">
+                        <img src="images\rav4ft.png" alt="" class="featured__img">
 
-                        <h3 class="featured__price">$175,900</h3>
-
-                        <button class="button featured__button">
-                            <i class="ri-shopping-bag-2-line"></i>
-                        </button>
+                        <a href="{{ url('/suvs') }}" class="button featured__button">
+                            <span>More Info</span>
+                        </a>
                     </article>
 
-                    <article class="featured__card mix porsche">
+                    <article class="featured__card mix suvs">
                         <div class="shape shape__smaller"></div>
 
-                        <h1 class="featured__title">Porsche</h1>
+                        <h1 class="featured__title">Cheap SUVs</h1>
 
-                        <h3 class="featured__subtitle">Boxster 987</h3>
+                        <h3 class="featured__subtitle">Nissan Rogue</h3>
 
-                        <img src="assets/img/featured4.png" alt="" class="featured__img">
+                        <img src="images\nissanrogueft.png" alt="" class="featured__img">
 
-                        <h3 class="featured__price">$126,900</h3>
-
-                        <button class="button featured__button">
-                            <i class="ri-shopping-bag-2-line"></i>
-                        </button>
-                    </article>
-
-                    <article class="featured__card mix porsche">
-                        <div class="shape shape__smaller"></div>
-
-                        <h1 class="featured__title">Porsche</h1>
-
-                        <h3 class="featured__subtitle">Panamera</h3>
-
-                        <img src="assets/img/featured5.png" alt="" class="featured__img">
-
-                        <h3 class="featured__price">$126,900</h3>
-
-                        <button class="button featured__button">
-                            <i class="ri-shopping-bag-2-line"></i>
-                        </button>
+                        <a href="{{ url('/suvs') }}" class="button featured__button">
+                            <span>More Info</span>
+                        </a>
                     </article>
                 </div>
             </div>
         </section>
+
+
 
         <!--==================== OFFER ====================-->
         <section class="offer section">
@@ -453,14 +370,15 @@
                         mailing list.
                     </p>
 
-                    <a href="#" class="button">
-                        Subscribe Now
+                    <a href="tel:+18007749450" class="button">
+                        Call Now: +1 800 774 9450
                     </a>
                 </div>
 
-                <img src="assets/img/offer.png" alt="" class="offer__img">
+                <img src="images\boxtt1.png" alt="" class="offer__img">
             </div>
         </section>
+
 
         <!--==================== LOGOS ====================-->
         <section class="logos section">
@@ -492,88 +410,112 @@
         </section>
     </main>
 
-    <!--==================== FOOTER ====================-->
+
+
+
     <footer class="footer section">
         <div class="shape shape__big"></div>
         <div class="shape shape__small"></div>
 
         <div class="footer__container container grid">
             <div class="footer__content">
-                <a href="#" class="footer__logo">
-                    <i class="ri-steering-line"></i> Elecar
+                <a href="/" class="footer__logo">
+                    <img src="images/hack.jpg" alt="Hack Solutions USA" class="footer__logo-img"
+                        style="max-width: 100px;">
                 </a>
                 <p class="footer__description">
-                    We offer the best electric cars of <br>
-                    the most recognized brands in <br>
-                    the world.
+                    Your go-to partner for vehicle rentals.
+
+                </p>
+                <p class="footer__description">
+                    Explore our fleet for your personal and business needs.
                 </p>
             </div>
 
+
             <div class="footer__content">
                 <h3 class="footer__title">
-                    Company
+                    About Us
                 </h3>
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#" class="footer__link">About</a>
+                        <a href="{{ url('/about') }}" class="footer__link">About</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Cars</a>
+                        <a href="{{ url('/home') }}" class="footer__link">Dashboard</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">History</a>
+                        <a href="#" class="footer__link">Terms and Conditions</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Shop</a>
+                        <a href="#" class="footer__link">Privacy & Cookies Policy</a>
                     </li>
                 </ul>
             </div>
 
             <div class="footer__content">
                 <h3 class="footer__title">
-                    Information
+                    Support
                 </h3>
 
                 <ul class="footer__links">
                     <li>
-                        <a href="#" class="footer__link">Request a quote</a>
+                        <a href="#" class="footer__link">FAQ</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Find a dealer</a>
+                        <a href="#" class="footer__link" data-toggle="modal"
+                            data-target="#paymentModal">Payment Options</a>
                     </li>
                     <li>
-                        <a href="#" class="footer__link">Contact us</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Services</a>
+                        <a href="{{ url('/contact') }}" class="footer__link">Contact Us</a>
                     </li>
                 </ul>
+
+                <!-- Payment Options Modal -->
+                <div class="modal fade" id="paymentModal" tabindex="-1" role="dialog"
+                    aria-labelledby="paymentModalLabel" aria-hidden="true">
+                    <!-- Modal content here -->
+                </div>
             </div>
 
             <div class="footer__content">
                 <h3 class="footer__title">
-                    Follow us
+                    Contact
                 </h3>
 
-                <ul class="footer__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-facebook-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-instagram-line"></i>
-                    </a>
-                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-twitter-line"></i>
-                    </a>
-                </ul>
+                <div class="block-23">
+                    <ul>
+                        <li>
+                            <a href="#" style="color: white;">
+                                <span class="icon icon-map-marker"></span>
+                                <span class="text">901 Dulaney Valley Rd Ste 110, Towson, MD 21204</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+18007749450" style="color: white;">
+                                <span class="icon icon-phone"></span>
+                                <span class="text">+1 800 774 9450</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:cgreen@hacksolutionsusa.com" style="color: white;">
+                                <span class="icon icon-envelope"></span>
+                                <span class="text">cgreen@hacksolutionsusa.com</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <span class="footer__copy">
-            &#169; Bedimcode. All rigths reserved
+            &copy; Hack Solutions USA. All rights reserved. Developed by <a href="https://jrmhd.tech" target="_blank"
+                rel="noopener noreferrer">JMRHD</a>
         </span>
+
     </footer>
+
 
 
     <!--========== SCROLL UP ==========-->
