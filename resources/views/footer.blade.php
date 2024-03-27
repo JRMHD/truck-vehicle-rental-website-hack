@@ -118,7 +118,7 @@
                     <script>
                         document.write(new Date().getFullYear());
                     </script> HACK SOLUTIONS USA. All rights reserved. Developed by <a
-                        href="mailto:jrmqhd@gmail.com" style="color: white;">JRMHD</a>
+                        href="https://www.jrmhd.tech/" style="color: white;">JRMHD</a>
                 </p>
             </div>
         </div>
