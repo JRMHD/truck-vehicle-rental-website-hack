@@ -253,10 +253,10 @@
                 <div class="col-lg-6 col-md-6 ftco-animate d-flex align-items-end">
                     <div class="text">
                         <h1 class="headline">
-                            <span>Discover</span>
-                            <span>Effortless</span>
-                            <span>Vehicle</span>
-                            <span>Rentals</span>
+                            <span style="font-weight: bold;">Discover</span>
+                            <span style="font-weight: bold;">Effortless</span>
+                            <span style="font-weight: bold;">Vehicle</span>
+                            <span style="font-weight: bold;">Rentals</span>
                         </h1>
 
                         <style>
@@ -281,117 +281,40 @@
                             }
                         </style>
 
-
-
-
-                        {{-- <h1 class="mb-4 text-effect">Discover <span>Effortless Vehicle Rentals</span></h1> --}}
-
-
                         <p style="font-size: 18px;">Experience the convenience of renting a Vehicle with us. We offer
                             top-notch services to make your journey smooth and worry-free.</p>
-                        {{-- <a href="https://youtu.be/xh7_uzq7UQE?si=vo97g2sWOmcCMpAf"
-                            class="icon-wrap popup-vimeo d-flex align-items-center mt-4">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <span class="ion-ios-play"></span>
-                            </div>
-                            <div class="heading-title ml-5">
-                                <span>Watch Our Rental Process</span>
-                            </div>
-                        </a> --}}
-                        {{-- <style>
-                            .btn {
-                                display: inline-block;
-                                margin-right: 16px;
-                                text-align: center;
-                                text-decoration: none;
-                                font-size: 16px;
-                                font-weight: 600;
-                                padding: 12px 24px;
-                                border-radius: 6px;
-                                transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                            }
 
-                            .btn-dashboard {
-                                background-color: #4169e1;
-                                color: #fff;
-                            }
+                        <a href="{{ url('posts') }}" class="start-now-link">
+                            <button type="button" class="btn btn-primary btn-block py-3 start-now-btn">Start
+                                Now</button>
+                            <style>
+                                .start-now-link {
+                                    display: inline-block;
+                                    /* Ensure the anchor behaves like a block element */
+                                    text-decoration: none;
+                                    /* Remove default underline */
+                                }
 
-                            .btn-dashboard:hover {
-                                background-color: #2b77b2;
-                                color: #fff;
-                            }
-                        </style> --}}
+                                .start-now-btn {
+                                    border-radius: 30px;
+                                    background-color: royalblue;
+                                    color: #fff;
+                                    font-weight: bold;
+                                    box-shadow: 0 0 20px royalblue;
+                                }
 
-                        {{-- <div style="display: flex; justify-content: center;">
+                                .start-now-btn:hover {
+                                    background-color: #0066cc;
+                                    /* Darker shade of royalblue on hover */
+                                    box-shadow: 0 0 20px #0066cc;
+                                }
+                            </style>
 
-                            <a href="{{ route('home') }}" class="btn btn-dashboard">
-                                Dashboard
-                            </a>
-
-                        </div> --}}
+                        </a>
 
                     </div>
+
                 </div>
-
-
-
-
-
-                {{-- <div class="col-lg-2 col"></div>
-                <div class="col-lg-4 col-md-6 mt-5 d-flex">
-                    <form action="{{ route('plan.journey') }}" method="POST" class="request-form ftco-animate">
-                        @csrf
-                        <h2 class="mb-4 text-center">Plan Your Journey</h2>
-
-                        <div class="form-group">
-                            <label for="starting_point" class="label">Starting Point?</label>
-                            <input type="text" class="form-control" name="starting_point" id="starting_point"
-                                placeholder="Your Location">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="destination" class="label">Your Destination?</label>
-                            <input type="text" class="form-control" name="destination" id="destination"
-                                placeholder="Your Destination">
-                        </div>
-
-                        <div class="d-flex justify-content-between">
-                            <div class="form-group">
-                                <label for="departure_date" class="label">Departure Date</label>
-                                <input type="date" class="form-control" name="departure_date" id="departure_date"
-                                    placeholder="Date">
-
-                            </div>
-
-                            <div class="form-group">
-                                <label for="return_date" class="label">Return Date</label>
-                                <input type="date" class="form-control" name="return_date" id="return_date"
-                                    placeholder="Date">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="preferred_time" class="label">Preferred Time</label>
-                            <input type="text" class="form-control" name="preferred_time" id="preferred_time"
-                                placeholder="Time">
-                        </div>
-                        <div class="g-recaptcha" data-sitekey="6LfL-VEpAAAAACCgE1lT9L9ESG3uc8OOGh9doE3m"></div>
-                        <div class="form-group mt-4">
-                            <button type="submit" class="btn btn-primary btn-block py-3">Find a Vehicle</button>
-                    </form>
-                    </form>
-                    @if ($errors->any())
-                        <div class="alert alert-danger">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                    <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
-                </div> --}}
-
 
                 <div class="col-lg-2 col"></div>
                 <div class="col-lg-4 col-md-6 mt-5 d-flex">
@@ -435,11 +358,16 @@
                     @endif
                 </div>
 
-
-
-
             </div>
         </div>
+    </div>
+
+
+
+
+
+    </div>
+    </div>
     </div>
 
     <link
@@ -462,51 +390,6 @@
 
     <div class="container my-5">
         <div class="row">
-
-            {{-- <div class="col-md-4 mb-4">
-                <div class="card border-0 shadow h-100">
-                    <img src="\images\BoxTruck2.png" class="card-img-top" alt="Saloon">
-
-                    <div class="card-body text-center">
-                        <h3 class="card-title h5">BOX TRUCKS</h3>
-
-
-                        <a href="{{ url('/boxtrucks') }}" class="btn btn-outline-primary rounded-pill mt-3">
-                            Browse Inventory
-                        </a>
-                    </div>
-                </div>
-            </div> --}}
-
-            {{-- <div class="col-md-4 mb-4">
-                <div class="card border-0 shadow h-100">
-                    <img src="\images\Toyota-Sequoia-Capstone-23-1.jpg" class="card-img-top" alt="SUV">
-
-                    <div class="card-body text-center">
-                        <h3 class="card-title h5">SUVs</h3>
-
-
-                        <a href="{{ url('/suvs') }}" class="btn btn-outline-primary rounded-pill mt-3">
-                            Browse Inventory
-                        </a>
-                    </div>
-                </div>
-            </div> --}}
-
-            {{-- <div class="col-md-4 mb-4">
-                <div class="card border-0 shadow h-100">
-                    <img src="\images\dims.jpg" class="card-img-top" alt="Luxury">
-
-                    <div class="card-body text-center">
-                        <h3 class="card-title h5">SEDANS</h3>
-
-
-                        <a href="{{ url('/sedans') }}" class="btn btn-outline-primary rounded-pill mt-3">
-                            Browse Inventory
-                        </a>
-                    </div>
-                </div>
-            </div> --}}
 
         </div>
 
@@ -640,73 +523,6 @@
                 </div>
             </div>
         </div> --}}
-
-
-
-
-
-
-    {{-- <section class="custom-services-section ftco-section ftco-no-pt ftco-no-pb"
-            style="background-color: #f5f5f5;">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-12 heading-section text-center ftco-animate mb-5">
-                        <span class="subheading" style="color: #333;">Our Unique Services</span>
-                        <h2 class="mb-2" style="color: #222;">Explore What We Offer</h2>
-                    </div>
-                </div>
-                <div class="row d-flex">
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services" style="background-color: #fff; border-radius: 10px;">
-                            <div class="media-body py-md-4">
-                                <div class="d-flex mb-3 align-items-center">
-                                    <div class="icon" style="background-color: #ff9900; color: #fff;"><span
-                                            class="flaticon-customer-support"></span></div>
-                                    <h3 class="heading mb-0 pl-3">24/7 Assistance</h3>
-                                </div>
-                                <p>Our dedicated support team is available round-the-clock to assist you.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services" style="background-color: #fff; border-radius: 10px;">
-                            <div class="media-body py-md-4">
-                                <div class="d-flex mb-3 align-items-center">
-                                    <div class="icon" style="background-color: #0099cc; color: #fff;"><span
-                                            class="flaticon-route"></span></div>
-                                    <h3 class="heading mb-0 pl-3">Convenient Locations</h3>
-                                </div>
-                                <p>Find us at multiple locations to serve your travel needs more conveniently.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services" style="background-color: #fff; border-radius: 10px;">
-                            <div class="media-body py-md-4">
-                                <div class="d-flex mb-3 align-items-center">
-                                    <div class="icon" style="background-color: #ff6699; color: #fff;"><span
-                                            class="flaticon-online-booking"></span></div>
-                                    <h3 class="heading mb-0 pl-3">Easy Reservations</h3>
-                                </div>
-                                <p>Make hassle-free reservations online or through our mobile app.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 d-flex align-self-stretch ftco-animate">
-                        <div class="media block-6 services" style="background-color: #fff; border-radius: 10px;">
-                            <div class="media-body py-md-4">
-                                <div class="d-flex mb-3 align-items-center">
-                                    <div class="icon" style="background-color: #33cc33; color: #fff;"><span
-                                            class="flaticon-rent"></span></div>
-                                    <h3 class="heading mb-0 pl-3">Wide Vehicle Selection</h3>
-                                </div>
-                                <p>Choose from a diverse range of vehicles to suit your transportation needs.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
 
     <div class="container mt-5">
         <div class="row justify-content-center">
@@ -1016,230 +832,6 @@
     </section>
 
 
-    {{-- <section class="ftco-section testimony-section">
-            <div class="container">
-                <div class="row justify-content-center mb-5">
-                    <div class="col-md-7 text-center heading-section ftco-animate">
-                        <span class="subheading">Testimonial</span>
-                        <h2 class="mb-3">Satisfied Customers</h2>
-                    </div>
-                </div>
-                <div class="row ftco-animate">
-                    <div class="col-md-12">
-                        <div class="carousel-testimony owl-carousel ftco-owl">
-                            <div class="item">
-                                <div class="testimony-wrap text-center py-4 pb-5">
-                                    <div class="user-img mb-4" style="background-image: url(images/charles2.jpg)">
-                                    </div>
-                                    <div class="text pt-4">
-                                        <p class="mb-4">Youll have an amazing experience leasing Vehicles with
-                                            Our
-                                            company. Our services are top-notch!</p>
-                                        <p class="name">Charles Green</p>
-                                        <span class="position">CEO HACK SOLUTIONS</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-wrap text-center py-4 pb-5">
-                                    <div class="user-img mb-4" style="background-image: url(images/charles.jpeg)">
-                                    </div>
-                                    <div class="text pt-4">
-                                        <p class="mb-4">The box trucks offered by this company are exceptional.
-                                            They
-                                            helped streamline our supply chain operations.</p>
-                                        <p class="name">Aaron Alves</p>
-                                        <span class="position">Supply Chain Analyst</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-wrap text-center py-4 pb-5">
-                                    <div class="user-img mb-4" style="background-image: url(images/person_3.jpg)">
-                                    </div>
-                                    <div class="text pt-4">
-                                        <p class="mb-4">Working with this company's box truck leasing experts has
-                                            been a
-                                            game-changer for our business.</p>
-                                        <p class="name">David Johnson</p>
-                                        <span class="position">Logistics Coordinator</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-wrap text-center py-4 pb-5">
-                                    <div class="user-img mb-4" style="background-image: url(images/person_2.jpg)">
-                                    </div>
-                                    <div class="text pt-4">
-                                        <p class="mb-4">Their box truck leasing solutions have significantly
-                                            improved
-                                            our
-                                            efficiency and cost-effectiveness.</p>
-                                        <p class="name">Robert Wilson</p>
-                                        <span class="position">Transportation Manager</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="testimony-wrap text-center py-4 pb-5">
-                                    <div class="user-img mb-4" style="background-image: url(images/veronica.jpg)">
-                                    </div>
-                                    <div class="text pt-4">
-                                        <p class="mb-4">I'm impressed with their dedication and expertise in box
-                                            truck
-                                            leasing.</p>
-                                        <p class="name">Veronica Tateum</p>
-                                        <span class="position">Logistics Analyst</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> --}}
-
-
-    {{-- <section class="ftco-section testimony-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-7 text-center heading-section ftco-animate">
-                    <span class="subheading">Company Team</span>
-                    <h2 class="mb-3">Meet Our Team</h2>
-                </div>
-            </div>
-            <div class="row ftco-animate">
-                <div class="col-md-12">
-                    <div class="carousel-testimony owl-carousel ftco-owl">
-                        <div class="item">
-                            <div class="testimony-wrap text-center py-4 pb-5">
-                                <div class="user-img mb-4" style="background-image: url(images/charles2.jpg)">
-                                </div>
-                                <div class="text pt-4">
-
-                                    <p class="name">Charles Green</p>
-                                    <span class="position">CEO</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap text-center py-4 pb-5">
-                                <div class="user-img mb-4" style="background-image: url(images/jrmhd.jpg)">
-                                </div>
-                                <div class="text pt-4">
-
-                                    <p class="name">Reagan Mukabana</p>
-                                    <span class="position">Software Engineer</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="testimony-wrap text-center py-4 pb-5">
-                                <div class="user-img mb-4" style="background-image: url(/images/Gibson.jpg)">
-                                </div>
-                                <div class="text pt-4">
-
-                                    <p class="name">Gabriel Gibson</p>
-                                    <span class="position">Chief Marketing Director</span>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-
-
-
-
-    {{-- <section class="ftco-section ftco-no-pt ftco-no-pb">
-            <div class="container">
-                <div class="row no-gutters">
-                    <div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center"
-                        style="background-image: url(images/about.jpg);">
-                    </div>
-                    <div class="col-md-6 wrap-about py-md-5 ftco-animate">
-                        <div class="heading-section mb-5 pl-md-5">
-                            <h2 class="mb-4">About Us</h2>
-                            <p>Welcome to Hack Solutions USA</p>
-
-                            <p>We are your reliable partner for all your vehicle leasing needs. With a diverse fleet
-                                that
-                                includes various
-                                vehicle types, we offer flexible leasing options starting at just $19.99 per day.</p>
-
-                            <p>Our mission is to simplify the process of renting a vehicle for your business or personal
-                                use. Whether you
-                                require a vehicle for moving, transportation, or any other purpose, we have the ideal
-                                solution for you.</p>
-
-                            <p>Explore our selection of vehicles and find the one that best suits your needs. Contact us
-                                today to begin your
-                                leasing journey with Hack Solutions USA.</p>
-
-                            <p><a href="{{ url('/posts') }}" class="btn btn-primary">Search Vehicle</a></p>
-                        </div>
-
-                    </div>
-                </div>
-            </div> --}}
-    </section>
-
-
-
-
-
-
-
-
-
-
-    {{-- subscribe start --}}
-
-    {{-- <form action="{{ route('subscribe.store') }}" method="post" class="bg-white rounded-4 shadow-sm p-4">
-
-            <div class="text-center mb-4">
-                <h3 class="text-muted">Subscribe for Offers</h3>
-            </div>
-
-            @csrf
-
-            <div class="row g-2">
-
-                <div class="col-6">
-                    <input type="text" class="form-control form-control-sm rounded-pill border-0"
-                        name="first_name" placeholder="First name">
-                </div>
-
-                <div class="col-6">
-                    <input type="text" class="form-control form-control-sm rounded-pill border-0" name="last_name"
-                        placeholder="Last name">
-                </div>
-
-                <div class="col-12 mt-2">
-                    <input type="email" class="form-control form-control-sm rounded-pill border-0" name="email"
-                        placeholder="Enter email">
-                </div>
-
-            </div>
-            <div class="g-recaptcha" data-sitekey="6LfL-VEpAAAAACCgE1lT9L9ESG3uc8OOGh9doE3m"></div>
-            <button type="submit" class="btn btn-primary btn-sm mt-3 w-100 rounded-pill">
-                Subscribe
-            </button>
-
-        </form>
-
-        @if (session('success'))
-            <div class="alert alert-success mt-3">
-                {{ session('success') }}
-            </div>
-        @endif --}}
-
-    {{-- subscribe end --}}
 
 
     @include('footer')
