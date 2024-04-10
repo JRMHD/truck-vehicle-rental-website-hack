@@ -225,16 +225,33 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="{{ url('/posts') }}">Our Inventory</a>
-                            <a class="dropdown-item" href="{{ url('/home') }}">Dashboard</a>
+                            {{-- <a class="dropdown-item" href="{{ url('/home') }}">Dashboard</a> --}}
                             <a class="dropdown-item" href="{{ url('Featured') }}">Featured</a>
                         </div>
                     </li>
                     <li class="nav-item"><a href="{{ url('/about') }}" class="nav-link">About Us</a></li>
                     <li class="nav-item"><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
+                    @guest
+                        <li class="nav-item">
+                            <a href="{{ route('login') }}" class="nav-link" style="color: #4169E1; font-weight: bold;">Log
+                                In</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{ route('register') }}" class="nav-link"
+                                style="color: green; font-weight: bold;">Create Account</a>
+                        </li>
+                    @else
+                        <li class="nav-item">
+                            <a href="{{ url('/home') }}" class="nav-link">
+                                <img src="images\userproffile.png" alt="User Profile" class="user-icon"
+                                    style="height: 30px; width: auto;">
+                            </a>
+                        </li>
+                    @endguest
                 </ul>
             </div>
-
         </div>
+
     </nav>
 
 
